@@ -172,7 +172,7 @@ function display_lesson_choices(){
     units.push("<div id='" + unit + "' >" + unit + "</div>");
   }
   console.log(units);
-  document.getElementById("units").innerHTML = units;
+  document.getElementById("units").innerHTML = units.join("");
 }
 
 function display_score_summary(){
