@@ -36,9 +36,6 @@ var units_json = {
         }, 
         "Laubach": {
             "story 1": {
-                "../Units/Laubach/story 1/picsfishspeech_google.mp3": null, 
-                "../Units/Laubach/story 1/picsbirdspeech_google.mp3": null, 
-                "../Units/Laubach/story 1/picscupspeech_google.mp3": null, 
                 "sounds": {
                     "../Units/Laubach/story 1/sounds/girlspeech_google.wav": null, 
                     "../Units/Laubach/story 1/sounds/handspeech_google.wav": null, 
@@ -48,9 +45,6 @@ var units_json = {
                     "../Units/Laubach/story 1/sounds/birdspeech_google.wav": null, 
                     "../Units/Laubach/story 1/sounds/dishspeech_google.wav": null
                 }, 
-                "../Units/Laubach/story 1/picshandspeech_google.mp3": null, 
-                "../Units/Laubach/story 1/picsdishspeech_google.mp3": null, 
-                "../Units/Laubach/story 1/picsgirlspeech_google.mp3": null, 
                 "pics": {
                     "../Units/Laubach/story 1/pics/fish.jpg": null, 
                     "../Units/Laubach/story 1/pics/apple.jpg": null, 
@@ -59,8 +53,7 @@ var units_json = {
                     "../Units/Laubach/story 1/pics/girl.jpg": null, 
                     "../Units/Laubach/story 1/pics/bird.jpg": null, 
                     "../Units/Laubach/story 1/pics/hand.jpg": null
-                }, 
-                "../Units/Laubach/story 1/picsapplespeech_google.mp3": null
+                }
             }
         }
     }
