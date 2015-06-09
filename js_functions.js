@@ -171,6 +171,7 @@ function display_lesson_choices(){
   for (unit in units_json["Units"]){
     units.push("<div id='" + unit + "' >" + unit + "</div>");
   }
+  console.log(units);
   document.getElementById("units").innerHTML = units;
 }
 
