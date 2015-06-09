@@ -12,30 +12,42 @@ and open the template in the editor.
         <script src="js_functions.js"></script>
     </head>
     <body onload='lesson_loop("Unit1","Wh questions")' onresize="fill_imgs()">
-        <div id="phrasebox" onclick="play(document.getElementById('phraseboxaudio'))">
-            <img src="sound.png" height="50px">
-            <span id="phraseboxwords" style="font-size: 3em">When do we go home?</span>
-            <audio id="phraseboxaudio" src=""></audio>
-            <span id='scorebox' style="float: right; font-size: 1.5em">Score: </span>
+        <div id="lesson_choice">
+          <table id="lesson_choice_table">
+            <tr>
+              <td id="units"></td>
+              <td id="lessons"></td>
+            </tr>
+          </table>
         </div>
+        <div id="score_screen"></div>
+        <div id="main_lesson">
+          <span id="phrasebox" onclick="play(document.getElementById('phraseboxaudio'))">
+              <img src="sound.png" height="50px">
+              <span id="phraseboxwords" style="font-size: 3em">When do we go home?</span>
+              <audio id="phraseboxaudio" src=""></audio>
+          </span>
+          <span id='scorebox' style="float: right; font-size: 1.5em">Score: </span>
+          <img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right">
 
-        <table border="1">
-            <tr>
-                <td id="box1" class="choicebox">
-                    <img src="sound.png" id="img1" onclick="box_clicked(this.id)">
-                </td>
-                <td id="box2" class="choicebox">
-                    <img src="sound.png" id="img2" onclick="box_clicked(this.id)">
-                </td>
-            </tr>
-            <tr>
-                <td id="box3" class="choicebox">
-                    <img src="sound.png" id="img3" onclick="box_clicked(this.id)">
-                </td>
-                <td id="box4" class="choicebox">
-                    <img src="sound.png" id="img4" onclick="box_clicked(this.id)">
-                </td>
-            </tr>
+          <table border="1">
+              <tr>
+                  <td id="box1" class="choicebox">
+                      <img src="sound.png" id="img1" onclick="box_clicked(this.id)">
+                  </td>
+                  <td id="box2" class="choicebox">
+                      <img src="sound.png" id="img2" onclick="box_clicked(this.id)">
+                  </td>
+              </tr>
+              <tr>
+                  <td id="box3" class="choicebox">
+                      <img src="sound.png" id="img3" onclick="box_clicked(this.id)">
+                  </td>
+                  <td id="box4" class="choicebox">
+                      <img src="sound.png" id="img4" onclick="box_clicked(this.id)">
+                  </td>
+              </tr>
         </table>
+      </div>
     </body>
 </html>

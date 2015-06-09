@@ -149,6 +149,7 @@ function box_clicked(box){
     }
     else {
       current_index = 0;
+      display_lesson_choices();
       display_score_summary();
     }
   }
@@ -160,6 +161,12 @@ function box_clicked(box){
 
 function display_lesson_choices(){
   //do something
+  document.getElementById("main_lesson").style.visibility = "hidden";
+  units= [];
+  for (unit in units_json["Units"]){
+    units.push(unit);
+  }
+  document.getElementById("units").innerHTML = units;
 }
 
 function display_score_summary(){
@@ -167,7 +174,7 @@ function display_score_summary(){
 }
 
 function click_lesson(item){
-  
+
 }
 
 function choose_lesson(u, l){
