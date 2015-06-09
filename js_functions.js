@@ -167,6 +167,7 @@ function box_clicked(box){
 function display_lesson_choices(){
   //do something
   document.getElementById("main_lesson").style.visibility = "hidden";
+  document.getElementById("lesson_choice").style.visibility = "visible";
   units= [];
   for (unit in units_json["Units"]){
     units.push("<div id='" + unit + "' >" + unit + "</div>");
