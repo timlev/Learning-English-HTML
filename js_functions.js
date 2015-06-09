@@ -138,6 +138,7 @@ function box_clicked(box){
     if (tries == 0){
       score += 1;
     }
+    document.getElementById("scorebox").innerHTML = "Score: " + score + "/" + String(current_index + 1);
     console.log(score + "/" + String(current_index + 1));
     current_index += 1;
     correct_item = "blahblah";
