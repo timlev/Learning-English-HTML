@@ -170,7 +170,7 @@ function display_lesson_choices(){
   document.getElementById("lesson_choice").style.visibility = "visible";
   units= [];
   for (unit in units_json["Units"]){
-    units.push("<div id='" + unit + "' >" + unit + "</div>");
+    units.push("<div id='" + unit + "' onclick='click_lesson(this)'>" + unit + "</div>");
   }
   console.log(units);
   document.getElementById("units").innerHTML = units.join("");
@@ -180,8 +180,8 @@ function display_score_summary(){
   //do something
 }
 
-function click_lesson(item){
-
+function click_lesson(u,l){
+  console.log(u);
 }
 
 function choose_lesson(u, l){
