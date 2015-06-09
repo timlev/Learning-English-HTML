@@ -7,6 +7,7 @@
 var correct_item = "blahblah";
 var img_slots = ["img1","img2", "img3", "img4"];
 var current_index = 0;
+var current_unit;
 var current_lesson;
 var lesson_length;
 var tries = 0;
@@ -146,9 +147,32 @@ function box_clicked(box){
     if (current_index < lesson_length){
       setup_item(current_lesson[current_index], current_lesson);
     }
+    else {
+      current_index = 0;
+      display_score_summary();
+    }
   }
   else {
     alert("Wrong choice :( !");
     tries += 1;
   }
+}
+
+function display_lesson_choices(){
+  //do something
+}
+
+function display_score_summary(){
+  //do something
+}
+
+function click_lesson(item){
+  
+}
+
+function choose_lesson(u, l){
+  current_unit = u;
+  current_lesson = l;
+  lesson_length = l.length;
+
 }
