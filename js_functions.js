@@ -36,7 +36,15 @@ function fill_imgs(img1,img2,img3,img4){
     var W = window.innerWidth;
     var boxH = (H - 100)/ 2;
     var boxW = W / 2;
-
+    /*
+    for (var img; img in images){
+      var originaHeight = document.getElementById(img).height;
+      var originalWidth = document.getElementById(img).width;
+      var new_height = scale_image(originaHeight, img1Originalwidth, boxH, boxW).new_height
+      var new_width = scale_image(originaHeight, img1Originalwidth, boxH, boxW).new_width
+      document.getElementById(img).height = new_height;
+      document.getElementById(img).width = new_width;
+    }*/
     img1Originalheight = document.getElementById("img1").height;
     img1Originalwidth = document.getElementById("img1").width;
     document.getElementById("img1").height = scale_image(img1Originalheight, img1Originalwidth, boxH, boxW).new_height;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rosetta-Tablet-HTML</title>
+        <script src="js_functions.js"></script>
+    </head>
+    <body onload="fill_imgs()" onresize="fill_imgs()">
+        <div id="phrasebox" onclick="play(document.getElementById('phraseboxaudio'))">
+            <img src="sound.png" height="50px">
+            <span id="phraseboxwords"><font size="7">When do we go home?</font></span>
+            <audio id="phraseboxaudio" src="When do we go home.questionmarkspeech_google.wav"></audio>
+        </div>
+        <table border="1">
+            <tr>
+                <td id="box1" class="choicebox">
+                    <img src="When do we go home.questionmark.JPG" id="img1" onclick="box_clicked(this.id)">
+                </td>
+                <td id="box2" class="choicebox">
+                    <img src="When does class start.questionmark.JPG" id="img2" onclick="box_clicked(this.id)">
+                </td>
+            </tr>
+            <tr>
+                <td id="box3" class="choicebox">
+                    <img src="When does the bus come.questionmark.JPG" id="img3" onclick="box_clicked(this.id)">
+                </td>
+                <td id="box4" class="choicebox">
+                    <img src="When is break time.questionmark.JPG" id="img4" onclick="box_clicked(this.id)">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
