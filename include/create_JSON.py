@@ -15,8 +15,8 @@ def get_directory_structure(rootdir):
         parent[folders[-1]] = subdir
     return dir
 
-results = get_directory_structure("Units")
-with open("units.json", "w") as fp:
+results = get_directory_structure("../Units")
+with open("../units.json", "w") as fp:
     fp.write("var units_json = ")
     json.dump(results, fp, indent=4)
 print results["Units"]["Unit1"]["Wh questions"].keys()
