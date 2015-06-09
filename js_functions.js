@@ -98,6 +98,8 @@ function set_sound(item){
 }
 
 function setup_item(item, lesson){
+  document.getElementById("lesson_choice").style.visibility = "hidden";
+  document.getElementById("score_screen").style.visibility = "hidden";
   lesson_length = lesson.length;
   tries = 0;
   //assign text
@@ -124,9 +126,12 @@ function setup_item(item, lesson){
     document.getElementById(img_slots[i]).src = another_pic;
   }
   fill_imgs();
+  document.getElementById("main_lesson").style.visibility = "visible";
 }
 
 function lesson_loop(unit, lesson){
+  document.getElementById("lesson_choice").style.visibility = "hidden";
+  document.getElementById("score_screen").style.visibility = "hidden";
   //grab lesson from units.json
   lesson = grab_lesson(unit,lesson)
   //shuffle lesson once
@@ -164,7 +169,7 @@ function display_lesson_choices(){
   document.getElementById("main_lesson").style.visibility = "hidden";
   units= [];
   for (unit in units_json["Units"]){
-    units.push(unit);
+    units.push("<div id='" + unit + "' >" + unit + "</div>");
   }
   document.getElementById("units").innerHTML = units;
 }
