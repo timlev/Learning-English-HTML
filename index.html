@@ -24,15 +24,32 @@ and open the template in the editor.
             </tr>
           </table>
         </div>
-        <div id="score_screen"></div>
-        <div id="main_lesson">
+        <div id="score_screen">
+        <table id="score_table" border=1>
+          <tr id="headers">
+            <td>Date</td>
+            <td>Unit</td>
+            <td>Lesson</td>
+            <td>Score</td>
+          </tr>
+          <tr id="values">
+            <td id="score_date"></td>
+            <td id="score_unit"></td>
+            <td id="score_lesson"></td>
+            <td id="score_score"></td>
+          </tr>
+        </table>
+        <img id="retry" src="repeat.png" border=1 onclick='choose_lesson(current_unit,current_lesson)'/>
+        <img id="home" src="home_icon.png" border=1 onclick='display_lesson_choices()'/>
+        </div>
+      <div id="main_lesson">
           <span id="phrasebox" onclick="play(document.getElementById('phraseboxaudio'))">
               <img src="sound.png" height="50px">
-              <span id="phraseboxwords" style="font-size: 3em">When do we go home?</span>
+              <span id="phraseboxwords" style="font-size: 3em;">Filler Text</span>
               <audio id="phraseboxaudio" src=""></audio>
           </span>
-          <span id='scorebox' style="float: right; font-size: 1.5em">Score: </span>
-          <img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right">
+          <span id='scorebox' style="float: right; font-size: 1.5em;">Score: </span>
+          <img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right;">
 
           <table border="1">
               <tr>

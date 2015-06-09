@@ -9,10 +9,12 @@ var img_slots = ["img1","img2", "img3", "img4"];
 var current_index = 0;
 var current_unit;
 var current_lesson;
+var current_lesson_contents;
 var current_unit;
 var lesson_length;
 var tries = 0;
 var score = 0;
+//function fill_imgs();
 
 function play(file){
     file.play();
@@ -54,21 +56,12 @@ function fill_imgs(){
       document.getElementById(img).height = new_height;
       document.getElementById(img).width = new_width;
     }
-}
-
-function test_func(){
-    console.log("Testing!");
+    document.getElementById("main_lesson").style.visibility = "visible";
 }
 
 function shuffle(o){
     for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
-}
-
-function reset_boxes(){
-
-    document.getElementById("img3").height = img3Originalheight;
-    document.getElementById("img3").width = img3Originalwidth;
 }
 
 function grab_lesson(unit, lesson){
@@ -98,7 +91,8 @@ function set_sound(item){
   document.getElementById("phraseboxaudio").src = sound_src;
 }
 
-function setup_item(item, lesson){
+function setup_item(item, lesson, callback){
+  document.getElementById("main_lesson").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "none";
   document.getElementById("score_screen").style.display = "none";
   lesson_length = lesson.length;
@@ -112,7 +106,7 @@ function setup_item(item, lesson){
   convert_to_display(item);
   img_slots = shuffle(img_slots);
   //set correct_item
-  correct_item = img_slots[0]
+  correct_item = img_slots[0];
   document.getElementById(img_slots[0]).src = item;
   var already_taken = [item];
   //var lesson = shuffle(lesson);
@@ -126,12 +120,13 @@ function setup_item(item, lesson){
     already_taken.push(another_pic);
     document.getElementById(img_slots[i]).src = another_pic;
   }
-  fill_imgs();
-  document.getElementById("main_lesson").style.visibility = "visible";
-  document.getElementById("main_lesson").style.display = "block";
+  if (typeof callback === "function"){
+    callback();
+  }
 }
 
 function lesson_loop(unit, lesson){
+  img_slots = ["img1","img2", "img3", "img4"];
   correct_item = "blahblah";
   current_index = 0;
   tries = 0;
@@ -140,11 +135,12 @@ function lesson_loop(unit, lesson){
   document.getElementById("lesson_choice").style.display = "none";
   document.getElementById("score_screen").style.display = "none";
   //grab lesson from units.json
-  lesson = grab_lesson(unit,lesson)
-  //shuffle lesson once
-  lesson = shuffle(lesson);
   current_lesson = lesson;
-  setup_item(current_lesson[current_index], current_lesson);
+  current_lesson_contents = grab_lesson(unit,lesson);
+  //shuffle lesson once
+  current_lesson_contents = shuffle(current_lesson_contents);
+  current_unit = unit;
+  setup_item(current_lesson_contents[current_index], current_lesson_contents, fill_imgs());
 }
 function box_clicked(box){
   if (correct_item == box){
@@ -153,16 +149,15 @@ function box_clicked(box){
       score += 1;
     }
     document.getElementById("scorebox").innerHTML = "Score: " + score + "/" + String(current_index + 1);
-    console.log(score + "/" + String(current_index + 1));
     current_index += 1;
     correct_item = "blahblah";
     if (current_index < lesson_length){
-      setup_item(current_lesson[current_index], current_lesson);
+      setup_item(current_lesson_contents[current_index], current_lesson_contents, fill_imgs());
     }
     else {
       current_index = 0;
-      display_lesson_choices();
-      display_score_summary();
+      //display_lesson_choices();
+      display_score_summary(lesson, score);
     }
   }
   else {
@@ -173,9 +168,10 @@ function box_clicked(box){
 
 function display_lesson_choices(){
   //set up units
-  document.getElementById("main_lesson").style.display = "none";
+  document.getElementById("main_lesson").style.visibility = "hidden";
   document.getElementById("lesson_choice").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "block";
+  document.getElementById("score_screen").style.display = "none";
   units= [];
   for (unit in units_json["Units"]){
     units.push("<div><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
@@ -183,12 +179,27 @@ function display_lesson_choices(){
   document.getElementById("units").innerHTML = units.join("");
 }
 
-function display_score_summary(){
+function constructDate(){
+  d = new Date();
+  date = ""
+  date += d.getMonth() + "/";//month
+  date += d.getDate() + "/"; // day
+  date += d.getYear(); //year
+  return date;
+}
+function display_score_summary(lesson, score){
   //do something
+  document.getElementById("main_lesson").style.visibility = "hidden";
+  document.getElementById("score_screen").style.display = "block";
+  document.getElementById("score_date").innerHTML = constructDate();
+  document.getElementById("score_unit").innerHTML = current_unit;
+  document.getElementById("score_lesson").innerHTML = lesson;
+  document.getElementById("score_score").innerHTML = score + "/" + lesson_length;
+
 }
 function populate_lesson_choices(unit){
   //set up units
-  document.getElementById("main_lesson").style.display = "none";
+  document.getElementById("main_lesson").style.visibility = "hidden";
   document.getElementById("lesson_choice").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "block";
   lessons= [];
@@ -206,6 +217,5 @@ function choose_lesson(u, l){
   current_unit = u;
   current_lesson = l;
   lesson_length = l.length;
-  console.log(current_unit, current_lesson);
   lesson_loop(current_unit, current_lesson);
 }

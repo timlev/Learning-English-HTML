@@ -4,6 +4,6 @@ HTML version of rosetta-tablet
 Depends on python to make units.json
 
 Not implemented:
-- score screen
+// score screen
 //lesson chooser
 - lesson creation
