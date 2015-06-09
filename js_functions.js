@@ -69,13 +69,14 @@ function grab_lesson(unit, lesson){
   var pics = [];
   for (var key in raw_lesson) {
     if (raw_lesson.hasOwnProperty(key)) {
+      console.log(key);
       pics.push(key);
     }
   }
   return pics;
 }
 function convert_to_display(item){
-  item = item.slice(item.lastIndexOf("\\") + 1,item.lastIndexOf("."));
+  item = item.slice(item.lastIndexOf("/") + 1,item.lastIndexOf("."));
   var replacementsdict = {'.exclamationmark': '!', '.apostrophe': "'", '.questionmark': '?', '.comma': ',', '.colon': ':'};
   for (key in replacementsdict){
     if (item.indexOf(key) != -1){
