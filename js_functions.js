@@ -100,9 +100,10 @@ function setup_item(item, lesson){
   lesson_length = lesson.length;
   tries = 0;
   //assign text
-  document.getElementById("phraseboxwords").innerHTML = '<font size="7">' + convert_to_display(item) + '</font>';
+  document.getElementById("phraseboxwords").innerHTML = convert_to_display(item);
   //assign sound
   set_sound(item);
+  play(document.getElementById("phraseboxaudio"));
   //assign pictures
   convert_to_display(item);
   img_slots = shuffle(img_slots);
