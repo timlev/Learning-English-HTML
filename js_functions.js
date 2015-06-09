@@ -170,7 +170,7 @@ function display_lesson_choices(){
   document.getElementById("lesson_choice").style.visibility = "visible";
   units= [];
   for (unit in units_json["Units"]){
-    units.push("<div id='" + unit + "' onclick='click_lesson(this)'>" + unit + "</div>");
+    units.push("<div id='" + unit + "' onclick='click_lesson(this.id)'>" + unit + "</div>");
   }
   console.log(units);
   document.getElementById("units").innerHTML = units.join("");
