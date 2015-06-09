@@ -12,12 +12,15 @@ and open the template in the editor.
         <script src="units.json"></script>
         <script src="js_functions.js"></script>
     </head>
-    <body onload='lesson_loop("Unit1","Wh questions")' onresize="fill_imgs()">
-        <div id="lesson_choice">
-          <table id="lesson_choice_table">
+    <body onload='display_lesson_choices()' onresize="fill_imgs()">
+        <div id="lesson_choice" style="display: none">
+          <table id="lesson_choice_table" border=1>
             <tr>
-              <td id="units"></td>
-              <td id="lessons"></td>
+              <td><h1>Units:</h1></td>
+              <td><h1>Lessons:</h1></td>
+            <tr>
+              <td><div id="units"></div></td>
+              <td><div id="lessons"></div></td>
             </tr>
           </table>
         </div>

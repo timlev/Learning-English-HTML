@@ -9,6 +9,7 @@ var img_slots = ["img1","img2", "img3", "img4"];
 var current_index = 0;
 var current_unit;
 var current_lesson;
+var current_unit;
 var lesson_length;
 var tries = 0;
 var score = 0;
@@ -98,8 +99,8 @@ function set_sound(item){
 }
 
 function setup_item(item, lesson){
-  document.getElementById("lesson_choice").style.visibility = "hidden";
-  document.getElementById("score_screen").style.visibility = "hidden";
+  document.getElementById("lesson_choice").style.display = "none";
+  document.getElementById("score_screen").style.display = "none";
   lesson_length = lesson.length;
   tries = 0;
   //assign text
@@ -127,11 +128,17 @@ function setup_item(item, lesson){
   }
   fill_imgs();
   document.getElementById("main_lesson").style.visibility = "visible";
+  document.getElementById("main_lesson").style.display = "block";
 }
 
 function lesson_loop(unit, lesson){
-  document.getElementById("lesson_choice").style.visibility = "hidden";
-  document.getElementById("score_screen").style.visibility = "hidden";
+  correct_item = "blahblah";
+  current_index = 0;
+  tries = 0;
+  score = 0;
+  document.getElementById("scorebox").innerHTML = "Score: ";
+  document.getElementById("lesson_choice").style.display = "none";
+  document.getElementById("score_screen").style.display = "none";
   //grab lesson from units.json
   lesson = grab_lesson(unit,lesson)
   //shuffle lesson once
@@ -165,28 +172,40 @@ function box_clicked(box){
 }
 
 function display_lesson_choices(){
-  //do something
-  document.getElementById("main_lesson").style.visibility = "hidden";
+  //set up units
+  document.getElementById("main_lesson").style.display = "none";
   document.getElementById("lesson_choice").style.visibility = "visible";
+  document.getElementById("lesson_choice").style.display = "block";
   units= [];
   for (unit in units_json["Units"]){
-    units.push("<div id='" + unit + "' onclick='click_lesson(this.id)'>" + unit + "</div>");
+    units.push("<div><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
   }
-  console.log(units);
   document.getElementById("units").innerHTML = units.join("");
 }
 
 function display_score_summary(){
   //do something
 }
-
-function click_lesson(u,l){
-  console.log(u);
+function populate_lesson_choices(unit){
+  //set up units
+  document.getElementById("main_lesson").style.display = "none";
+  document.getElementById("lesson_choice").style.visibility = "visible";
+  document.getElementById("lesson_choice").style.display = "block";
+  lessons= [];
+  for (lesson in units_json["Units"][unit]){
+    lessons.push("<div><input type='radio' name='lesson' id='" + lesson + "' onchange='choose_lesson(unit, this.id)' >" + lesson + "</input></div>");
+  }
+  document.getElementById("lessons").innerHTML = lessons.join("");
+}
+function click_unit(choice){
+  unit = choice.id;
+  populate_lesson_choices(unit);
 }
 
 function choose_lesson(u, l){
   current_unit = u;
   current_lesson = l;
   lesson_length = l.length;
-
+  console.log(current_unit, current_lesson);
+  lesson_loop(current_unit, current_lesson);
 }
