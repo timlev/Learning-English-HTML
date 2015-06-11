@@ -15,11 +15,26 @@ var lesson_length;
 var tries = 0;
 var score = 0;
 //function fill_imgs();
+var sep = json_dir_sep();
+console.log(sep);
 
 function play(file){
     file.play();
 };
-
+function json_dir_sep(){
+  //Try first units.json entry
+  var first_unit = Object.keys(units_json["Units"])[0];
+  var first_lesson = Object.keys(units_json["Units"][first_unit])[0];
+  var first_file = Object.keys(units_json["Units"][first_unit][first_lesson]["pics"])[0];
+  //Test case
+  //first_file = "Units\\Units1\\Wh/ questions\\pics\\Where/ is/ your/ hat.questionmark.jpg"
+  if (first_file.indexOf("/pics/") != -1){
+    return "/";
+  }
+  else if (first_file.indexOf("\\pics\\") != -1){
+    return "\\";
+  }
+}
 function scale_image(img_height, img_width, container_height, container_width){
     var container_ratio = container_height / container_width;
     var img_ratio = img_height / img_width;
@@ -76,7 +91,7 @@ function grab_lesson(unit, lesson){
   return pics;
 }
 function convert_to_display(item){
-  item = item.slice(item.lastIndexOf("/") + 1,item.lastIndexOf("."));
+  item = item.slice(item.lastIndexOf(sep) + 1,item.lastIndexOf("."));
   var replacementsdict = {'.exclamationmark': '!', '.apostrophe': "'", '.questionmark': '?', '.comma': ',', '.colon': ':'};
   for (key in replacementsdict){
     if (item.indexOf(key) != -1){
