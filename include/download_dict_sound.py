@@ -19,7 +19,11 @@ def download(word, directory="./"):
     #end = "#"
     end = ""
     query = base + word + qmid + word + end
-    response = urllib2.urlopen(query)
+    try:
+        response = urllib2.urlopen(query)
+    except:
+        print "Couldn't find", word
+        return 1
     mp3source = ""
     for line in response:
         if "sound audio_play_button pron-icon us" in line and word + ".mp3" in line:

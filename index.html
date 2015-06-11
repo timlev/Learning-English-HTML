@@ -43,9 +43,10 @@ and open the template in the editor.
         <img id="home" src="home_icon.png" border=1 onclick='display_lesson_choices()'/>
         </div>
       <div id="main_lesson">
-          <span id="phrasebox" onclick="play(document.getElementById('phraseboxaudio'))">
-              <img src="sound.png" height="50px">
+          <span id="phrasebox">
+              <img src="sound.png" height="50px" onclick="play(document.getElementById('phraseboxaudio'))">
               <span id="phraseboxwords" style="font-size: 3em;">Filler Text</span>
+              <audio id="ind_words_audio" src=""></audio>
               <audio id="phraseboxaudio" src=""></audio>
           </span>
           <span id='scorebox' style="float: right; font-size: 1.5em;">Score: </span>

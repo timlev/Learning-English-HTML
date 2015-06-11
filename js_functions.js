@@ -114,7 +114,9 @@ function setup_item(item, lesson, callback){
   lesson_length = lesson.length;
   tries = 0;
   //assign text
-  document.getElementById("phraseboxwords").innerHTML = convert_to_display(item);
+  //document.getElementById("phraseboxwords").innerHTML = convert_to_display(item);
+  //split words into divs
+  document.getElementById("phraseboxwords").innerHTML = split_item_to_word_spans(convert_to_display(item));
   //assign sound
   set_sound(item);
   play(document.getElementById("phraseboxaudio"));
@@ -234,4 +236,28 @@ function choose_lesson(u, l){
   current_lesson = l;
   lesson_length = l.length;
   lesson_loop(current_unit, current_lesson);
+}
+
+function play_word_file(word_sound_file_name){
+  document.getElementById("ind_words_audio").src = "sounds/" + word_sound_file_name.id + ".mp3";
+  play(document.getElementById("ind_words_audio"));
+  //problems do, class, break
+}
+
+function addSpan(word, word_sound_file_name){
+  return "<span id ='" + word_sound_file_name + "' onclick='play_word_file(" + word_sound_file_name +")'>" + word + "</span>"
+}
+
+function split_item_to_word_spans(disp_item){
+  var wordArray = disp_item.split(" ");
+  var output_array = [];
+  for (i in wordArray){
+    word = wordArray[i];
+    //remove ? ! . ,
+    var word_sound_file_name = word.replace("?","").replace("!","").replace(".", "").replace(",","");
+    word_sound_file_name = word_sound_file_name.toLowerCase();
+    output_array.push(addSpan(word, word_sound_file_name));
+  }
+  var output = output_array.join(" ");
+  return output;
 }

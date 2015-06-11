@@ -1,5 +1,5 @@
 import os, sys
-import download_dict_sound	
+import download_dict_sound
 import glob
 
 units_root = os.path.relpath("../Units/")
@@ -28,3 +28,23 @@ for item in compared:
 
 
 import create_JSON #This automatically runs
+
+############DOWNLOAD DICT SOUNDS#################
+dictsoundfiles = [x for x in os.listdir("sounds") if x.startswith(".") == False and os.path.isfile(x)]
+print dictsoundfiles
+
+all_words = []
+for pic in picfiles:
+	f = os.path.basename(pic)
+	f = f[:f.rindex(".")]
+	f = download_dict_sound.replace_symbols(f)
+	f = f.lower()
+	f = f.replace("?","").replace("!","").replace(".", "").replace(",","")
+	f = f.split(" ")
+	all_words += f
+
+all_words = list(set(all_words))
+
+for word in all_words:
+	if download_dict_sound.check_downloaded_word(word, "sounds") == False:
+		download_dict_sound.download(word, "sounds")
