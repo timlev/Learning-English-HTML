@@ -238,14 +238,14 @@ function choose_lesson(u, l){
   lesson_loop(current_unit, current_lesson);
 }
 
-function play_word_file(word_sound_file_name){
-  document.getElementById("ind_words_audio").src = "sounds/" + word_sound_file_name.id + ".mp3";
+function play_word_file(word_sound_file_path){
+  document.getElementById("ind_words_audio").src = word_sound_file_path;
   play(document.getElementById("ind_words_audio"));
-  //problems do, class, break
+  //problems do, break, time -- don't download
 }
 
-function addSpan(word, word_sound_file_name){
-  return "<span id ='" + word_sound_file_name + "' onclick='play_word_file(" + word_sound_file_name +")'>" + word + "</span>"
+function addSpan(word, word_sound_file_name, word_sound_file_path){
+  return "<span id ='" + word_sound_file_name + "' onclick=play_word_file('" + word_sound_file_path +"')>" + word + "</span>"
 }
 
 function split_item_to_word_spans(disp_item){
@@ -256,7 +256,8 @@ function split_item_to_word_spans(disp_item){
     //remove ? ! . ,
     var word_sound_file_name = word.replace("?","").replace("!","").replace(".", "").replace(",","");
     word_sound_file_name = word_sound_file_name.toLowerCase();
-    output_array.push(addSpan(word, word_sound_file_name));
+    var word_sound_file_path = ["sounds/",String(word_sound_file_name),".mp3"].join("");
+    output_array.push(addSpan(word, word_sound_file_name, word_sound_file_path));
   }
   var output = output_array.join(" ");
   return output;
