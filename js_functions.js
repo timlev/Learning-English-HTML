@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+"use strict"
 
 var correct_item = "blahblah";
 var img_slots = ["img1","img2", "img3", "img4"];
@@ -43,16 +44,16 @@ function scale_image(img_height, img_width, container_height, container_width){
     var container_ratio = container_height / container_width;
     var img_ratio = img_height / img_width;
     if (img_ratio == container_ratio){
-        new_height = container_height;
-        new_width = container_width;
+        var new_height = container_height;
+        var new_width = container_width;
     }
     else if (img_ratio > container_ratio){
-        new_height = container_height;
-        new_width = img_width * (container_height / img_height);
+        var new_height = container_height;
+        var new_width = img_width * (container_height / img_height);
     }
     else {
-        new_width = container_width;
-        new_height = img_height * (container_width / img_width);
+        var new_width = container_width;
+        var new_height = img_height * (container_width / img_width);
     }
     return {
         new_height: new_height,
@@ -66,7 +67,7 @@ function fill_imgs(){
     var boxH = (H - 100)/ 2;
     var boxW = W / 2;
 
-    for (img in img_slots){
+    for (var img in img_slots){
       img = img_slots[img];
       var originaHeight = document.getElementById(img).height;
       var originalWidth = document.getElementById(img).width;
@@ -97,7 +98,7 @@ function grab_lesson(unit, lesson){
 function convert_to_display(item){
   item = item.slice(item.lastIndexOf(sep) + 1,item.lastIndexOf("."));
   var replacementsdict = {'.exclamationmark': '!', '.apostrophe': "'", '.questionmark': '?', '.comma': ',', '.colon': ':'};
-  for (key in replacementsdict){
+  for (var key in replacementsdict){
     if (item.indexOf(key) != -1){
       item = item.replace(key, replacementsdict[key]);
     }
@@ -179,7 +180,7 @@ function box_clicked(box){
     else {
       current_index = 0;
       //display_lesson_choices();
-      display_score_summary(lesson, score);
+      display_score_summary(current_lesson, score);
     }
   }
   else {
@@ -194,23 +195,22 @@ function display_lesson_choices(){
   document.getElementById("lesson_choice").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "block";
   document.getElementById("score_screen").style.display = "none";
-  units= [];
-  for (unit in units_json["Units"]){
+  var units= [];
+  for (var unit in units_json["Units"]){
     units.push("<div><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
   }
   document.getElementById("units").innerHTML = units.join("");
 }
 
 function constructDate(){
-  d = new Date();
-  date = ""
+  var d = new Date();
+  var date = ""
   date += d.getMonth() + "/";//month
   date += d.getDate() + "/"; // day
   date += d.getYear(); //year
   return date;
 }
 function display_score_summary(lesson, score){
-  //do something
   document.getElementById("main_lesson").style.visibility = "hidden";
   document.getElementById("score_screen").style.display = "block";
   document.getElementById("score_date").innerHTML = constructDate();
@@ -224,14 +224,15 @@ function populate_lesson_choices(unit){
   document.getElementById("main_lesson").style.visibility = "hidden";
   document.getElementById("lesson_choice").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "block";
-  lessons= [];
-  for (lesson in units_json["Units"][unit]){
-    lessons.push("<div><input type='radio' name='lesson' id='" + lesson + "' onchange='choose_lesson(unit, this.id)' >" + lesson + "</input></div>");
+  current_unit = unit;
+  var lessons= [];
+  for (var lesson in units_json["Units"][unit]){
+    lessons.push("<div><input type='radio' name='lesson' id='" + lesson + "' onchange='choose_lesson(current_unit, this.id)' >" + lesson + "</input></div>");
   }
   document.getElementById("lessons").innerHTML = lessons.join("");
 }
 function click_unit(choice){
-  unit = choice.id;
+  var unit = choice.id;
   populate_lesson_choices(unit);
 }
 
@@ -249,8 +250,8 @@ function addSpan(word, word_sound_file_name, word_sound_file_path){
 function split_item_to_word_spans(disp_item){
   var wordArray = disp_item.split(" ");
   var output_array = [];
-  for (i in wordArray){
-    word = wordArray[i];
+  for (var i in wordArray){
+    var word = wordArray[i];
     //remove ? ! . ,
     var word_sound_file_name = word.replace("?","").replace("!","").replace(".", "").replace(",","");
     word_sound_file_name = word_sound_file_name.toLowerCase();
@@ -263,7 +264,6 @@ function split_item_to_word_spans(disp_item){
 
 function revert_color(obj){
   setTimeout(function (){document.getElementById(obj.id).style.backgroundColor = 'transparent';},1000);
-  //document.getElementById(obj.id).class = 'unselected';
 }
 
 function play_word_file(obj){
