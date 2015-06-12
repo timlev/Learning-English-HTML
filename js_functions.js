@@ -19,7 +19,11 @@ var sep = json_dir_sep();
 console.log(sep);
 
 function play(file){
-    file.play();
+  //console.log(file.name);
+  file.play();
+    //if (file.name != null){
+    //  file.addEventListener( "ended", revert_color(file.name), false);
+    //}
 };
 function json_dir_sep(){
   //Try first units.json entry
@@ -84,7 +88,7 @@ function grab_lesson(unit, lesson){
   var pics = [];
   for (var key in raw_lesson) {
     if (raw_lesson.hasOwnProperty(key)) {
-      console.log(key);
+      //console.log(key);
       pics.push(key);
     }
   }
@@ -238,14 +242,8 @@ function choose_lesson(u, l){
   lesson_loop(current_unit, current_lesson);
 }
 
-function play_word_file(word_sound_file_path){
-  document.getElementById("ind_words_audio").src = word_sound_file_path;
-  play(document.getElementById("ind_words_audio"));
-  //problems do, break, time -- don't download
-}
-
 function addSpan(word, word_sound_file_name, word_sound_file_path){
-  return "<span id ='" + word_sound_file_name + "' onclick=play_word_file('" + word_sound_file_path +"')>" + word + "</span>"
+  return "<span id=" + word_sound_file_name + " onclick=play_word_file(this)>" + word + "</span>";
 }
 
 function split_item_to_word_spans(disp_item){
@@ -256,9 +254,24 @@ function split_item_to_word_spans(disp_item){
     //remove ? ! . ,
     var word_sound_file_name = word.replace("?","").replace("!","").replace(".", "").replace(",","");
     word_sound_file_name = word_sound_file_name.toLowerCase();
-    var word_sound_file_path = ["sounds/",String(word_sound_file_name),".mp3"].join("");
+    var word_sound_file_path = ["'","sounds/",String(word_sound_file_name),".mp3","'"].join("");
     output_array.push(addSpan(word, word_sound_file_name, word_sound_file_path));
   }
   var output = output_array.join(" ");
   return output;
+}
+
+function revert_color(obj){
+  setTimeout(function (){document.getElementById(obj.id).style.backgroundColor = 'transparent';},1000);
+  //document.getElementById(obj.id).class = 'unselected';
+}
+
+function play_word_file(obj){
+  document.getElementById(obj.id).style.backgroundColor = 'yellow';
+  var word_sound_file_path = "sounds/" + obj.id + ".mp3";
+  document.getElementById("ind_words_audio").src = word_sound_file_path;
+  play(document.getElementById("ind_words_audio"));
+  document.getElementById("ind_words_audio").addEventListener( "ended", revert_color(obj));
+
+  //problems do, break, time -- don't download
 }
