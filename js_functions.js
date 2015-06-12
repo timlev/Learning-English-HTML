@@ -167,6 +167,7 @@ function lesson_loop(unit, lesson){
 }
 function box_clicked(box){
   if (correct_item == box){
+    play_feedback_sound(true);
     alert("Correct choice!");
     if (tries == 0){
       score += 1;
@@ -184,6 +185,7 @@ function box_clicked(box){
     }
   }
   else {
+    play_feedback_sound(false);
     alert("Wrong choice :( !");
     tries += 1;
   }
@@ -274,4 +276,15 @@ function play_word_file(obj){
   document.getElementById("ind_words_audio").addEventListener( "ended", revert_color(obj));
 
   //problems do, break, time -- don't download
+}
+
+function play_feedback_sound(correct){
+  if (correct == true){
+    document.getElementById("audio_feedback").src = "GuitarStrum.wav";
+    play(document.getElementById("audio_feedback"));
+  }
+  else {
+    document.getElementById("audio_feedback").src = "CymbalCrash.wav";
+    play(document.getElementById("audio_feedback"));
+  }
 }
