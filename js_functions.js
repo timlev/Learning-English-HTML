@@ -220,7 +220,8 @@ function constructDate(){
 }
 function display_score_summary(lesson, score){
   document.getElementById("main_lesson").style.visibility = "hidden";
-  document.getElementById("score_screen").style.display = "block";
+  //document.getElementById("score_screen").style.display = "block";
+  highlight_div("score_screen", 0);
   document.getElementById("score_date").innerHTML = constructDate();
   document.getElementById("score_unit").innerHTML = current_unit;
   document.getElementById("score_lesson").innerHTML = lesson;
@@ -301,7 +302,9 @@ function highlight_div(div, timeout){
   }
   document.getElementById(div).style.display='block';
   document.getElementById('fade').style.display='block';
-  setTimeout(function(){ reverse_highlight(div);}, timeout);
+  if (timeout != 0){
+    setTimeout(function(){ reverse_highlight(div);}, timeout);
+  }
 }
 
 function reverse_highlight(div){

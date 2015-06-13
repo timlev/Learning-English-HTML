@@ -25,7 +25,8 @@ and open the template in the editor.
             </tr>
           </table>
         </div>
-        <div id="score_screen">
+        <div id="fade" class="black_overlay"></div>
+        <div id="score_screen" class='white_content'>
         <table id="score_table" border=1>
           <tr id="headers">
             <td>Date</td>
@@ -44,7 +45,7 @@ and open the template in the editor.
         <img id="home" src="home_icon.png" border=1 onclick='display_lesson_choices()'/>
         </div>
       <div id="answer_feedback" class='white_content'></div>
-      <div id="fade" class="black_overlay"></div>
+
       <div id="main_lesson">
           <span id="phrasebox">
               <img src="sound.png" height="50px" onclick="play(document.getElementById('phraseboxaudio'))">
