@@ -4,7 +4,10 @@
  * and open the template in the editor.
  */
 "use strict"
-
+var H;
+var W;
+var boxH;
+var boxW;
 var correct_item = "blahblah";
 var img_slots = ["img1","img2", "img3", "img4"];
 var current_index = 0;
@@ -19,6 +22,22 @@ var score = 0;
 var sep = json_dir_sep();
 console.log(sep);
 
+function onWinResize(){
+  H = window.innerHeight;
+  W = window.innerWidth;
+  boxH = (H - 100)/ 2;
+  boxW = W / 2;
+  console.log(H, W, boxH, boxW);
+  H = window.innerHeight;
+  W = window.innerWidth;
+  boxH = (H - 100)/ 2;
+  boxW = W / 2;
+  var boxes = ['box1', 'box2','box3','box4'];
+  for (var box in boxes){
+    document.getElementById(boxes[box]).height = boxH;
+    document.getElementById(boxes[box]).width = boxW;
+  }
+}
 function play(file){
   //console.log(file.name);
   file.play();
@@ -49,46 +68,9 @@ function getbestratio(boxheight,boxwidth,picheight,picwidth){
     return {new_width: picwidth,new_height: picheight};
 }
 
-function scale_image(img_height, img_width, container_height, container_width){
-    var container_ratio = container_height / container_width;
-    var img_ratio = img_height / img_width;
-    if (img_ratio == container_ratio){
-        var new_height = container_height;
-        var new_width = container_width;
-    }
-    else if (img_ratio > container_ratio){
-        var new_height = container_height;
-        var new_width = img_width * (container_height / img_height);
-    }
-    else {
-        var new_width = container_width;
-        var new_height = img_height * (container_width / img_width);
-    }
-    return {
-        new_height: new_height,
-        new_width: new_width
-    };
-}
-
 function fill_imgs(){
-    var H = window.innerHeight;
-    var W = window.innerWidth;
-    var boxH = (H - 100)/ 2;
-    var boxW = W / 2;
-
-    for (var img in img_slots){
-      img = img_slots[img];
-      var originaHeight = document.getElementById(img).height;
-      var originalWidth = document.getElementById(img).width;
-      //var new_height = scale_image(originaHeight, originalWidth, boxH, boxW).new_height
-      //var new_width = scale_image(originaHeight, originalWidth, boxH, boxW).new_width
-      var result = getbestratio(boxH, boxW, originaHeight, originalWidth)
-      var new_height = result.new_height;
-      var new_width = result.new_width;
-      document.getElementById(img).height = new_height;
-      document.getElementById(img).width = new_width;
-    }
-    document.getElementById("main_lesson").style.visibility = "visible";
+  onWinResize();
+  document.getElementById("main_lesson").style.visibility = "visible";
 }
 
 function shuffle(o){
@@ -125,6 +107,7 @@ function set_sound(item){
 }
 
 function setup_item(item, lesson, callback){
+  onWinResize();
   document.getElementById("main_lesson").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "none";
   document.getElementById("score_screen").style.display = "none";
@@ -143,6 +126,7 @@ function setup_item(item, lesson, callback){
   //set correct_item
   correct_item = img_slots[0];
   document.getElementById(img_slots[0]).src = item;
+
   var already_taken = [item];
   //var lesson = shuffle(lesson);
   for (var i = 1; i < img_slots.length; i++){
@@ -155,12 +139,18 @@ function setup_item(item, lesson, callback){
     already_taken.push(another_pic);
     document.getElementById(img_slots[i]).src = another_pic;
   }
-  if (typeof callback === "function"){
-    callback();
-  }
+}
+
+function resizePic(img){
+  var picheight = img.height;
+  var picwidth = img.width;
+  var results = getbestratio(boxH,boxW,picheight,picwidth);
+  img.width = results.new_width;
+  img.height = results.new_height;
 }
 
 function lesson_loop(unit, lesson){
+  onWinResize();
   img_slots = ["img1","img2", "img3", "img4"];
   correct_item = "blahblah";
   current_index = 0;
@@ -175,7 +165,7 @@ function lesson_loop(unit, lesson){
   //shuffle lesson once
   current_lesson_contents = shuffle(current_lesson_contents);
   current_unit = unit;
-  setup_item(current_lesson_contents[current_index], current_lesson_contents, fill_imgs());
+  setup_item(current_lesson_contents[current_index], current_lesson_contents);//, fill_imgs()
 }
 function box_clicked(box){
   var timeout = 2000;
@@ -191,7 +181,7 @@ function box_clicked(box){
     current_index += 1;
     correct_item = "blahblah";
     if (current_index < lesson_length){
-      setTimeout(function(){setup_item(current_lesson_contents[current_index], current_lesson_contents, fill_imgs());},timeout);
+      setTimeout(function(){setup_item(current_lesson_contents[current_index], current_lesson_contents);},timeout);
     }
     else {
       current_index = 0;
@@ -208,8 +198,17 @@ function box_clicked(box){
     tries += 1;
   }
 }
+function check(d){
+  d.firstChild.checked = true;
+  click_unit(d.firstChild);
+}
+function check_lesson(d){
+  d.firstChild.checked = true;
+  choose_lesson(current_unit, d.firstChild.id);
+}
 
 function display_lesson_choices(){
+  onWinResize();
   //set up units
   document.getElementById("main_lesson").style.visibility = "hidden";
   document.getElementById("lesson_choice").style.visibility = "visible";
@@ -217,7 +216,7 @@ function display_lesson_choices(){
   document.getElementById("score_screen").style.display = "none";
   var units= [];
   for (var unit in units_json["Units"]){
-    units.push("<div><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
+    units.push("<div onclick='check(this)'><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
   }
   document.getElementById("units").innerHTML = units.join("");
 }
@@ -248,7 +247,7 @@ function populate_lesson_choices(unit){
   current_unit = unit;
   var lessons= [];
   for (var lesson in units_json["Units"][unit]){
-    lessons.push("<div><input type='radio' name='lesson' id='" + lesson + "' onchange='choose_lesson(current_unit, this.id)' >" + lesson + "</input></div>");
+    lessons.push("<div onclick='check_lesson(this)'><input type='radio' name='lesson' id='" + lesson + "' onchange='choose_lesson(current_unit, this.id)' >" + lesson + "</input></div>");
   }
   document.getElementById("lessons").innerHTML = lessons.join("");
 }

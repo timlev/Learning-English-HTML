@@ -60,21 +60,27 @@ and open the template in the editor.
           <table border="1">
               <tr>
                   <td id="box1" class="choicebox">
-                      <img src="sound.png" id="img1" onclick="box_clicked(this.id)">
+                      <img src="sound.png" id="img1" class="choice" onclick="box_clicked(this.id)">
                   </td>
                   <td id="box2" class="choicebox">
-                      <img src="sound.png" id="img2" onclick="box_clicked(this.id)">
+                      <img src="sound.png" id="img2" class="choice" onclick="box_clicked(this.id)">
                   </td>
               </tr>
               <tr>
                   <td id="box3" class="choicebox">
-                      <img src="sound.png" id="img3" onclick="box_clicked(this.id)">
+                      <img src="sound.png" id="img3" class="choice" onclick="box_clicked(this.id)">
                   </td>
                   <td id="box4" class="choicebox">
-                      <img src="sound.png" id="img4" onclick="box_clicked(this.id)">
+                      <img src="sound.png" id="img4" class="choice" onclick="box_clicked(this.id)">
                   </td>
               </tr>
         </table>
+      </div>
+      <div id="imgholder" style="display: hidden;">
+        <img src="" id="image_holder1"/>
+        <img src="" id="image_holder2"/>
+        <img src="" id="image_holder3"/>
+        <img src="" id="image_holder4"/>
       </div>
     </body>
 </html>

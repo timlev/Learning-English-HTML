@@ -1,3 +1,7 @@
+.choice {
+  height:100%;
+  width: auto;
+}
 .black_overlay {
     display: none;
     position: absolute;
@@ -28,4 +32,7 @@
 
 #answer_feedback {
   font-size: 4em;
+}
+#lesson_choice {
+  font-size: 2em;
 }
