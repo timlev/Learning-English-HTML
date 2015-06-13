@@ -11,6 +11,7 @@ and open the template in the editor.
         <link rel="shortcut icon" href="headphones_globe.png" />
         <script src="units.json"></script>
         <script src="js_functions.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
     <body onload='display_lesson_choices()' onresize="fill_imgs()">
         <div id="lesson_choice" style="display: none">
@@ -42,6 +43,8 @@ and open the template in the editor.
         <img id="retry" src="repeat.png" border=1 onclick='choose_lesson(current_unit,current_lesson)'/>
         <img id="home" src="home_icon.png" border=1 onclick='display_lesson_choices()'/>
         </div>
+      <div id="answer_feedback" class='white_content'></div>
+      <div id="fade" class="black_overlay"></div>
       <div id="main_lesson">
           <span id="phrasebox">
               <img src="sound.png" height="50px" onclick="play(document.getElementById('phraseboxaudio'))">

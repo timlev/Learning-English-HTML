@@ -166,9 +166,12 @@ function lesson_loop(unit, lesson){
   setup_item(current_lesson_contents[current_index], current_lesson_contents, fill_imgs());
 }
 function box_clicked(box){
+  var timeout = 2000;
   if (correct_item == box){
     play_feedback_sound(true);
-    alert("Correct choice!");
+    document.getElementById('answer_feedback').innerHTML = "Yes!";
+    highlight_div('answer_feedback', timeout);
+    //alert("Correct choice!");
     if (tries == 0){
       score += 1;
     }
@@ -176,17 +179,20 @@ function box_clicked(box){
     current_index += 1;
     correct_item = "blahblah";
     if (current_index < lesson_length){
-      setup_item(current_lesson_contents[current_index], current_lesson_contents, fill_imgs());
+      setTimeout(function(){setup_item(current_lesson_contents[current_index], current_lesson_contents, fill_imgs());},timeout);
     }
     else {
       current_index = 0;
       //display_lesson_choices();
-      display_score_summary(current_lesson, score);
+      setTimeout(function() {display_score_summary(current_lesson, score);});
     }
   }
   else {
     play_feedback_sound(false);
-    alert("Wrong choice :( !");
+    document.getElementById('answer_feedback').innerHTML = "No :(";
+    highlight_div('answer_feedback', timeout);
+    setTimeout(function(){play(document.getElementById("phraseboxaudio"));},timeout);
+    //alert("Wrong choice :( !");
     tries += 1;
   }
 }
@@ -287,4 +293,18 @@ function play_feedback_sound(correct){
     document.getElementById("audio_feedback").src = "CymbalCrash.wav";
     play(document.getElementById("audio_feedback"));
   }
+}
+
+function highlight_div(div, timeout){
+  if (timeout === undefined){
+    timout = 1000;
+  }
+  document.getElementById(div).style.display='block';
+  document.getElementById('fade').style.display='block';
+  setTimeout(function(){ reverse_highlight(div);}, timeout);
+}
+
+function reverse_highlight(div){
+  document.getElementById(div).style.display='none';
+  document.getElementById('fade').style.display='none';
 }
