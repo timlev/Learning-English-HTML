@@ -171,7 +171,7 @@ function box_clicked(box){
   var timeout = 2000;
   if (correct_item == box){
     play_feedback_sound(true);
-    document.getElementById('answer_feedback').innerHTML = "Yes!";
+    document.getElementById('answer_feedback').innerHTML = "<img src='correct.png' height=50px width=50px />Yes!";
     highlight_div('answer_feedback', timeout);
     //alert("Correct choice!");
     if (tries == 0){
@@ -191,7 +191,7 @@ function box_clicked(box){
   }
   else {
     play_feedback_sound(false);
-    document.getElementById('answer_feedback').innerHTML = "No :(";
+    document.getElementById('answer_feedback').innerHTML = "<img src='wrong.png' height=50px width=50px />No";
     highlight_div('answer_feedback', timeout);
     setTimeout(function(){play(document.getElementById("phraseboxaudio"));},timeout);
     //alert("Wrong choice :( !");
