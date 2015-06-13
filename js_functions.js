@@ -40,6 +40,15 @@ function json_dir_sep(){
     return "\\";
   }
 }
+
+function getbestratio(boxheight,boxwidth,picheight,picwidth){
+    var height_ratio = boxheight / picheight;
+    var width_ratio = boxwidth / picwidth;
+    picwidth *= Math.min(width_ratio, height_ratio)
+    picheight *= Math.min(width_ratio, height_ratio)
+    return {new_width: picwidth,new_height: picheight};
+}
+
 function scale_image(img_height, img_width, container_height, container_width){
     var container_ratio = container_height / container_width;
     var img_ratio = img_height / img_width;
@@ -71,8 +80,11 @@ function fill_imgs(){
       img = img_slots[img];
       var originaHeight = document.getElementById(img).height;
       var originalWidth = document.getElementById(img).width;
-      var new_height = scale_image(originaHeight, originalWidth, boxH, boxW).new_height
-      var new_width = scale_image(originaHeight, originalWidth, boxH, boxW).new_width
+      //var new_height = scale_image(originaHeight, originalWidth, boxH, boxW).new_height
+      //var new_width = scale_image(originaHeight, originalWidth, boxH, boxW).new_width
+      var result = getbestratio(boxH, boxW, originaHeight, originalWidth)
+      var new_height = result.new_height;
+      var new_width = result.new_width;
       document.getElementById(img).height = new_height;
       document.getElementById(img).width = new_width;
     }
