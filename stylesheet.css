@@ -36,3 +36,9 @@
 #lesson_choice {
   font-size: 2em;
 }
+#lesson_choice div:hover {
+  cursor: pointer;
+}
+#phraseboxwords span:hover {
+  cursor: pointer;
+}
