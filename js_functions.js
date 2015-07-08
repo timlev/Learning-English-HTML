@@ -20,14 +20,12 @@ var tries = 0;
 var score = 0;
 //function fill_imgs();
 var sep = json_dir_sep();
-console.log(sep);
 
 function onWinResize(){
   H = window.innerHeight;
   W = window.innerWidth;
   boxH = (H - 100)/ 2;
   boxW = W / 2;
-  console.log(H, W, boxH, boxW);
   H = window.innerHeight;
   W = window.innerWidth;
   boxH = (H - 100)/ 2;
@@ -236,7 +234,8 @@ function display_score_summary(lesson, score){
   document.getElementById("score_date").innerHTML = constructDate();
   document.getElementById("score_unit").innerHTML = current_unit;
   document.getElementById("score_lesson").innerHTML = lesson;
-  document.getElementById("score_score").innerHTML = score + "/" + lesson_length;
+  var percent = Math.round(score / lesson_length * 100.0) + " %";
+  document.getElementById("score_score").innerHTML = percent;
 
 }
 function populate_lesson_choices(unit){
