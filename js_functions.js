@@ -224,9 +224,9 @@ function display_lesson_choices(){
 function constructDate(){
   var d = new Date();
   var date = ""
-  date += d.getMonth() + "/";//month
+  date += (d.getMonth() + 1) + "/";//month
   date += d.getDate() + "/"; // day
-  date += d.getYear(); //year
+  date += d.getFullYear(); //year
   return date;
 }
 function display_score_summary(lesson, score){
