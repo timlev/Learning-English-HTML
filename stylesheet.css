@@ -1,7 +1,7 @@
-.choice {
-  height:100%;
-  width: auto;
+* {
+    font-family: 'Didact Gothic', sans-serif;
 }
+
 .black_overlay {
     display: none;
     position: absolute;
@@ -33,12 +33,43 @@
 #answer_feedback {
   font-size: 4em;
 }
+
+/*Lesson Choice Stuff*/
 #lesson_choice {
   font-size: 2em;
 }
 #lesson_choice div:hover {
   cursor: pointer;
 }
+#lesson_choice_table {
+    border: 2px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: solid 1px black;
+}
+.header {
+    border-bottom: 2px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#units_box {
+    padding-right: 40px;
+}
+#lessons_box {
+    vertical-align: top;
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+
+/*Main Lesson*/
 #phraseboxwords span:hover {
   cursor: pointer;
+}
+
+.choice {
+  height:100%;
+  width: auto;
+}
+#choice_table * {
+    border: 2px solid black;
 }

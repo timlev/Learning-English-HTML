@@ -12,16 +12,18 @@ and open the template in the editor.
         <script src="units.json"></script>
         <script src="js_functions.js"></script>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
     </head>
     <body onload='display_lesson_choices()' onresize="fill_imgs()">
         <div id="lesson_choice" style="display: none">
-          <table id="lesson_choice_table" border=1>
+          <table id="lesson_choice_table">
+            <tr id="lesson_choice_table_header">
+              <td class="header"><h2>Units:</h2></td>
+              <td class="header"><h2>Lessons:</h2></td>
+            </tr>
             <tr>
-              <td><h1>Units:</h1></td>
-              <td><h1>Lessons:</h1></td>
-            <tr>
-              <td><div id="units"></div></td>
-              <td><div id="lessons"></div></td>
+              <td id="units_box"><div id="units"></div></td>
+              <td id="lessons_box"><div id="lessons"></div></td>
             </tr>
           </table>
         </div>
@@ -57,7 +59,7 @@ and open the template in the editor.
           <span id='scorebox' style="float: right; font-size: 1.5em;">Score: </span>
           <img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right; cursor: pointer;">
 
-          <table border="1">
+          <table id="choice_table">
               <tr>
                   <td id="box1" class="choicebox">
                       <img src="sound.png" id="img1" class="choice" onclick="box_clicked(this.id)">
