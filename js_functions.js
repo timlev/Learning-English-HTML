@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-"use strict"
+"use strict";
 var H;
 var W;
 var boxH;
 var boxW;
 var correct_item = "blahblah";
-var img_slots = ["img1","img2", "img3", "img4"];
+var img_slots = ["img1", "img2", "img3", "img4"];
 var current_index = 0;
 var current_unit;
 var current_lesson;
@@ -19,6 +19,21 @@ var lesson_length;
 var tries = 0;
 var score = 0;
 //function fill_imgs();
+
+function json_dir_sep() {
+  //Try first units.json entry
+  var first_unit = Object.keys(units_json["Units"])[0];
+  var first_lesson = Object.keys(units_json["Units"][first_unit])[0];
+  var first_file = Object.keys(units_json["Units"][first_unit][first_lesson]["pics"])[0];
+  //Test case
+  //first_file = "Units\\Units1\\Wh/ questions\\pics\\Where/ is/ your/ hat.questionmark.jpg"
+  if (first_file.indexOf("/pics/") != -1){
+    return "/";
+  }
+  else if (first_file.indexOf("\\pics\\") != -1){
+    return "\\";
+  }
+}
 var sep = json_dir_sep();
 
 function onWinResize(){
@@ -43,20 +58,6 @@ function play(file){
     //  file.addEventListener( "ended", revert_color(file.name), false);
     //}
 };
-function json_dir_sep(){
-  //Try first units.json entry
-  var first_unit = Object.keys(units_json["Units"])[0];
-  var first_lesson = Object.keys(units_json["Units"][first_unit])[0];
-  var first_file = Object.keys(units_json["Units"][first_unit][first_lesson]["pics"])[0];
-  //Test case
-  //first_file = "Units\\Units1\\Wh/ questions\\pics\\Where/ is/ your/ hat.questionmark.jpg"
-  if (first_file.indexOf("/pics/") != -1){
-    return "/";
-  }
-  else if (first_file.indexOf("\\pics\\") != -1){
-    return "\\";
-  }
-}
 
 function getbestratio(boxheight,boxwidth,picheight,picwidth){
     var height_ratio = boxheight / picheight;
@@ -288,8 +289,13 @@ function revert_color(obj){
 function play_word_file(obj){
   document.getElementById(obj.id).style.backgroundColor = 'yellow';
   var word_sound_file_path = "sounds/" + obj.id + ".mp3";
-  document.getElementById("ind_words_audio").src = word_sound_file_path;
-  play(document.getElementById("ind_words_audio"));
+  var word_sound_google_path = "http://translate.google.com/translate_tts?q=" + obj.id + "&tl=en";
+  var ind_audio = document.getElementById("ind_words_audio");
+  ind_audio.src = word_sound_file_path;
+//  ind_audio.onerror =
+  play(ind_audio);
+  //ind_audio.onerror = function(){ind_audio.src = word_sound_google_path; play(ind_audio);};
+  //Above creates endless loop if Google doesn't have it
   document.getElementById("ind_words_audio").addEventListener( "ended", revert_color(obj));
 
   //problems do, break, time -- don't download
