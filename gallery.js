@@ -34,10 +34,6 @@ function resizePic(img){
 
 
 function displayPics(){
-	document.getElementById("gallery").style.height="200px";
-	document.getElementById("gallery").style.width="100%";
-	document.getElementById("gallery").style.maxHeight="200px";
-	document.getElementById("gallery").style.overflow="scroll";
 	console.log(document.getElementById("gallery").offsetHeight);
 	
 	var picArray = listPictures("Unit1","Wh questions");
