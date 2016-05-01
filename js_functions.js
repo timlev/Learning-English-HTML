@@ -198,7 +198,7 @@ function box_clicked(box){
 function check(d){
   console.log("check");
   d.firstChild.checked = true;
-  click_unit(d.firstChild);
+  //click_unit(d.firstChild);
 }
 function listgalleryPictures(unit, lesson){
 	var picArray = [];
@@ -243,12 +243,12 @@ function displaygalleryPics(unit, lesson){
 }
 
 function activateButton(unit, lesson){
+	document.getElementById(lesson).checked = true;
 	current_lesson = lesson;
 	console.log(unit, lesson);
 	displaygalleryPics(unit, lesson);
 	document.getElementById("gobutton").src = "gobutton.png";
-	document.getElementById("gobutton").onclick = function(){console.log("clicked gobutton")};
-	//choose_lesson(unit, lesson);
+	document.getElementById("gobutton").onclick = function(){choose_lesson(current_unit, current_lesson)};
 }
 
 function check_lesson(d){
@@ -272,7 +272,7 @@ function display_unit_choices(){
   //onclick - first time?
   //onchange - future times?
   for (var unit in units_json["Units"]){
-    units.push("<div><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
+    units.push("<div onclick='click_unit(this.firstChild)'><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
   }
   document.getElementById("units").innerHTML = units.join("");
 }
@@ -304,11 +304,12 @@ function populate_lesson_choices(unit){
   current_unit = unit;
   var lessons= [];
   for (var lesson in units_json["Units"][unit]){
-    lessons.push("<div><input type='radio' name='lesson' id='" + lesson + "' onchange='activateButton(current_unit, this.id)' >" + lesson + "</input></div>");
+    lessons.push("<div onclick='activateButton(current_unit, this.firstChild.id)'><input type='radio' name='lesson' id='" + lesson + "' onchange='console.log('change')' >" + lesson + "</input></div>");
   }
   document.getElementById("lessons").innerHTML = lessons.join("");
 }
 function click_unit(choice){
+  choice.checked = true;
   console.log("click_unit");
   var unit = choice.id;
   current_unit = choice.id;
