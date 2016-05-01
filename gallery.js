@@ -1,15 +1,9 @@
-var gallery = {};
-
-
-function listPictures(unit, lesson){
+function listgalleryPictures(unit, lesson){
 	var picArray = [];
 	for (pic in units_json["Units"][unit][lesson].pics){
 		picArray.push(pic);
 	}
 	return picArray;
-}
-function getBoxDimensions(){
-	console.log(document.getElementById("gallery").width);
 }
 
 function getbestratio(boxheight,boxwidth,picheight,picwidth){
@@ -20,10 +14,9 @@ function getbestratio(boxheight,boxwidth,picheight,picwidth){
     return {new_width: picwidth,new_height: picheight};
 }
 
-function resizePic(img){
-	getBoxDimensions();
-	var boxH = document.getElementById("gallery").style.maxHeight;
-	var boxW = document.getElementById("gallery").width / 5;
+function resizegalleryPic(img){
+	var boxH = 200;
+	var boxW = 200;
 	var picheight = img.height;
 	var picwidth = img.width;
 	var results = getbestratio(boxH,boxW,picheight,picwidth);
@@ -33,16 +26,13 @@ function resizePic(img){
 }
 
 
-function displayPics(){
-	console.log(document.getElementById("gallery").offsetHeight);
-	
-	var picArray = listPictures("Unit1","Wh questions");
+function displaygalleryPics(unit = "Unit1", lesson = "Wh questions"){
+	var picArray = listgalleryPictures(unit, lesson);
 	for (pic in picArray){
 		var img = document.createElement("IMG");
 		img.src = picArray[pic];
-		//img.onload = resizePic(img);
 		document.getElementById("gallery").appendChild(img);
-		console.log(pic);
+		img.onload = resizegalleryPic(img);
 	}
 
 }

@@ -50,8 +50,6 @@ function json_dir_sep(){
   var first_unit = Object.keys(units_json["Units"])[0];
   var first_lesson = Object.keys(units_json["Units"][first_unit])[0];
   var first_file = Object.keys(units_json["Units"][first_unit][first_lesson]["pics"])[0];
-  //Test case
-  //first_file = "Units\\Units1\\Wh/ questions\\pics\\Where/ is/ your/ hat.questionmark.jpg"
   if (first_file.indexOf("/pics/") != -1){
     return "/";
   }
@@ -185,7 +183,6 @@ function box_clicked(box){
     }
     else {
       current_index = 0;
-      //display_lesson_choices();
       setTimeout(function() {display_score_summary(current_lesson, score);});
     }
   }
@@ -199,15 +196,71 @@ function box_clicked(box){
   }
 }
 function check(d){
+  console.log("check");
   d.firstChild.checked = true;
   click_unit(d.firstChild);
 }
-function check_lesson(d){
-  d.firstChild.checked = true;
-  choose_lesson(current_unit, d.firstChild.id);
+function listgalleryPictures(unit, lesson){
+	var picArray = [];
+	console.log(unit, lesson);
+	for (var pic in units_json['Units'][current_unit][current_lesson]["pics"]){
+		picArray.push(pic);
+	}
+	return picArray;
 }
 
-function display_lesson_choices(){
+function getbestratio(boxheight,boxwidth,picheight,picwidth){
+    var height_ratio = boxheight / picheight;
+    var width_ratio = boxwidth / picwidth;
+    picwidth *= Math.min(width_ratio, height_ratio)
+    picheight *= Math.min(width_ratio, height_ratio)
+    return {new_width: picwidth,new_height: picheight};
+}
+
+function resizegalleryPic(img){
+	var boxH = 200;
+	var boxW = 200;
+	var picheight = img.height;
+	var picwidth = img.width;
+	var results = getbestratio(boxH,boxW,picheight,picwidth);
+	img.width = results.new_width;
+	img.height = results.new_height;
+	//document.getElementById("gallery").appendChild(img);
+}
+
+
+function displaygalleryPics(unit, lesson){
+	document.getElementById("gallery").innerHTML = "";
+	console.log(unit,lesson);
+	var picArray = listgalleryPictures(unit, lesson);
+	for (var pic in picArray){
+		var img = document.createElement("IMG");
+		img.src = picArray[pic];
+		document.getElementById("gallery").appendChild(img);
+		img.onload = resizegalleryPic(img);
+	}
+
+}
+
+function activateButton(unit, lesson){
+	current_lesson = lesson;
+	console.log(unit, lesson);
+	displaygalleryPics(unit, lesson);
+	document.getElementById("gobutton").src = "gobutton.png";
+	document.getElementById("gobutton").onclick = function(){console.log("clicked gobutton")};
+	//choose_lesson(unit, lesson);
+}
+
+function check_lesson(d){
+  d.firstChild.checked = true;
+  current_lesson = d.firstChild.id;
+  console.log(current_unit, current_lesson);
+  activateButton(current_unit, current_lesson);
+  //choose_lesson(current_unit, d.firstChild.id);
+}
+
+function display_unit_choices(){
+  //This function sets up the unit choices and hides all other sections.
   onWinResize();
   //set up units
   document.getElementById("main_lesson").style.visibility = "hidden";
@@ -215,15 +268,18 @@ function display_lesson_choices(){
   document.getElementById("lesson_choice").style.display = "block";
   document.getElementById("score_screen").style.display = "none";
   var units= [];
+  //Populates Unit Choices
+  //onclick - first time?
+  //onchange - future times?
   for (var unit in units_json["Units"]){
-    units.push("<div onclick='check(this)'><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
+    units.push("<div><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
   }
   document.getElementById("units").innerHTML = units.join("");
 }
 
 function constructDate(){
   var d = new Date();
-  var date = ""
+  var date = "";
   date += d.getMonth() + "/";//month
   date += d.getDate() + "/"; // day
   date += d.getYear(); //year
@@ -240,19 +296,22 @@ function display_score_summary(lesson, score){
 
 }
 function populate_lesson_choices(unit){
-  //set up units
+  //set up lesson choices after unit has been clicked
+  //activateButton(u,l) after change
   document.getElementById("main_lesson").style.visibility = "hidden";
   document.getElementById("lesson_choice").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "block";
   current_unit = unit;
   var lessons= [];
   for (var lesson in units_json["Units"][unit]){
-    lessons.push("<div onclick='check_lesson(this)'><input type='radio' name='lesson' id='" + lesson + "' onchange='choose_lesson(current_unit, this.id)' >" + lesson + "</input></div>");
+    lessons.push("<div><input type='radio' name='lesson' id='" + lesson + "' onchange='activateButton(current_unit, this.id)' >" + lesson + "</input></div>");
   }
   document.getElementById("lessons").innerHTML = lessons.join("");
 }
 function click_unit(choice){
+  console.log("click_unit");
   var unit = choice.id;
+  current_unit = choice.id;
   populate_lesson_choices(unit);
 }
 

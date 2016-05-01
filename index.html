@@ -13,16 +13,22 @@ and open the template in the editor.
         <script src="js_functions.js"></script>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
-    <body onload='display_lesson_choices()' onresize="fill_imgs()">
+    <body onload='display_unit_choices()' onresize="fill_imgs()">
         <div id="lesson_choice" style="display: none">
           <table id="lesson_choice_table" border=1>
             <tr>
               <td><h1>Units:</h1></td>
               <td><h1>Lessons:</h1></td>
-            <tr>
+             </tr>
+            <tr style="height:75vh;">
               <td><div id="units"></div></td>
               <td><div id="lessons"></div></td>
-              <td id="previewcontainer"><div id="preview"></div></td>
+              <td id="previewcontainer">
+              <div id='gallery' style="height:50vh;display:block;overflow-y:scroll;"></div>
+<div id='section2'style="display:block;">
+<img id='gobutton' src='gobutton_unavailable.png'>
+</div>
+              </td>
             </tr>
           </table>
         </div>
@@ -43,7 +49,7 @@ and open the template in the editor.
           </tr>
         </table>
         <img id="retry" src="repeat.png" border=1 onclick='choose_lesson(current_unit,current_lesson)'/>
-        <img id="home" src="home_icon.png" border=1 onclick='display_lesson_choices()'/>
+        <img id="home" src="home_icon.png" border=1 onclick='display_unit_choices()'/>
         </div>
       <div id="answer_feedback" class='white_content'></div>
 
@@ -56,7 +62,7 @@ and open the template in the editor.
               <audio id="phraseboxaudio" src=""></audio>
           </span>
           <span id='scorebox' style="float: right; font-size: 1.5em;">Score: </span>
-          <img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right;">
+          <img src="home_icon.png" onclick="display_unit_choices()" height="50px" style="float: right;">
 
           <table border="1">
               <tr>
