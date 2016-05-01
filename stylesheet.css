@@ -2,6 +2,10 @@
   height:100%;
   width: auto;
 }
+
+.clickable:hover {
+  cursor: pointer;
+ }
 .black_overlay {
     display: none;
     position: absolute;

@@ -248,6 +248,7 @@ function activateButton(unit, lesson){
 	console.log(unit, lesson);
 	displaygalleryPics(unit, lesson);
 	document.getElementById("gobutton").src = "gobutton.png";
+	document.getElementById("gobutton").className += " clickable";
 	document.getElementById("gobutton").onclick = function(){choose_lesson(current_unit, current_lesson)};
 }
 
@@ -256,11 +257,15 @@ function check_lesson(d){
   current_lesson = d.firstChild.id;
   console.log(current_unit, current_lesson);
   activateButton(current_unit, current_lesson);
-  //choose_lesson(current_unit, d.firstChild.id);
+  
 }
 
 function display_unit_choices(){
   //This function sets up the unit choices and hides all other sections.
+  //Clear lesson preview
+  document.getElementById("gallery").innerHTML = "";
+  document.getElementById("gobutton").src = "gobutton_unavailable.png";
+  document.getElementById("gobutton").className = "";
   onWinResize();
   //set up units
   document.getElementById("main_lesson").style.visibility = "hidden";
@@ -272,7 +277,7 @@ function display_unit_choices(){
   //onclick - first time?
   //onchange - future times?
   for (var unit in units_json["Units"]){
-    units.push("<div onclick='click_unit(this.firstChild)'><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
+    units.push("<div class='clickable' onclick='click_unit(this.firstChild)'><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
   }
   document.getElementById("units").innerHTML = units.join("");
 }
@@ -304,7 +309,7 @@ function populate_lesson_choices(unit){
   current_unit = unit;
   var lessons= [];
   for (var lesson in units_json["Units"][unit]){
-    lessons.push("<div onclick='activateButton(current_unit, this.firstChild.id)'><input type='radio' name='lesson' id='" + lesson + "' onchange='console.log('change')' >" + lesson + "</input></div>");
+    lessons.push("<div class='clickable' onclick='activateButton(current_unit, this.firstChild.id)'><input type='radio' name='lesson' id='" + lesson + "' onchange='console.log('change')' >" + lesson + "</input></div>");
   }
   document.getElementById("lessons").innerHTML = lessons.join("");
 }
@@ -320,6 +325,8 @@ function choose_lesson(u, l){
   current_unit = u;
   current_lesson = l;
   lesson_length = l.length;
+  document.getElementById("gobutton").src = "gobutton_unavailable.png";
+  document.getElementById("gobutton").className = "";
   lesson_loop(current_unit, current_lesson);
 }
 
