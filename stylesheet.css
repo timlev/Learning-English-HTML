@@ -66,10 +66,15 @@
   cursor: pointer;
 }
 
-.choice {
-  height:100%;
-  width: auto;
-}
-#choice_table * {
+#choice_table td {
     border: 2px solid black;
+    height: 40vh;
+    width: 50vw;
 }
+
+.choice {
+  height: 100%;
+  width: auto;
+  max-width: 40vw;
+}
+

@@ -19,6 +19,8 @@ def download(word, directory="./"):
     #end = "#"
     end = ""
     query = base + word + qmid + word + end
+    print query
+
     try:
         response = urllib2.urlopen(query)
     except:
