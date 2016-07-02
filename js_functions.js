@@ -36,21 +36,21 @@ function json_dir_sep() {
 }
 var sep = json_dir_sep();
 
-function onWinResize(){
-  H = window.innerHeight;
-  W = window.innerWidth;
-  boxH = (H - 100)/ 2;
-  boxW = W / 2;
-  H = window.innerHeight;
-  W = window.innerWidth;
-  boxH = (H - 100)/ 2;
-  boxW = W / 2;
-  var boxes = ['box1', 'box2','box3','box4'];
-  for (var box in boxes){
-    document.getElementById(boxes[box]).height = boxH;
-    document.getElementById(boxes[box]).width = boxW;
-  }
-}
+// function onWinResize(){
+  // H = window.innerHeight;
+  // W = window.innerWidth;
+  // boxH = (H - 100)/ 2;
+  // boxW = W / 2;
+  // H = window.innerHeight;
+  // W = window.innerWidth;
+  // boxH = (H - 100)/ 2;
+  // boxW = W / 2;
+  // var boxes = ['box1', 'box2','box3','box4'];
+  // for (var box in boxes){
+  //   document.getElementById(boxes[box]).height = boxH;
+  //   document.getElementById(boxes[box]).width = boxW;
+  // }
+// }
 function play(file){
   //console.log(file.name);
   file.play();
@@ -68,8 +68,9 @@ function getbestratio(boxheight,boxwidth,picheight,picwidth){
 }
 
 function fill_imgs(){
-  onWinResize();
+  // onWinResize();
   document.getElementById("main_lesson").style.visibility = "visible";
+  document.getElementById("main_lesson").style.display = "inline";
 }
 
 function shuffle(o){
@@ -104,9 +105,14 @@ function set_sound(item){
   sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
   document.getElementById("phraseboxaudio").src = sound_src;
 }
+function set_teach_sound(item){
+  var sound_src = item.replace("pics","sounds");
+  sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
+  document.getElementById("teach_phraseboxaudio").src = sound_src;
+}
 
 function setup_item(item, lesson, callback){
-  onWinResize();
+  // onWinResize();
   document.getElementById("main_lesson").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "none";
   document.getElementById("score_screen").style.display = "none";
@@ -149,7 +155,7 @@ function resizePic(img){
 }
 
 function lesson_loop(unit, lesson){
-  onWinResize();
+  // onWinResize();
   img_slots = ["img1","img2", "img3", "img4"];
   correct_item = "blahblah";
   current_index = 0;
@@ -207,9 +213,10 @@ function check_lesson(d){
 }
 
 function display_lesson_choices(){
-  onWinResize();
+  // onWinResize();
   //set up units
   document.getElementById("main_lesson").style.visibility = "hidden";
+  document.getElementById("teach_lesson").style.visibility = "hidden";
   document.getElementById("lesson_choice").style.visibility = "visible";
   document.getElementById("lesson_choice").style.display = "block";
   document.getElementById("score_screen").style.display = "none";
@@ -230,6 +237,7 @@ function constructDate(){
 }
 function display_score_summary(lesson, score){
   document.getElementById("main_lesson").style.visibility = "hidden";
+  document.getElementById("teach_lesson").style.visibility = "hidden";
   //document.getElementById("score_screen").style.display = "block";
   highlight_div("score_screen", 0);
   document.getElementById("score_date").innerHTML = constructDate();
@@ -261,6 +269,40 @@ function choose_lesson(u, l){
   current_lesson = l;
   lesson_length = l.length;
   lesson_loop(current_unit, current_lesson);
+}
+
+
+function teach_lesson(){
+  document.getElementById("lesson_choice").style.display = "none";
+  document.getElementById("score_screen").style.display = "none";
+  document.getElementById("main_lesson").style.display = "none";
+  document.getElementById("teach_lesson").style.visibility = "visible";
+  current_index = 0
+  current_lesson_contents = grab_lesson(current_unit, current_lesson);
+
+  //shuffle lesson once
+  current_lesson_contents = shuffle(current_lesson_contents);
+  console.log(current_lesson_contents);
+  display_teach_item()
+}
+
+function display_teach_item(){
+  if (current_index + 1 == lesson_length){
+    //change img src
+    document.getElementById("learn_img").src = current_lesson_contents[current_index];
+    //hide next button because it is last
+    document.getElementById("next_button_img").style.visibility = "hidden";
+    }
+  else{
+    //change img src
+    document.getElementById("learn_img").src = current_lesson_contents[current_index];
+    var item = current_lesson_contents[current_index];
+    document.getElementById("teach_phraseboxwords").innerHTML = split_item_to_word_spans(convert_to_display(item));
+    //assign sound
+    set_teach_sound(item);
+    play(document.getElementById("teach_phraseboxaudio"));
+    current_index += 1;
+  }
 }
 
 function addSpan(word, word_sound_file_name, word_sound_file_path){

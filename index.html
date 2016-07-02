@@ -14,7 +14,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
     </head>
-    <body onload='display_lesson_choices()' onresize="fill_imgs()">
+    <body onload='display_lesson_choices()'>
         <div id="lesson_choice" style="display: none">
           <table id="lesson_choice_table">
             <tr id="lesson_choice_table_header">
@@ -57,7 +57,8 @@ and open the template in the editor.
               <audio id="phraseboxaudio" src=""></audio>
           </span>
           <span id='scorebox' style="float: right; font-size: 1.5em;">Score: </span>
-          <img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right; cursor: pointer;">
+          <img src="learn.png" onclick="teach_lesson()" height="50px" style="float: right; cursor: pointer;">
+          <a href="index.html"><img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right; cursor: pointer;"></a>
 
           <table id="choice_table">
               <tr>
@@ -77,6 +78,26 @@ and open the template in the editor.
                   </td>
               </tr>
         </table>
+      </div>
+
+      <div id="teach_lesson">
+        <div id="header_space">
+          <span id="teach_phrasebox">
+              <img src="sound.png" height="50px" onclick="play(document.getElementById('teach_phraseboxaudio'))">
+              <span id="teach_phraseboxwords" style="font-size: 3em;">Filler Text</span>
+              <audio id="ind_words_audio" src=""></audio>
+              <audio id="audio_feedback" src=""></audio>
+              <audio id="teach_phraseboxaudio" src=""></audio>
+          </span>
+
+          <a href="index.html"><img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right; cursor: pointer;"></a>
+        </div>
+          <div id="img_container">
+            <img src="sound.png" id="learn_img">
+          </div>
+          <div id="next_button">
+            <a id="go_home_link"><img src="arrow-next.png" id="next_button_img" onclick="display_teach_item()"></a>
+          </div>
       </div>
     </body>
 </html>

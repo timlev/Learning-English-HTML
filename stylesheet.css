@@ -77,4 +77,26 @@
   width: auto;
   max-width: 40vw;
 }
+#teach_lesson #img_container {
+  border: 2px solid black;
+  height: 80vh;
+  width: 80vw;
+  float: left;
+}
+#teach_lesson #next_button{
+  float: right;
+  height: 80vh;
+  width: 15vw;
+}
 
+#teach_lesson #next_button_img{
+  margin: auto;
+  padding: 20vh 0;
+  height: auto;
+  max-width: 15vw;
+}
+#teach_lesson #learn_img {
+  height: 100%;
+  width: auto;
+  max-width: 80vw;
+}
