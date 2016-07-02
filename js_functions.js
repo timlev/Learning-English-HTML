@@ -290,6 +290,11 @@ function display_teach_item(){
   if (current_index + 1 == lesson_length){
     //change img src
     document.getElementById("learn_img").src = current_lesson_contents[current_index];
+    var item = current_lesson_contents[current_index];
+    document.getElementById("teach_phraseboxwords").innerHTML = split_item_to_word_spans(convert_to_display(item));
+    //assign sound
+    set_teach_sound(item);
+    play(document.getElementById("teach_phraseboxaudio"));
     //hide next button because it is last
     document.getElementById("next_button_img").style.visibility = "hidden";
     }
