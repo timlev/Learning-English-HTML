@@ -15,7 +15,7 @@ if len(os.path.split(sys.argv[0])[0]) > 0:
     os.chdir(os.path.split(sys.argv[0])[0])
 
 
-########## DOWNLOAD GOOGLE SPEECH AND CONVERT TO WAVE#########
+########## DOWNLOAD Pico2wave #########
 picfiles = [os.path.abspath(file) for file in glob.glob('../Units/*/*/pics/*.*')]
 soundfiles = [os.path.abspath(file) for file in glob.glob('../Units/*/*/sounds/*.*')]
 comparepicfiles = [file[:file.rindex(".")] for file in picfiles]
@@ -23,8 +23,9 @@ comparesoundfiles =[file.replace("speech_google.ogg","").replace("speech_google.
 compared = [os.path.split(file) for file in comparepicfiles if file not in comparesoundfiles]
 print compared
 for item in compared:
-    path, raw_word = item[0], item[1]
-    download_dict_sound.convert_mp3_to_wav(download_dict_sound.download_google(raw_word, path), True)
+	path, raw_word = item[0], item[1]
+	download_dict_sound.download_pico(raw_word, path)
+    #download_dict_sound.convert_mp3_to_wav(download_dict_sound.download_google(raw_word, path), True)
 
 
 import create_JSON #This automatically runs
