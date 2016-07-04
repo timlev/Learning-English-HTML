@@ -66,6 +66,10 @@
   cursor: pointer;
 }
 
+#teach_phraseboxwords span:hover {
+  cursor: pointer;
+}
+
 #choice_table td {
     border: 2px solid black;
     height: 40vh;
