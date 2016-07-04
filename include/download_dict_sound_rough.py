@@ -71,10 +71,10 @@ def download(word, directory="./"):
         ofp.close()
     except:
         print "Could not download:", word
-"""
+
 picfiles = [os.path.abspath(file) for file in glob.glob('../Units/*/*/pics/*.*')]
-dictsoundfiles = [x for x in os.listdir("../sounds") if x.startswith(".") == False and os.path.isfile(x)]
-print dictsoundfiles
+dictsoundfiles = [x.replace(".mp3","") for x in os.listdir("../sounds/") if x.endswith(".mp3")]
+# print sorted(dictsoundfiles)
 
 all_words = []
 for pic in picfiles:
@@ -87,7 +87,7 @@ for pic in picfiles:
 	all_words += f
 
 all_words = list(set(all_words))
-
+# print all_words
 not_downloaded_words = []
 
 for word in all_words:
@@ -95,10 +95,10 @@ for word in all_words:
 		not_downloaded_words.append(word)
         #dictionary_rough_search(word)
 
-print not_downloaded_words
+print sorted(not_downloaded_words)
 
-"""
-not_downloaded_words = ['neighbors', 'olive', 'tv', 'fog', '11:30', "driver's", 'washing', 'button', 'tea', 'boots', 'hairspray', 'blue', 'sun', 'fingers', 'children', 'lights', 'somalia', 'toes', 'iran', 'carseat', '2:30', 'earthquake', 'watermelons', 'cucumbers', 'cooked', 'scales', 'county', 'thailand', 'actress', 'singing', 'use', 'eye', '0', '6', 'scratched', 'pencil', 'entrance', 'lungs', 'drowning', 'sleeping', 'sprained', 'animals', 'mechanic', 'high', 'cows', 'airplane', 'extinguisher', 'onions', 'watching', 'nuts', 'microwave', 'fare', 'fever', 'ladder', 'jumping', 'bear', 'man', 'a', 'bugs', 'q', 'waitress', 'playing', 'headlight', 'shoes', 'oven', '5:30', 'avocado', 'writing', 'orange', 'seatbelt', 'birth', 'oranges', 'bandages', 'break', 'hands', 'mushrooms', 'takin', 'allergies', 'week', 'weight', 'grapefruits', 'braided', 'by', 'lemons', 'busboy', 'unclog', '7', 'peeling', 'medicine', 'mittens', 'red', 'friday', 'grapes', 'steering', 'dishwasher', 'flamingos', 'waiter', 'locksmith', 'firefighter', 'yells', 'one', 'feet', 'monkey', 'twenty', 'tow', 'elevator', '2', 'pains', 'tomato', 'eyes', 'dentist', '11', '10', 'grocery', 'bee', 'r', '8:30', 'janitor', 'carrots', 'hairstylist', 'talking', 'cleaned', 'organs', 'dishes', 'dancing', 'studying', 'thermometer', 'dentists', 'leaking', 'eggs', 'pencils', 'strawberries', 'wind', '7:30', 'lightbulb', 'stained', '8', 'plums', 'boating', '12', 'fairview', 'dye', 'burned', 'runt', "don't", 'eyebrow', 'penguins', 'gloves', 'ears', 'stylist', 'pictures', '3', 'kicking', 'wear', 'veterinarian', 'taking', '1:30', 'officer', 'clogged', 'stoplight', '6:30', 'wastebasket', 'goats', 'mailman', 'chalkboard', 'laos', 'peppers', 'opthamologist', 'engine', 'shoulders', 'deer', "what's", 'foggy', 'loon', 'otter', 'turtles', 'careers', 'cracked', 'larpenteur', 'kenya', 'choking', '10:30', '9', 'hallway', 'cleaning', 'paycheck', 'classroom', 'i', 'chickens', 'walls', 'asked', 'the', 'bhutan', 'cherries', '9:30', '4', 'limes', 'homework', 'forklift', 'dryer', 'listening', 'using', 'cd', '12:30', 'painted', 'onion', 'nose', 'old', 'fixing', 'lips', 'warmer', 'contacts', '3:30', 'eating', 'pear', 'nails', 'beavers', 'carpenter', 'boxes', 'on', 'of', 'whiteboard', 'o', 'cockroaches', 'camels', 'beans', 'hospital', 'socks', 'operator', 'vegetables', 'there', 'eyelash', '4:30', 'delivery', 'bookshelf', 'birthdate', 'called', 'x-ray', 'gong', 'rabbits', 'paint', 'am', 'crutches', 'cabinets', '5', 'ponytail', "o'clock", 'u-turn', 'time', 'stealing', 'peas', 'weekend', 'motorcycle', 'dvd', 'mp3']
-for word in not_downloaded_words:
-    dictionary_rough_search(word)
+
+# not_downloaded_words = ['neighbors', 'olive', 'tv', 'fog', '11:30', "driver's", 'washing', 'button', 'tea', 'boots', 'hairspray', 'blue', 'sun', 'fingers', 'children', 'lights', 'somalia', 'toes', 'iran', 'carseat', '2:30', 'earthquake', 'watermelons', 'cucumbers', 'cooked', 'scales', 'county', 'thailand', 'actress', 'singing', 'use', 'eye', '0', '6', 'scratched', 'pencil', 'entrance', 'lungs', 'drowning', 'sleeping', 'sprained', 'animals', 'mechanic', 'high', 'cows', 'airplane', 'extinguisher', 'onions', 'watching', 'nuts', 'microwave', 'fare', 'fever', 'ladder', 'jumping', 'bear', 'man', 'a', 'bugs', 'q', 'waitress', 'playing', 'headlight', 'shoes', 'oven', '5:30', 'avocado', 'writing', 'orange', 'seatbelt', 'birth', 'oranges', 'bandages', 'break', 'hands', 'mushrooms', 'takin', 'allergies', 'week', 'weight', 'grapefruits', 'braided', 'by', 'lemons', 'busboy', 'unclog', '7', 'peeling', 'medicine', 'mittens', 'red', 'friday', 'grapes', 'steering', 'dishwasher', 'flamingos', 'waiter', 'locksmith', 'firefighter', 'yells', 'one', 'feet', 'monkey', 'twenty', 'tow', 'elevator', '2', 'pains', 'tomato', 'eyes', 'dentist', '11', '10', 'grocery', 'bee', 'r', '8:30', 'janitor', 'carrots', 'hairstylist', 'talking', 'cleaned', 'organs', 'dishes', 'dancing', 'studying', 'thermometer', 'dentists', 'leaking', 'eggs', 'pencils', 'strawberries', 'wind', '7:30', 'lightbulb', 'stained', '8', 'plums', 'boating', '12', 'fairview', 'dye', 'burned', 'runt', "don't", 'eyebrow', 'penguins', 'gloves', 'ears', 'stylist', 'pictures', '3', 'kicking', 'wear', 'veterinarian', 'taking', '1:30', 'officer', 'clogged', 'stoplight', '6:30', 'wastebasket', 'goats', 'mailman', 'chalkboard', 'laos', 'peppers', 'opthamologist', 'engine', 'shoulders', 'deer', "what's", 'foggy', 'loon', 'otter', 'turtles', 'careers', 'cracked', 'larpenteur', 'kenya', 'choking', '10:30', '9', 'hallway', 'cleaning', 'paycheck', 'classroom', 'i', 'chickens', 'walls', 'asked', 'the', 'bhutan', 'cherries', '9:30', '4', 'limes', 'homework', 'forklift', 'dryer', 'listening', 'using', 'cd', '12:30', 'painted', 'onion', 'nose', 'old', 'fixing', 'lips', 'warmer', 'contacts', '3:30', 'eating', 'pear', 'nails', 'beavers', 'carpenter', 'boxes', 'on', 'of', 'whiteboard', 'o', 'cockroaches', 'camels', 'beans', 'hospital', 'socks', 'operator', 'vegetables', 'there', 'eyelash', '4:30', 'delivery', 'bookshelf', 'birthdate', 'called', 'x-ray', 'gong', 'rabbits', 'paint', 'am', 'crutches', 'cabinets', '5', 'ponytail', "o'clock", 'u-turn', 'time', 'stealing', 'peas', 'weekend', 'motorcycle', 'dvd', 'mp3']
+# for word in not_downloaded_words:
+#     dictionary_rough_search(word)
 # dictionary_rough_search("neighbor")
