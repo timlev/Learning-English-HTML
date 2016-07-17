@@ -87,6 +87,7 @@ function grab_lesson(unit, lesson){
       pics.push(key);
     }
   }
+  preload_images(pics);
   return pics;
 }
 function convert_to_display(item){
@@ -373,4 +374,15 @@ function highlight_div(div, timeout){
 function reverse_highlight(div){
   document.getElementById(div).style.display='none';
   document.getElementById('fade').style.display='none';
+}
+
+function preload_images(pics){
+  if (document.images){
+    for (var pic in pics){
+      var imgObject = new Image();
+      console.log(pics[pic]);
+      imgObject.src = pics[pic];
+      imgObject.onload = console.log(imgObject);
+    };
+  };
 }
