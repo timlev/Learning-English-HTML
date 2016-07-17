@@ -88,6 +88,7 @@ function grab_lesson(unit, lesson){
     }
   }
   preload_images(pics);
+  preload_audio_files(pics);
   return pics;
 }
 function convert_to_display(item){
@@ -384,5 +385,15 @@ function preload_images(pics){
       imgObject.src = pics[pic];
       imgObject.onload = console.log(imgObject);
     };
+  };
+}
+
+function preload_audio_files(pics){
+  for (var pic in pics){
+    var audioObject = new Audio();
+    var sound_src = pics[pic].replace("pics","sounds");
+    sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
+    audioObject.src = sound_src;
+    console.log(audioObject);
   };
 }
