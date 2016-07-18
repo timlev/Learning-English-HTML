@@ -20,16 +20,12 @@ var tries = 0;
 var score = 0;
 var all_screens = ["main_lesson","lesson_choice", "score_screen", "teach_lesson"]
 
-function loadingGIF(){
-	var loader = new Image();
-	loader.src = "Loading_icon.gif";
-	loader.id = "loadinggif";
-	return loader;
-}
+var loader = new Image();
+loader.src = "Loading_icon.gif";
+loader.id = "loadinggif";
 
 function displayloadingGif(){
-	document.body.appendChild(loadingGIF());
-
+	document.body.appendChild(loader);
 }
 
 function focus_on_screen(screen) {
@@ -83,6 +79,7 @@ function shuffle(o){
 }
 
 function grab_lesson(unit, lesson){
+  //~ displayloadingGif();
   var raw_lesson = units_json["Units"][unit][lesson]["pics"];
   var pics = [];
   for (var key in raw_lesson) {
@@ -91,7 +88,6 @@ function grab_lesson(unit, lesson){
       pics.push(key);
     }
   }
-  displayloadingGif();
   preload_images(pics);
   preload_audio_files(pics);
   return pics;
@@ -408,12 +404,12 @@ function preload_images(pics){
       imgObject.onload = loadedpics.push(imgObject);
     };
   };
-  if (loadedpics.length < pics.length){
-    focus_on_screen(null);
-  }
-  else {
-    document.getElementById("loadinggif").style.display = "none";
-  }
+  //~ if (loadedpics.length < pics.length){
+    //~ focus_on_screen(null);
+  //~ }
+  //~ else {
+    //~ document.getElementById("loadinggif").style.display = "none";
+  //~ }
 }
 
 function preload_audio_files(pics){
