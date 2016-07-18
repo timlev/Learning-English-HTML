@@ -20,6 +20,18 @@ var tries = 0;
 var score = 0;
 var all_screens = ["main_lesson","lesson_choice", "score_screen", "teach_lesson"]
 
+function loadingGIF(){
+	var loader = new Image();
+	loader.src = "Loading_icon.gif";
+	loader.id = "loadinggif";
+	return loader;
+}
+
+function displayloadingGif(){
+	document.body.appendChild(loadingGIF());
+
+}
+
 function focus_on_screen(screen) {
 	for (var s in all_screens){
 		
@@ -79,6 +91,7 @@ function grab_lesson(unit, lesson){
       pics.push(key);
     }
   }
+  displayloadingGif();
   preload_images(pics);
   preload_audio_files(pics);
   return pics;
@@ -386,14 +399,21 @@ function reverse_highlight(div){
 }
 
 function preload_images(pics){
+  var loadedpics = [];
   if (document.images){
     for (var pic in pics){
       var imgObject = new Image();
       console.log(pics[pic]);
       imgObject.src = pics[pic];
-      imgObject.onload = console.log(imgObject);
+      imgObject.onload = loadedpics.push(imgObject);
     };
   };
+  if (loadedpics.length < pics.length){
+    focus_on_screen(null);
+  }
+  else {
+    document.getElementById("loadinggif").style.display = "none";
+  }
 }
 
 function preload_audio_files(pics){
