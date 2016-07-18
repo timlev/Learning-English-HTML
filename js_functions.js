@@ -18,15 +18,30 @@ var current_unit;
 var lesson_length;
 var tries = 0;
 var score = 0;
-//function fill_imgs();
+var all_screens = ["main_lesson","lesson_choice", "score_screen", "teach_lesson"]
 
+function focus_on_screen(screen) {
+	for (var s in all_screens){
+		
+		//Turn on screen
+		if (all_screens[s] === screen) {
+			console.log(all_screens[s]);
+			document.getElementById(all_screens[s]).style.display = "block";
+			document.getElementById(all_screens[s]).style.visibility = "visible";
+		}
+		else {
+			if (document.getElementById(all_screens[s]) != null){
+				document.getElementById(all_screens[s]).style.display = "none";
+				document.getElementById(all_screens[s]).style.visibility = "hidden";
+			}
+		}
+	}
+}
 function json_dir_sep() {
   //Try first units.json entry
   var first_unit = Object.keys(units_json["Units"])[0];
   var first_lesson = Object.keys(units_json["Units"][first_unit])[0];
   var first_file = Object.keys(units_json["Units"][first_unit][first_lesson]["pics"])[0];
-  //Test case
-  //first_file = "Units\\Units1\\Wh/ questions\\pics\\Where/ is/ your/ hat.questionmark.jpg"
   if (first_file.indexOf("/pics/") != -1){
     return "/";
   }
@@ -36,27 +51,10 @@ function json_dir_sep() {
 }
 var sep = json_dir_sep();
 
-// function onWinResize(){
-  // H = window.innerHeight;
-  // W = window.innerWidth;
-  // boxH = (H - 100)/ 2;
-  // boxW = W / 2;
-  // H = window.innerHeight;
-  // W = window.innerWidth;
-  // boxH = (H - 100)/ 2;
-  // boxW = W / 2;
-  // var boxes = ['box1', 'box2','box3','box4'];
-  // for (var box in boxes){
-  //   document.getElementById(boxes[box]).height = boxH;
-  //   document.getElementById(boxes[box]).width = boxW;
-  // }
-// }
+
 function play(file){
   //console.log(file.name);
   file.play();
-    //if (file.name != null){
-    //  file.addEventListener( "ended", revert_color(file.name), false);
-    //}
 };
 
 function getbestratio(boxheight,boxwidth,picheight,picwidth){
@@ -65,12 +63,6 @@ function getbestratio(boxheight,boxwidth,picheight,picwidth){
     picwidth *= Math.min(width_ratio, height_ratio)
     picheight *= Math.min(width_ratio, height_ratio)
     return {new_width: picwidth,new_height: picheight};
-}
-
-function fill_imgs(){
-  // onWinResize();
-  document.getElementById("main_lesson").style.visibility = "visible";
-  document.getElementById("main_lesson").style.display = "inline";
 }
 
 function shuffle(o){
@@ -115,9 +107,11 @@ function set_teach_sound(item){
 
 function setup_item(item, lesson, callback){
   // onWinResize();
-  document.getElementById("main_lesson").style.visibility = "visible";
-  document.getElementById("lesson_choice").style.display = "none";
-  document.getElementById("score_screen").style.display = "none";
+  
+  //~ document.getElementById("main_lesson").style.visibility = "visible";
+  //~ document.getElementById("lesson_choice").style.display = "none";
+  //~ document.getElementById("score_screen").style.display = "none";
+  focus_on_screen("main_lesson");
   lesson_length = lesson.length;
   tries = 0;
   //assign text
@@ -164,8 +158,8 @@ function lesson_loop(unit, lesson){
   tries = 0;
   score = 0;
   document.getElementById("scorebox").innerHTML = "Score: ";
-  document.getElementById("lesson_choice").style.display = "none";
-  document.getElementById("score_screen").style.display = "none";
+  focus_on_screen("main_lesson");
+  
   //grab lesson from units.json
   current_lesson = lesson;
   current_lesson_contents = grab_lesson(unit,lesson);
@@ -216,12 +210,17 @@ function check_lesson(d){
 
 function display_lesson_choices(){
   // onWinResize();
-  //set up units
-  document.getElementById("main_lesson").style.visibility = "hidden";
-  document.getElementById("teach_lesson").style.visibility = "hidden";
-  document.getElementById("lesson_choice").style.visibility = "visible";
-  document.getElementById("lesson_choice").style.display = "block";
-  document.getElementById("score_screen").style.display = "none";
+  //document.getElementById("main_lesson").style.visibility = "hidden";
+  
+  
+  //~ document.getElementById("lesson_choice").style.visibility = "visible";
+  //~ document.getElementById("lesson_choice").style.display = "block";
+  
+  //~ document.getElementById("score_screen").style.display = "none";
+  //~ document.getElementById("main_lesson").style.display = "none";
+  //~ document.getElementById("teach_lesson").style.display = "none";
+  
+  focus_on_screen("lesson_choice");
   var units= [];
   for (var unit in units_json["Units"]){
     units.push("<div onclick='check(this)'><input type='radio' name='unit' id='" + unit + "' onchange='click_unit(this)' >" + unit + "</input></div>");
@@ -238,9 +237,12 @@ function constructDate(){
   return date;
 }
 function display_score_summary(lesson, score){
-  document.getElementById("main_lesson").style.visibility = "hidden";
-  document.getElementById("teach_lesson").style.visibility = "hidden";
-  //document.getElementById("score_screen").style.display = "block";
+  //~ document.getElementById("main_lesson").style.visibility = "hidden";
+  //~ document.getElementById("teach_lesson").style.visibility = "hidden";
+  //~ document.getElementById("score_screen").style.display = "block";
+  
+  focus_on_screen("score_screen");
+  
   highlight_div("score_screen", 0);
   document.getElementById("score_date").innerHTML = constructDate();
   document.getElementById("score_unit").innerHTML = current_unit;
@@ -251,9 +253,14 @@ function display_score_summary(lesson, score){
 }
 function populate_lesson_choices(unit){
   //set up units
-  document.getElementById("main_lesson").style.visibility = "hidden";
-  document.getElementById("lesson_choice").style.visibility = "visible";
-  document.getElementById("lesson_choice").style.display = "block";
+  //document.getElementById("main_lesson").style.visibility = "hidden";
+  //~ document.getElementById("lesson_choice").style.visibility = "visible";
+  //~ document.getElementById("lesson_choice").style.display = "block";
+  
+  //~ document.getElementById("score_screen").style.display = "none";
+  //~ document.getElementById("main_lesson").style.display = "none";
+  //~ document.getElementById("teach_lesson").style.display = "none";
+  focus_on_screen("lesson_choice");
   current_unit = unit;
   var lessons= [];
   for (var lesson in units_json["Units"][unit]){
@@ -275,10 +282,11 @@ function choose_lesson(u, l){
 
 
 function teach_lesson(){
-  document.getElementById("lesson_choice").style.display = "none";
-  document.getElementById("score_screen").style.display = "none";
-  document.getElementById("main_lesson").style.display = "none";
-  document.getElementById("teach_lesson").style.visibility = "visible";
+  //~ document.getElementById("lesson_choice").style.display = "none";
+  //~ document.getElementById("score_screen").style.display = "none";
+  //~ document.getElementById("main_lesson").style.display = "none";
+  //~ document.getElementById("teach_lesson").style.visibility = "visible";
+  focus_on_screen("teach_lesson");
   current_index = 0
   current_lesson_contents = grab_lesson(current_unit, current_lesson);
 
