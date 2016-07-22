@@ -550,30 +550,30 @@ var units_json = {
                     "Units/Basics/CASAS/pics/no smoking.jpg": null
                 }
             }, 
-            "money": {
+            "Money": {
                 "sounds": {
-                    "Units/Basics/money/sounds/quarterspeech_google.wav": null, 
-                    "Units/Basics/money/sounds/one hundred dollar billspeech_google.wav": null, 
-                    "Units/Basics/money/sounds/pennyspeech_google.wav": null, 
-                    "Units/Basics/money/sounds/dimespeech_google.wav": null, 
-                    "Units/Basics/money/sounds/one dollar billspeech_google.wav": null, 
-                    "Units/Basics/money/sounds/twenty dollar billspeech_google.wav": null, 
-                    "Units/Basics/money/sounds/nickelspeech_google.wav": null, 
-                    "Units/Basics/money/sounds/ten dollar billspeech_google.wav": null, 
-                    "Units/Basics/money/sounds/five dollar billspeech_google.wav": null, 
-                    "Units/Basics/money/sounds/fifty dollar billspeech_google.wav": null
+                    "Units/Basics/Money/sounds/quarterspeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/one hundred dollar billspeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/pennyspeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/dimespeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/one dollar billspeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/twenty dollar billspeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/nickelspeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/ten dollar billspeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/five dollar billspeech_google.wav": null, 
+                    "Units/Basics/Money/sounds/fifty dollar billspeech_google.wav": null
                 }, 
                 "pics": {
-                    "Units/Basics/money/pics/one hundred dollar bill.jpg": null, 
-                    "Units/Basics/money/pics/dime.png": null, 
-                    "Units/Basics/money/pics/fifty dollar bill.jpg": null, 
-                    "Units/Basics/money/pics/penny.png": null, 
-                    "Units/Basics/money/pics/one dollar bill.jpg": null, 
-                    "Units/Basics/money/pics/quarter.png": null, 
-                    "Units/Basics/money/pics/twenty dollar bill.jpg": null, 
-                    "Units/Basics/money/pics/ten dollar bill.jpg": null, 
-                    "Units/Basics/money/pics/nickel.png": null, 
-                    "Units/Basics/money/pics/five dollar bill.jpg": null
+                    "Units/Basics/Money/pics/one hundred dollar bill.jpg": null, 
+                    "Units/Basics/Money/pics/dime.png": null, 
+                    "Units/Basics/Money/pics/fifty dollar bill.jpg": null, 
+                    "Units/Basics/Money/pics/penny.png": null, 
+                    "Units/Basics/Money/pics/one dollar bill.jpg": null, 
+                    "Units/Basics/Money/pics/quarter.png": null, 
+                    "Units/Basics/Money/pics/twenty dollar bill.jpg": null, 
+                    "Units/Basics/Money/pics/ten dollar bill.jpg": null, 
+                    "Units/Basics/Money/pics/nickel.png": null, 
+                    "Units/Basics/Money/pics/five dollar bill.jpg": null
                 }
             }, 
             "times of day": {
@@ -2244,7 +2244,7 @@ var units_json = {
                     "Units/Transportation/Bus easy/sounds/I get on the bus.speech_google.wav": null, 
                     "Units/Transportation/Bus easy/sounds/I get a transfer.speech_google.wav": null, 
                     "Units/Transportation/Bus easy/sounds/I pull stop.speech_google.wav": null, 
-                    "Units/Transportation/Bus easy/sounds/I pay money.speech_google.wav": null
+                    "Units/Transportation/Bus easy/sounds/I pay Money.speech_google.wav": null
                 }, 
                 "pics": {
                     "Units/Transportation/Bus easy/pics/I sit down..jpg": null, 
@@ -2252,7 +2252,7 @@ var units_json = {
                     "Units/Transportation/Bus easy/pics/I wait..jpg": null, 
                     "Units/Transportation/Bus easy/pics/I get a transfer..JPG": null, 
                     "Units/Transportation/Bus easy/pics/I get on the bus..jpg": null, 
-                    "Units/Transportation/Bus easy/pics/I pay money..jpg": null, 
+                    "Units/Transportation/Bus easy/pics/I pay Money..jpg": null, 
                     "Units/Transportation/Bus easy/pics/I pull stop..jpg": null
                 }
             }, 
