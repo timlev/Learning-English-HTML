@@ -79,7 +79,7 @@ function shuffle(o){
     return o;
 }
 
-function grab_lesson(unit, lesson){
+function grab_lesson(unit, lesson, lessontype){
   //~ displayloadingGif();
   var raw_lesson = units_json["Units"][unit][lesson]["pics"];
   var pics = [];
@@ -93,7 +93,7 @@ function grab_lesson(unit, lesson){
   current_unit = unit;
   //preload_images(pics);
   //preload_audio_files(pics);
-  preload_audio_and_images(pics);
+  preload_audio_and_images(pics, lessontype);
   return pics;
 }
 function convert_to_display(item){
@@ -175,7 +175,7 @@ function lesson_loop(unit, lesson){
 
   //grab lesson from units.json
   current_lesson = lesson;
-  current_lesson_contents = grab_lesson(unit,lesson);
+  current_lesson_contents = grab_lesson(unit,lesson, "main");
   //shuffle lesson once
   //current_lesson_contents = shuffle(current_lesson_contents);
   //current_unit = unit;
@@ -301,11 +301,11 @@ function teach_lesson(){
   //~ document.getElementById("teach_lesson").style.visibility = "visible";
   focus_on_screen("teach_lesson");
   current_index = 0
-  current_lesson_contents = grab_lesson(current_unit, current_lesson);
+  current_lesson_contents = grab_lesson(current_unit, current_lesson, "teach");
 
   //shuffle lesson once
-  current_lesson_contents = shuffle(current_lesson_contents);
-  console.log(current_lesson_contents);
+  //current_lesson_contents = shuffle(current_lesson_contents);
+  //console.log(current_lesson_contents);
   display_teach_item()
 }
 
@@ -397,7 +397,7 @@ function reverse_highlight(div){
   document.getElementById(div).style.display='none';
   document.getElementById('fade').style.display='none';
 }
-
+/*
 function preload_images(pics){
   var loadedpics = [];
   if (document.images){
@@ -427,8 +427,9 @@ function preload_audio_files(pics){
     check_if_all_loaded(audioObject, loaded, pics);
   };
 }
+*/
 
-function preload_audio_and_images(pics){
+function preload_audio_and_images(pics, lessontype){
 	loaded = [];
 	if (document.images){
 		for (var pic in pics){
@@ -443,18 +444,24 @@ function preload_audio_and_images(pics){
 			sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
 			audioObject.src = sound_src;
 			audioObject.onload = loaded.push(audioObject);
-			check_if_all_loaded(loaded, pics);
+			check_if_all_loaded(loaded, pics, lessontype);
 		};
 	};
 }
 
-function check_if_all_loaded(loaded, files){
+function check_if_all_loaded(loaded, files, lessontype){
     var total_objects = files.length * 2;
     if (loaded.length == total_objects){
         //Everything is loaded
         console.log("all loaded");
-        setup_item(current_lesson_contents[current_index], current_lesson_contents);
+        if (lessontype == "main"){
+            setup_item(current_lesson_contents[current_index], current_lesson_contents);
         }
+        else if (lessontype == "teach"){
+			display_teach_item();
+		};
+        
+	}
     else {
         console.log(files.length - loaded.length);
     }
