@@ -91,8 +91,9 @@ function grab_lesson(unit, lesson){
   }
   current_lesson_contents = shuffle(pics);
   current_unit = unit;
-  preload_images(pics);
-  preload_audio_files(pics);
+  //preload_images(pics);
+  //preload_audio_files(pics);
+  preload_audio_and_images(pics);
   return pics;
 }
 function convert_to_display(item){
@@ -427,11 +428,29 @@ function preload_audio_files(pics){
   };
 }
 
+function preload_audio_and_images(pics){
+	loaded = [];
+	if (document.images){
+		for (var pic in pics){
+			//IMAGES
+			var imgObject = new Image();
+			//console.log(pics[pic]);
+			imgObject.src = pics[pic];
+			imgObject.onload = loaded.push(imgObject);
+			//AUDIO
+			var audioObject = new Audio();
+			var sound_src = pics[pic].replace("pics","sounds");
+			sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
+			audioObject.src = sound_src;
+			audioObject.onload = loaded.push(audioObject);
+			check_if_all_loaded(loaded, pics);
+		};
+	};
+}
 
-function check_if_all_loaded(object, loaded, files){
-    //Load latest object
-    loaded.push(object);
-    if (loaded.length == files.length){
+function check_if_all_loaded(loaded, files){
+    var total_objects = files.length * 2;
+    if (loaded.length == total_objects){
         //Everything is loaded
         console.log("all loaded");
         setup_item(current_lesson_contents[current_index], current_lesson_contents);
