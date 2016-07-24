@@ -21,6 +21,7 @@ var score = 0;
 var all_screens = ["main_lesson","lesson_choice", "score_screen", "teach_lesson"]
 
 var loader = new Image();
+var loaded = [];
 loader.src = "Loading_icon.gif";
 loader.id = "loadinggif";
 
@@ -88,6 +89,8 @@ function grab_lesson(unit, lesson){
       pics.push(key);
     }
   }
+  current_lesson_contents = shuffle(pics);
+  current_unit = unit;
   preload_images(pics);
   preload_audio_files(pics);
   return pics;
@@ -116,7 +119,7 @@ function set_teach_sound(item){
 
 function setup_item(item, lesson, callback){
   // onWinResize();
-  
+
   //~ document.getElementById("main_lesson").style.visibility = "visible";
   //~ document.getElementById("lesson_choice").style.display = "none";
   //~ document.getElementById("score_screen").style.display = "none";
@@ -168,14 +171,14 @@ function lesson_loop(unit, lesson){
   score = 0;
   document.getElementById("scorebox").innerHTML = "Score: ";
   focus_on_screen("main_lesson");
-  
+
   //grab lesson from units.json
   current_lesson = lesson;
   current_lesson_contents = grab_lesson(unit,lesson);
   //shuffle lesson once
-  current_lesson_contents = shuffle(current_lesson_contents);
-  current_unit = unit;
-  setup_item(current_lesson_contents[current_index], current_lesson_contents);//, fill_imgs()
+  //current_lesson_contents = shuffle(current_lesson_contents);
+  //current_unit = unit;
+  //setup_item(current_lesson_contents[current_index], current_lesson_contents);//, fill_imgs()
 }
 function box_clicked(box){
   var timeout = 2000;
@@ -220,15 +223,15 @@ function check_lesson(d){
 function display_lesson_choices(){
   // onWinResize();
   //document.getElementById("main_lesson").style.visibility = "hidden";
-  
-  
+
+
   //~ document.getElementById("lesson_choice").style.visibility = "visible";
   //~ document.getElementById("lesson_choice").style.display = "block";
-  
+
   //~ document.getElementById("score_screen").style.display = "none";
   //~ document.getElementById("main_lesson").style.display = "none";
   //~ document.getElementById("teach_lesson").style.display = "none";
-  
+
   focus_on_screen("lesson_choice");
   var units= [];
   for (var unit in units_json["Units"]){
@@ -249,9 +252,9 @@ function display_score_summary(lesson, score){
   //~ document.getElementById("main_lesson").style.visibility = "hidden";
   //~ document.getElementById("teach_lesson").style.visibility = "hidden";
   //~ document.getElementById("score_screen").style.display = "block";
-  
+
   focus_on_screen("score_screen");
-  
+
   highlight_div("score_screen", 0);
   document.getElementById("score_date").innerHTML = constructDate();
   document.getElementById("score_unit").innerHTML = current_unit;
@@ -265,7 +268,7 @@ function populate_lesson_choices(unit){
   //document.getElementById("main_lesson").style.visibility = "hidden";
   //~ document.getElementById("lesson_choice").style.visibility = "visible";
   //~ document.getElementById("lesson_choice").style.display = "block";
-  
+
   //~ document.getElementById("score_screen").style.display = "none";
   //~ document.getElementById("main_lesson").style.display = "none";
   //~ document.getElementById("teach_lesson").style.display = "none";
@@ -399,7 +402,7 @@ function preload_images(pics){
   if (document.images){
     for (var pic in pics){
       var imgObject = new Image();
-      console.log(pics[pic]);
+      //console.log(pics[pic]);
       imgObject.src = pics[pic];
       imgObject.onload = loadedpics.push(imgObject);
     };
@@ -413,11 +416,27 @@ function preload_images(pics){
 }
 
 function preload_audio_files(pics){
+  loaded = [];
   for (var pic in pics){
     var audioObject = new Audio();
     var sound_src = pics[pic].replace("pics","sounds");
     sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
     audioObject.src = sound_src;
-    console.log(audioObject);
+    //console.log(audioObject);
+    check_if_all_loaded(audioObject, loaded, pics);
   };
+}
+
+
+function check_if_all_loaded(object, loaded, files){
+    //Load latest object
+    loaded.push(object);
+    if (loaded.length == files.length){
+        //Everything is loaded
+        console.log("all loaded");
+        setup_item(current_lesson_contents[current_index], current_lesson_contents);
+        }
+    else {
+        console.log(files.length - loaded.length);
+    }
 }
