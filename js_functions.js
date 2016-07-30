@@ -434,6 +434,7 @@ function preload_audio_files(pics){
 function preload_audio_and_images(pics, lessontype){
 	loaded = [];
 	if (document.images){
+		toggleLoading();
 		for (var pic in pics){
 			//IMAGES
 			var imgObject = new Image();
@@ -456,6 +457,7 @@ function check_if_all_loaded(loaded, files, lessontype){
     if (loaded.length == total_objects){
         //Everything is loaded
         console.log("all loaded");
+        toggleLoading();
         if (lessontype == "main"){
             setup_item(current_lesson_contents[current_index], current_lesson_contents);
         }
@@ -466,5 +468,18 @@ function check_if_all_loaded(loaded, files, lessontype){
 	}
     else {
         console.log(files.length - loaded.length);
+    }
+}
+
+function toggleLoading(){
+    var soundbtn = document.getElementById("soundbuttonimg");
+    console.log(soundbtn.src);
+    if (soundbtn.src.endsWith("Loading_icon.gif")){
+        soundbtn.src = "Loading_icon.gif";
+        console.log("toggling");
+    }
+    else {
+        console.log("toggling");
+        soundbtn.src = "sound.png";
     }
 }
