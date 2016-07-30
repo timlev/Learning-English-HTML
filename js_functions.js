@@ -494,11 +494,11 @@ function toggleLoading(){
     var soundbtn = document.getElementById("soundbuttonimg");
     console.log(soundbtn.src);
     if (soundbtn.src.endsWith("Loading_icon.gif")){
-        soundbtn.src = "sound.png";
+        soundbtn.setAttribute('src',"sound.png");
         console.log("toggling");
     }
     else {
         console.log("toggling");
-        soundbtn.src = "Loading_icon.gif";
+        soundbtn.setAttribute('src', "Loading_icon.gif");
     }
 }
