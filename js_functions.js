@@ -14,6 +14,8 @@ var current_index = 0;
 var current_unit;
 var current_lesson;
 var current_lesson_contents;
+var current_lesson_pics = [];
+var current_lesson_sounds = [];
 var current_unit;
 var lesson_length;
 var tries = 0;
