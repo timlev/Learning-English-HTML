@@ -21,7 +21,8 @@ var lesson_length;
 var tries = 0;
 var score = 0;
 var all_screens = ["main_lesson","lesson_choice", "score_screen", "teach_lesson"]
-
+var loaded_pics = [];
+var loaded_audio = [];
 var loader = new Image();
 var loaded = [];
 loader.src = "Loading_icon.gif";
@@ -418,6 +419,8 @@ function preload_images(pics){
   //~ }
 }
 
+
+
 function preload_audio_files(pics){
   loaded = [];
   for (var pic in pics){
@@ -430,6 +433,14 @@ function preload_audio_files(pics){
   };
 }
 */
+function listloadImage(image, files, lessontype){
+  loaded_pics.push(image);
+  check_if_all_loaded(files, lessontype);
+}
+function listloadAudio(audio, files, lessontype){
+  loaded_audio.push(audio);
+  check_if_all_loaded(files, lessontype);
+}
 
 function preload_audio_and_images(pics, lessontype){
 	loaded = [];
@@ -440,24 +451,32 @@ function preload_audio_and_images(pics, lessontype){
 			var imgObject = new Image();
 			//console.log(pics[pic]);
 			imgObject.src = pics[pic];
-			imgObject.onload = loaded.push(imgObject);
+			if (imgObject.complete){
+				listloadImage(imgObject, pics, lessontype);
+				//loaded.push(imgObject);
+			}
+			else {
+				imgObject.onload = listloadImage(imgObject, pics, lessontype);
+				//imgObject.onload = loaded.push(imgObject);
+			}
 			//AUDIO
 			var audioObject = new Audio();
 			var sound_src = pics[pic].replace("pics","sounds");
 			sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
 			audioObject.src = sound_src;
-			audioObject.onload = loaded.push(audioObject);
-			check_if_all_loaded(loaded, pics, lessontype);
+			audioObject.addEventListener('canplaythrough', listloadAudio(audioObject, pics, lessontype));
+			//check_if_all_loaded(loaded, pics, lessontype);
 		};
 	};
 }
 
-function check_if_all_loaded(loaded, files, lessontype){
+//function check_if_all_loaded(loaded, files, lessontype){
+function check_if_all_loaded(files, lessontype){
     var total_objects = files.length * 2;
-    if (loaded.length == total_objects){
+    if (loaded_pics.length + loaded_audio.length == total_objects){
         //Everything is loaded
         console.log("all loaded");
-        toggleLoading();
+        toggleLoading();//return to normal sound pic
         if (lessontype == "main"){
             setup_item(current_lesson_contents[current_index], current_lesson_contents);
         }
@@ -465,9 +484,9 @@ function check_if_all_loaded(loaded, files, lessontype){
 			display_teach_item();
 		};
         
-	}
+    }
     else {
-        console.log(files.length - loaded.length);
+        console.log(files.length - loaded_pics.length - loaded_audio.length);
     }
 }
 
