@@ -450,15 +450,16 @@ function preload_audio_and_images(pics, lessontype){
 			//IMAGES
 			var imgObject = new Image();
 			//console.log(pics[pic]);
+			imgObject.onload = listloadImage(imgObject, pics, lessontype);
 			imgObject.src = pics[pic];
-			if (imgObject.complete){
-				listloadImage(imgObject, pics, lessontype);
-				//loaded.push(imgObject);
-			}
-			else {
-				imgObject.onload = listloadImage(imgObject, pics, lessontype);
-				//imgObject.onload = loaded.push(imgObject);
-			}
+			//if (imgObject.complete){
+				//listloadImage(imgObject, pics, lessontype);
+				////loaded.push(imgObject);
+			//}
+			//else {
+				//imgObject.onload = listloadImage(imgObject, pics, lessontype);
+				////imgObject.onload = loaded.push(imgObject);
+			//}
 			//AUDIO
 			var audioObject = new Audio();
 			var sound_src = pics[pic].replace("pics","sounds");
