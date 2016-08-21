@@ -26,41 +26,47 @@ function buildImg(num){
 
 function loadImg(img){
 	var imgObject = new Image();
-	imgObject.onload = function () {
-		console.log(this.src + "image is loaded");
-	};
+	//imgObject.onload = function () {
+	//	console.log(this.src + "image is loaded");
+	//};
 	imgObject.src = img;
 	return imgObject;
 }
 
 function placeImg(img, boxnum){
-	checkIndImgComplete(img);
 	var box = document.getElementById("box" + boxnum.toString());
 	box.appendChild(img);
+	checkIndImgComplete(img);
+
 }
 function afterpageload(){
 	placeImg(loadImg(buildImg(0)), 1);
 	placeImg(loadImg(buildImg(1)), 2);
 	placeImg(loadImg(buildImg(2)), 3);
 	placeImg(loadImg(buildImg(3)), 4);
-	checkAllImgsComplete(imgSrcArray);
+	//checkAllImgsComplete(imgSrcArray);
 }
 
-
+function onComplete(object){
+	console.log(object + " is complete");
+}
 function checkIndImgComplete(object){
 	if (object.complete){
-		imgLoaded.push(object);
-		console.log(object.src + "complete");
+		//imgLoaded.push(object);
+		//console.log(object.src + "complete");
+		onComplete(object);
 	}
 	else {
-		object.addEventListener('load', checkIndImgComplete(object));
+		//object.addEventListener('load', checkIndImgComplete(object));
+		object.addEventListener('load', onComplete(object));
 		object.addEventListener('error', function(){alert(object.src + "error")});
-	}	
+	}
 }
 
 function checkAllImgsComplete(imgSrcArray){
 	var imgs = document.querySelectorAll('img');
 	//var imgs = imgSrcArray;
+	var i;
 	for (i in imgs){
 		var object = imgs[i];
 		checkIndImgComplete(object);
