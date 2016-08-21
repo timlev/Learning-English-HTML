@@ -1,0 +1,83 @@
+<html>
+<head>
+
+<title>Testing</title>
+<style>
+img {
+	height : 50vh;
+	width : 50 vw;
+	}
+</style>
+<script>
+var imgSrcRoot = "http://timlev.github.io/Learning-English-HTML/Units/";
+var imgSrcUnit = "Unit1/";
+var imgSrcLesson = "What are they doing/";
+var imgSrcArray = ["He is listening to music..JPG","He is reading a book..JPG","He is writing a letter..JPG","She is cleaning the house..JPG","She is drinking water..JPG","She is sleeping..JPG","She is using the computer..JPG","She is washing the car..JPG","They are doing their homework..JPG","They are playing video games..JPG","They are studying..JPG","They are talking..JPG","They are watching TV..JPG"];
+var imgSrcArray = ["https://c.o0bg.com/rf/image_1200w/Boston/2011-2020/2016/08/06/BostonGlobe.com/BigPicture/Images/AFP_DW8FJ.jpg", "https://c.o0bg.com/rf/image_1200w/Boston/2011-2020/2016/08/06/BostonGlobe.com/BigPicture/Images/2016-08-06T025540Z_1282952411_RIOEC86084BP8_RTRMADP_3_OLYMPICS-RIO-OPENING.jpg", "https://c.o0bg.com/rf/image_1200w/Boston/2011-2020/2016/08/06/BostonGlobe.com/BigPicture/Images/AFP_DW7MV.jpg", "https://c.o0bg.com/rf/image_1200w/Boston/2011-2020/2016/08/06/BostonGlobe.com/BigPicture/Images/586226020.jpg", "https://c.o0bg.com/rf/image_1200w/Boston/2011-2020/2016/08/06/BostonGlobe.com/BigPicture/Images/05457515.jpg", "https://c.o0bg.com/rf/image_1200w/Boston/2011-2020/2016/08/06/BostonGlobe.com/BigPicture/Images/ce0d7a8b14c44692a35b797b15d85a34-ce0d7a8b14c44692a35b797b15d85a34-0.jpg"];
+var imgSrcArray = ["http://weknowyourdreams.com/images/space/space-04.jpg","http://wallpapershome.com/images/pages/pic_hs/10121.jpg", "http://wallpapershome.com/images/pages/pic_hs/3334.jpg", "http://undark.org/wp-content/uploads/sites/2/2016/02/fpo-6.jpg"];
+var imgLoaded = [];
+function buildImg(num){
+	if (imgSrcArray[num].includes("http")){
+		return imgSrcArray[num];
+	}
+	var src = imgSrcRoot + imgSrcUnit + imgSrcLesson + "pics/" + imgSrcArray[num];
+	return src;
+}
+
+function loadImg(img){
+	var imgObject = new Image();
+	imgObject.onload = function () {
+		console.log(this.src + "image is loaded");
+	};
+	imgObject.src = img;
+	return imgObject;
+}
+
+function placeImg(img, boxnum){
+	checkIndImgComplete(img);
+	var box = document.getElementById("box" + boxnum.toString());
+	box.appendChild(img);
+}
+function afterpageload(){
+	placeImg(loadImg(buildImg(0)), 1);
+	placeImg(loadImg(buildImg(1)), 2);
+	placeImg(loadImg(buildImg(2)), 3);
+	placeImg(loadImg(buildImg(3)), 4);
+	checkAllImgsComplete(imgSrcArray);
+}
+
+
+function checkIndImgComplete(object){
+	if (object.complete){
+		imgLoaded.push(object);
+		console.log(object.src + "complete");
+	}
+	else {
+		object.addEventListener('load', checkIndImgComplete(object));
+		object.addEventListener('error', function(){alert(object.src + "error")});
+	}	
+}
+
+function checkAllImgsComplete(imgSrcArray){
+	var imgs = document.querySelectorAll('img');
+	//var imgs = imgSrcArray;
+	for (i in imgs){
+		var object = imgs[i];
+		checkIndImgComplete(object);
+	}
+}
+
+</script>
+
+</head>
+<body onload="afterpageload()">
+<div id="container">
+<table border='1'>
+<tr><td id='box1'></td><td id='box2'></td></tr>
+<tr><td id='box3'></td><td id='box4'></td></tr>
+</table>
+</div>
+
+</body>
+
+</html>
