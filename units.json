@@ -2244,7 +2244,7 @@ var units_json = {
                     "Units/Transportation/Bus easy/sounds/I get on the bus.speech_google.wav": null, 
                     "Units/Transportation/Bus easy/sounds/I get a transfer.speech_google.wav": null, 
                     "Units/Transportation/Bus easy/sounds/I pull stop.speech_google.wav": null, 
-                    "Units/Transportation/Bus easy/sounds/I pay Money.speech_google.wav": null
+                    "Units/Transportation/Bus easy/sounds/I pay money.speech_google.wav": null
                 }, 
                 "pics": {
                     "Units/Transportation/Bus easy/pics/I sit down..jpg": null, 
@@ -2252,7 +2252,7 @@ var units_json = {
                     "Units/Transportation/Bus easy/pics/I wait..jpg": null, 
                     "Units/Transportation/Bus easy/pics/I get a transfer..JPG": null, 
                     "Units/Transportation/Bus easy/pics/I get on the bus..jpg": null, 
-                    "Units/Transportation/Bus easy/pics/I pay Money..jpg": null, 
+                    "Units/Transportation/Bus easy/pics/I pay money..jpg": null, 
                     "Units/Transportation/Bus easy/pics/I pull stop..jpg": null
                 }
             }, 
