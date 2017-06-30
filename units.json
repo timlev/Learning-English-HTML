@@ -2105,6 +2105,38 @@ var units_json = {
             }
         }, 
         "Animals": {
+            "Fish Species": {
+                "sounds": {
+                    "Units/Animals/Fish Species/sounds/large mouth bassspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/lake troutspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/sturgeonspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/white bassspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/black crappiespeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/yellow perchspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/walleyespeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/rock bassspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/sunfishspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/pikespeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/salmonspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/small mouth bassspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/catfishspeech_google.wav": null
+                }, 
+                "pics": {
+                    "Units/Animals/Fish Species/pics/yellow perch.jpg": null, 
+                    "Units/Animals/Fish Species/pics/small mouth bass.jpg": null, 
+                    "Units/Animals/Fish Species/pics/rock bass.jpg": null, 
+                    "Units/Animals/Fish Species/pics/large mouth bass.jpg": null, 
+                    "Units/Animals/Fish Species/pics/walleye.jpg": null, 
+                    "Units/Animals/Fish Species/pics/sunfish.jpg": null, 
+                    "Units/Animals/Fish Species/pics/sturgeon.jpg": null, 
+                    "Units/Animals/Fish Species/pics/catfish.jpg": null, 
+                    "Units/Animals/Fish Species/pics/white bass.jpg": null, 
+                    "Units/Animals/Fish Species/pics/black crappie.jpg": null, 
+                    "Units/Animals/Fish Species/pics/lake trout.jpg": null, 
+                    "Units/Animals/Fish Species/pics/salmon.jpg": null, 
+                    "Units/Animals/Fish Species/pics/pike.jpg": null
+                }
+            }, 
             "Zoo Animals": {
                 "sounds": {
                     "Units/Animals/Zoo Animals/sounds/wild sheepspeech_google.wav": null, 
