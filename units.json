@@ -731,21 +731,6 @@ var units_json = {
                     "Units/Food/food/pics/chicken.jpg": null
                 }
             }, 
-            "HAP Food": {
-                "sounds": {}, 
-                "pics": {
-                    "Units/Food/HAP Food/pics/pork.png": null, 
-                    "Units/Food/HAP Food/pics/carrots.png": null, 
-                    "Units/Food/HAP Food/pics/chicken.png": null, 
-                    "Units/Food/HAP Food/pics/milk.png": null, 
-                    "Units/Food/HAP Food/pics/grapes.png": null, 
-                    "Units/Food/HAP Food/pics/pear.png": null, 
-                    "Units/Food/HAP Food/pics/fish.png": null, 
-                    "Units/Food/HAP Food/pics/apple.png": null, 
-                    "Units/Food/HAP Food/pics/rice.png": null, 
-                    "Units/Food/HAP Food/pics/potatoes.png": null
-                }
-            }, 
             "vegetables": {
                 "sounds": {
                     "Units/Food/vegetables/sounds/broccolispeech_google.wav": null, 
@@ -782,20 +767,45 @@ var units_json = {
                     "Units/Food/vegetables/pics/tomato.jpg": null
                 }
             }, 
-            "drinks": {
+            "Cooking Verbs": {
+                "sounds": {}, 
+                "pics": {
+                    "Units/Food/Cooking Verbs/pics/boil the water.gif": null, 
+                    "Units/Food/Cooking Verbs/pics/mix.gif": null, 
+                    "Units/Food/Cooking Verbs/pics/wash my hands.gif": null, 
+                    "Units/Food/Cooking Verbs/pics/open the can.gif": null, 
+                    "Units/Food/Cooking Verbs/pics/peel the potato.gif": null, 
+                    "Units/Food/Cooking Verbs/pics/microwave.jpeg": null, 
+                    "Units/Food/Cooking Verbs/pics/cut.gif": null, 
+                    "Units/Food/Cooking Verbs/pics/wash the vegetables.gif": null, 
+                    "Units/Food/Cooking Verbs/pics/oven.jpeg": null, 
+                    "Units/Food/Cooking Verbs/pics/cook.gif": null
+                }
+            }, 
+            "HAP Food": {
                 "sounds": {
-                    "Units/Food/drinks/sounds/waterspeech_google.wav": null, 
-                    "Units/Food/drinks/sounds/teaspeech_google.wav": null, 
-                    "Units/Food/drinks/sounds/coffeespeech_google.wav": null, 
-                    "Units/Food/drinks/sounds/drink milkspeech_google.wav": null, 
-                    "Units/Food/drinks/sounds/popspeech_google.wav": null
+                    "Units/Food/HAP Food/sounds/applespeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/porkspeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/carrotsspeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/chickenspeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/grapesspeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/ricespeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/milkspeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/pearspeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/fishspeech_google.wav": null, 
+                    "Units/Food/HAP Food/sounds/potatoesspeech_google.wav": null
                 }, 
                 "pics": {
-                    "Units/Food/drinks/pics/drink milk.jpg": null, 
-                    "Units/Food/drinks/pics/tea.jpg": null, 
-                    "Units/Food/drinks/pics/coffee.jpg": null, 
-                    "Units/Food/drinks/pics/water.jpg": null, 
-                    "Units/Food/drinks/pics/pop.jpg": null
+                    "Units/Food/HAP Food/pics/pork.png": null, 
+                    "Units/Food/HAP Food/pics/carrots.png": null, 
+                    "Units/Food/HAP Food/pics/chicken.png": null, 
+                    "Units/Food/HAP Food/pics/milk.png": null, 
+                    "Units/Food/HAP Food/pics/grapes.png": null, 
+                    "Units/Food/HAP Food/pics/pear.png": null, 
+                    "Units/Food/HAP Food/pics/fish.png": null, 
+                    "Units/Food/HAP Food/pics/apple.png": null, 
+                    "Units/Food/HAP Food/pics/rice.png": null, 
+                    "Units/Food/HAP Food/pics/potatoes.png": null
                 }
             }, 
             "fruits": {
@@ -832,6 +842,22 @@ var units_json = {
                     "Units/Food/fruits/pics/bananas.jpg": null, 
                     "Units/Food/fruits/pics/limes.jpg": null, 
                     "Units/Food/fruits/pics/peach.jpg": null
+                }
+            }, 
+            "drinks": {
+                "sounds": {
+                    "Units/Food/drinks/sounds/waterspeech_google.wav": null, 
+                    "Units/Food/drinks/sounds/teaspeech_google.wav": null, 
+                    "Units/Food/drinks/sounds/coffeespeech_google.wav": null, 
+                    "Units/Food/drinks/sounds/drink milkspeech_google.wav": null, 
+                    "Units/Food/drinks/sounds/popspeech_google.wav": null
+                }, 
+                "pics": {
+                    "Units/Food/drinks/pics/drink milk.jpg": null, 
+                    "Units/Food/drinks/pics/tea.jpg": null, 
+                    "Units/Food/drinks/pics/coffee.jpg": null, 
+                    "Units/Food/drinks/pics/water.jpg": null, 
+                    "Units/Food/drinks/pics/pop.jpg": null
                 }
             }
         }, 
