@@ -3348,6 +3348,23 @@ var units_json = {
                     "Units/Basics/alphabet/pics/K.png": null
                 }
             }, 
+            "months": {
+                "sounds": {}, 
+                "pics": {
+                    "Units/Basics/months/pics/September.jpg": null, 
+                    "Units/Basics/months/pics/March.jpg": null, 
+                    "Units/Basics/months/pics/July.jpg": null, 
+                    "Units/Basics/months/pics/January.jpg": null, 
+                    "Units/Basics/months/pics/April.jpg": null, 
+                    "Units/Basics/months/pics/December.jpg": null, 
+                    "Units/Basics/months/pics/May.jpg": null, 
+                    "Units/Basics/months/pics/August.jpg": null, 
+                    "Units/Basics/months/pics/June.jpg": null, 
+                    "Units/Basics/months/pics/October.jpg": null, 
+                    "Units/Basics/months/pics/February.jpg": null, 
+                    "Units/Basics/months/pics/November.jpg": null
+                }
+            }, 
             "emotions": {
                 "sounds": {
                     "Units/Basics/emotions/sounds/grumpyspeech_google.wav": null, 

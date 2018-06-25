@@ -1,5 +1,6 @@
 import os, sys
 import download_dict_sound
+import download_wiktionary_word
 import glob
 
 units_root = os.path.relpath("../Units/")
