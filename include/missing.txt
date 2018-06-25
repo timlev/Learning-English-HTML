@@ -1,1 +1,10 @@
-October
+grapes
+chicken
+rice
+carrots
+pear
+potatoes
+milk
+pork
+fish
+apple

@@ -731,6 +731,21 @@ var units_json = {
                     "Units/Food/food/pics/chicken.jpg": null
                 }
             }, 
+            "HAP Food": {
+                "sounds": {}, 
+                "pics": {
+                    "Units/Food/HAP Food/pics/pork.png": null, 
+                    "Units/Food/HAP Food/pics/carrots.png": null, 
+                    "Units/Food/HAP Food/pics/chicken.png": null, 
+                    "Units/Food/HAP Food/pics/milk.png": null, 
+                    "Units/Food/HAP Food/pics/grapes.png": null, 
+                    "Units/Food/HAP Food/pics/pear.png": null, 
+                    "Units/Food/HAP Food/pics/fish.png": null, 
+                    "Units/Food/HAP Food/pics/apple.png": null, 
+                    "Units/Food/HAP Food/pics/rice.png": null, 
+                    "Units/Food/HAP Food/pics/potatoes.png": null
+                }
+            }, 
             "vegetables": {
                 "sounds": {
                     "Units/Food/vegetables/sounds/broccolispeech_google.wav": null, 
@@ -3349,7 +3364,20 @@ var units_json = {
                 }
             }, 
             "months": {
-                "sounds": {}, 
+                "sounds": {
+                    "Units/Basics/months/sounds/Januaryspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Aprilspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Septemberspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Augustspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Novemberspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Junespeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Marchspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Februaryspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Decemberspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Octoberspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Mayspeech_google.wav": null, 
+                    "Units/Basics/months/sounds/Julyspeech_google.wav": null
+                }, 
                 "pics": {
                     "Units/Basics/months/pics/September.jpg": null, 
                     "Units/Basics/months/pics/March.jpg": null, 
