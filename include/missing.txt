@@ -1,10 +1,20 @@
-mix
-wash my hands
-wash the vegetables
-open the can
-peel the potato
-oven
-boil the water
-cook
-cut
-microwave
+potatoes
+apple
+milk
+carrots
+pork
+bread
+rice
+cheese
+yogurt
+beef
+chicken
+grapes
+fish
+tomato
+shop
+beans
+noodles
+broccoli
+pear
+onion
