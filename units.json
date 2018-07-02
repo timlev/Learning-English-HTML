@@ -768,7 +768,18 @@ var units_json = {
                 }
             }, 
             "Cooking Verbs": {
-                "sounds": {}, 
+                "sounds": {
+                    "Units/Food/Cooking Verbs/sounds/peel the potatospeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/mixspeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/boil the waterspeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/cutspeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/ovenspeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/cookspeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/microwavespeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/open the canspeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/wash the vegetablesspeech_google.wav": null, 
+                    "Units/Food/Cooking Verbs/sounds/wash my handsspeech_google.wav": null
+                }, 
                 "pics": {
                     "Units/Food/Cooking Verbs/pics/boil the water.gif": null, 
                     "Units/Food/Cooking Verbs/pics/mix.gif": null, 
