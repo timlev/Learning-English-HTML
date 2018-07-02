@@ -48,5 +48,13 @@ for pic in picfiles:
 all_words = list(set(all_words))
 
 for word in all_words:
-	if download_dict_sound.check_downloaded_word(word, "sounds") == False:
-		download_dict_sound.download(word, "sounds")
+	#if download_dict_sound.check_downloaded_word(word, "sounds") == False:
+	if download_wiktionary_word.check_downloaded_word(word,"sounds") == False:
+		print os.path.join("sounds",word) + ".ogg"
+		download_wiktionary_word.get_wiki(word, "sounds")
+        try:
+            download_wiktionary_word.convert_ogg_to_mp3(os.path.join("sounds",word) + ".ogg", True)
+        except:
+			continue
+            #print "************\n Problem with " + word + "\n******************\n"
+		#download_dict_sound.download(word, "sounds")
