@@ -154,12 +154,13 @@ if __name__ == "__main__":
     #    convert_ogg_to_mp3("i'm" + ".ogg", True)
     #print download_gstatic("blowhole")
     #print download_gstatic("myword")
-    wordlist = ["write","happy","sad"]
+    wordlist = ['fly', 'sleep', 'climb', 'fight', 'feed', 'swim', 'eat', 'play', 'run']
+    #wordlist = ["write","happy","sad"]
     print len(wordlist)
     for word in wordlist:
         get_wiki(word)
         #download_gstatic(word)
-        try:
-            convert_ogg_to_mp3(word + ".ogg", True)
-        except:
-            print "************\n Problem with " + word + "\n******************\n"
+        #try:
+            #convert_ogg_to_mp3(word + ".ogg", False)
+        #except:
+            #print "************\n Problem with " + word + "\n******************\n"

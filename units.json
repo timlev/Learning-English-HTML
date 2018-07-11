@@ -1457,6 +1457,20 @@ var units_json = {
                     "Units/Verbs/lesson a/pics/I cook food..JPG": null, 
                     "Units/Verbs/lesson a/pics/I call my friend..jpg": null
                 }
+            }, 
+            "Animal Actions": {
+                "sounds": {}, 
+                "pics": {
+                    "Units/Verbs/Animal Actions/pics/swim.png": null, 
+                    "Units/Verbs/Animal Actions/pics/sleep.png": null, 
+                    "Units/Verbs/Animal Actions/pics/feed.png": null, 
+                    "Units/Verbs/Animal Actions/pics/fight.png": null, 
+                    "Units/Verbs/Animal Actions/pics/climb.png": null, 
+                    "Units/Verbs/Animal Actions/pics/run.png": null, 
+                    "Units/Verbs/Animal Actions/pics/fly.png": null, 
+                    "Units/Verbs/Animal Actions/pics/eat.png": null, 
+                    "Units/Verbs/Animal Actions/pics/play.png": null
+                }
             }
         }, 
         "Health": {
