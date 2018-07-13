@@ -1416,6 +1416,7 @@ var units_json = {
             }, 
             "Basic Action Verbs": {
                 "sounds": {
+                    "Units/Verbs/Basic Action Verbs/sounds/fightspeech_google.wav": null, 
                     "Units/Verbs/Basic Action Verbs/sounds/sitspeech_google.wav": null, 
                     "Units/Verbs/Basic Action Verbs/sounds/drinkspeech_google.wav": null, 
                     "Units/Verbs/Basic Action Verbs/sounds/waitspeech_google.wav": null, 
@@ -1459,7 +1460,25 @@ var units_json = {
                 }
             }, 
             "Animal Actions": {
-                "sounds": {}, 
+                "sounds": {
+                    "Units/Verbs/Animal Actions/sounds/sleep.mp3": null, 
+                    "Units/Verbs/Animal Actions/sounds/swim.mp3": null, 
+                    "Units/Verbs/Animal Actions/sounds/playspeech_google.wav": null, 
+                    "Units/Verbs/Animal Actions/sounds/runspeech_google.wav": null, 
+                    "Units/Verbs/Animal Actions/sounds/climb.mp3": null, 
+                    "Units/Verbs/Animal Actions/sounds/feedspeech_google.wav": null, 
+                    "Units/Verbs/Animal Actions/sounds/feed.mp3": null, 
+                    "Units/Verbs/Animal Actions/sounds/swimspeech_google.wav": null, 
+                    "Units/Verbs/Animal Actions/sounds/play.mp3": null, 
+                    "Units/Verbs/Animal Actions/sounds/eat.mp3": null, 
+                    "Units/Verbs/Animal Actions/sounds/eatspeech_google.wav": null, 
+                    "Units/Verbs/Animal Actions/sounds/run.mp3": null, 
+                    "Units/Verbs/Animal Actions/sounds/fly.mp3": null, 
+                    "Units/Verbs/Animal Actions/sounds/fightspeech_google.wav": null, 
+                    "Units/Verbs/Animal Actions/sounds/climbspeech_google.wav": null, 
+                    "Units/Verbs/Animal Actions/sounds/flyspeech_google.wav": null, 
+                    "Units/Verbs/Animal Actions/sounds/sleepspeech_google.wav": null
+                }, 
                 "pics": {
                     "Units/Verbs/Animal Actions/pics/swim.png": null, 
                     "Units/Verbs/Animal Actions/pics/sleep.png": null, 
@@ -2191,36 +2210,50 @@ var units_json = {
             }
         }, 
         "Animals": {
-            "Fish Species": {
+            "animals": {
                 "sounds": {
-                    "Units/Animals/Fish Species/sounds/large mouth bassspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/lake troutspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/sturgeonspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/white bassspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/black crappiespeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/yellow perchspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/walleyespeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/rock bassspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/sunfishspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/pikespeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/salmonspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/small mouth bassspeech_google.wav": null, 
-                    "Units/Animals/Fish Species/sounds/catfishspeech_google.wav": null
+                    "Units/Animals/animals/sounds/dogspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/cowsspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/roosterspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/monkeyspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/fishspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/snakespeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/goatspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/squirrelspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/lionspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/tigerspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/gorillaspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/rabbitspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/chickensspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/bearspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/beespeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/elephantspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/chickspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/sheepspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/birdspeech_google.wav": null, 
+                    "Units/Animals/animals/sounds/catspeech_google.wav": null
                 }, 
                 "pics": {
-                    "Units/Animals/Fish Species/pics/yellow perch.jpg": null, 
-                    "Units/Animals/Fish Species/pics/small mouth bass.jpg": null, 
-                    "Units/Animals/Fish Species/pics/rock bass.jpg": null, 
-                    "Units/Animals/Fish Species/pics/large mouth bass.jpg": null, 
-                    "Units/Animals/Fish Species/pics/walleye.jpg": null, 
-                    "Units/Animals/Fish Species/pics/sunfish.jpg": null, 
-                    "Units/Animals/Fish Species/pics/sturgeon.jpg": null, 
-                    "Units/Animals/Fish Species/pics/catfish.jpg": null, 
-                    "Units/Animals/Fish Species/pics/white bass.jpg": null, 
-                    "Units/Animals/Fish Species/pics/black crappie.jpg": null, 
-                    "Units/Animals/Fish Species/pics/lake trout.jpg": null, 
-                    "Units/Animals/Fish Species/pics/salmon.jpg": null, 
-                    "Units/Animals/Fish Species/pics/pike.jpg": null
+                    "Units/Animals/animals/pics/fish.jpg": null, 
+                    "Units/Animals/animals/pics/lion.jpg": null, 
+                    "Units/Animals/animals/pics/monkey.jpg": null, 
+                    "Units/Animals/animals/pics/elephant.jpg": null, 
+                    "Units/Animals/animals/pics/snake.jpg": null, 
+                    "Units/Animals/animals/pics/chickens.jpg": null, 
+                    "Units/Animals/animals/pics/tiger.jpg": null, 
+                    "Units/Animals/animals/pics/cat.jpg": null, 
+                    "Units/Animals/animals/pics/sheep.jpg": null, 
+                    "Units/Animals/animals/pics/cows.JPG": null, 
+                    "Units/Animals/animals/pics/bee.jpg": null, 
+                    "Units/Animals/animals/pics/goat.jpg": null, 
+                    "Units/Animals/animals/pics/squirrel.jpg": null, 
+                    "Units/Animals/animals/pics/dog.jpg": null, 
+                    "Units/Animals/animals/pics/rooster.jpg": null, 
+                    "Units/Animals/animals/pics/rabbit.jpg": null, 
+                    "Units/Animals/animals/pics/chick.jpg": null, 
+                    "Units/Animals/animals/pics/bird.jpg": null, 
+                    "Units/Animals/animals/pics/bear.jpg": null, 
+                    "Units/Animals/animals/pics/gorilla.jpg": null
                 }
             }, 
             "Zoo Animals": {
@@ -2287,50 +2320,43 @@ var units_json = {
                     "Units/Animals/Zoo Animals/pics/penguins.jpg": null
                 }
             }, 
-            "animals": {
-                "sounds": {
-                    "Units/Animals/animals/sounds/dogspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/cowsspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/roosterspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/monkeyspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/fishspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/snakespeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/goatspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/squirrelspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/lionspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/tigerspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/gorillaspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/rabbitspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/chickensspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/bearspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/beespeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/elephantspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/chickspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/sheepspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/birdspeech_google.wav": null, 
-                    "Units/Animals/animals/sounds/catspeech_google.wav": null
-                }, 
+            "Tropical Animals": {
+                "sounds": {}, 
                 "pics": {
-                    "Units/Animals/animals/pics/fish.jpg": null, 
-                    "Units/Animals/animals/pics/lion.jpg": null, 
-                    "Units/Animals/animals/pics/monkey.jpg": null, 
-                    "Units/Animals/animals/pics/elephant.jpg": null, 
-                    "Units/Animals/animals/pics/snake.jpg": null, 
-                    "Units/Animals/animals/pics/chickens.jpg": null, 
-                    "Units/Animals/animals/pics/tiger.jpg": null, 
-                    "Units/Animals/animals/pics/cat.jpg": null, 
-                    "Units/Animals/animals/pics/sheep.jpg": null, 
-                    "Units/Animals/animals/pics/cows.JPG": null, 
-                    "Units/Animals/animals/pics/bee.jpg": null, 
-                    "Units/Animals/animals/pics/goat.jpg": null, 
-                    "Units/Animals/animals/pics/squirrel.jpg": null, 
-                    "Units/Animals/animals/pics/dog.jpg": null, 
-                    "Units/Animals/animals/pics/rooster.jpg": null, 
-                    "Units/Animals/animals/pics/rabbit.jpg": null, 
-                    "Units/Animals/animals/pics/chick.jpg": null, 
-                    "Units/Animals/animals/pics/bird.jpg": null, 
-                    "Units/Animals/animals/pics/bear.jpg": null, 
-                    "Units/Animals/animals/pics/gorilla.jpg": null
+                    "Units/Animals/Tropical Animals/pics/hog.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/red panda.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/komodo dragon.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/duck.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/tapir.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/otter.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/sloth.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/snow monkey.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/monkey.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/tortoise.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/penguins.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/fish.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/armadillo.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/flamingos.jpg": null, 
+                    "Units/Animals/Tropical Animals/pics/bat.jpg": null
+                }
+            }, 
+            "Minnesota Trail Animals": {
+                "sounds": {}, 
+                "pics": {
+                    "Units/Animals/Minnesota Trail Animals/pics/frog.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/black bear.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/wolf.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/raccoon.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/lynx.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/coyote.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/eagle.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/river otter.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/turtles.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/beaver.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/porcupine.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/woodpecker.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/puma.jpg": null, 
+                    "Units/Animals/Minnesota Trail Animals/pics/owl.jpg": null
                 }
             }, 
             "Minnesota Animals": {
@@ -2349,6 +2375,38 @@ var units_json = {
                     "Units/Animals/Minnesota Animals/pics/duck.jpg": null, 
                     "Units/Animals/Minnesota Animals/pics/wolf.jpg": null, 
                     "Units/Animals/Minnesota Animals/pics/owl.jpg": null
+                }
+            }, 
+            "Fish Species": {
+                "sounds": {
+                    "Units/Animals/Fish Species/sounds/large mouth bassspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/lake troutspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/sturgeonspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/white bassspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/black crappiespeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/yellow perchspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/walleyespeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/rock bassspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/sunfishspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/pikespeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/salmonspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/small mouth bassspeech_google.wav": null, 
+                    "Units/Animals/Fish Species/sounds/catfishspeech_google.wav": null
+                }, 
+                "pics": {
+                    "Units/Animals/Fish Species/pics/yellow perch.jpg": null, 
+                    "Units/Animals/Fish Species/pics/small mouth bass.jpg": null, 
+                    "Units/Animals/Fish Species/pics/rock bass.jpg": null, 
+                    "Units/Animals/Fish Species/pics/large mouth bass.jpg": null, 
+                    "Units/Animals/Fish Species/pics/walleye.jpg": null, 
+                    "Units/Animals/Fish Species/pics/sunfish.jpg": null, 
+                    "Units/Animals/Fish Species/pics/sturgeon.jpg": null, 
+                    "Units/Animals/Fish Species/pics/catfish.jpg": null, 
+                    "Units/Animals/Fish Species/pics/white bass.jpg": null, 
+                    "Units/Animals/Fish Species/pics/black crappie.jpg": null, 
+                    "Units/Animals/Fish Species/pics/lake trout.jpg": null, 
+                    "Units/Animals/Fish Species/pics/salmon.jpg": null, 
+                    "Units/Animals/Fish Species/pics/pike.jpg": null
                 }
             }
         }, 
