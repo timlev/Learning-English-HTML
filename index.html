@@ -8,28 +8,32 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Learning-English-HTML</title>
-        <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="headphones_globe.png" />
         <script src="units.json"></script>
         <script src="js_functions.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-102206469-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
     </head>
-    <body onload='display_unit_choices()' onresize="fill_imgs()">
+    <body onload='display_lesson_choices()'>
         <div id="lesson_choice" style="display: none">
-          <table id="lesson_choice_table" border=1>
+          <table id="lesson_choice_table">
+            <tr id="lesson_choice_table_header">
+              <td class="header"><h2>Units:</h2></td>
+              <td class="header"><h2>Lessons:</h2></td>
+            </tr>
             <tr>
-              <td><h1>Units:</h1></td>
-              <td><h1>Lessons:</h1></td>
-             </tr>
-            <tr style="height:75vh;">
-              <td><div id="units"></div></td>
-              <td><div id="lessons"></div></td>
-              <td id="previewcontainer">
-              <div id='gallery' style="height:50vh;display:block;overflow-y:scroll;"></div>
-<div id='section2'style="display:block;">
-<img id='gobutton' src='gobutton_unavailable.png'>
-</div>
-              </td>
+              <td id="units_box"><div id="units"></div></td>
+              <td id="lessons_box"><div id="lessons"></div></td>
             </tr>
           </table>
         </div>
@@ -49,23 +53,24 @@ and open the template in the editor.
             <td id="score_score"></td>
           </tr>
         </table>
-        <img id="retry" src="repeat.png" border=1 onclick='choose_lesson(current_unit,current_lesson)'/>
-        <img id="home" src="home_icon.png" border=1 onclick='display_unit_choices()'/>
+        <img id="retry" src="repeat.png" border=1 onclick='choose_lesson(current_unit,current_lesson)' style="cursor: pointer;"/>
+        <img id="home" src="home_icon.png" border=1 onclick='display_lesson_choices()' style="cursor: pointer;"/>
         </div>
       <div id="answer_feedback" class='white_content'></div>
 
       <div id="main_lesson">
           <span id="phrasebox">
-              <img src="sound.png" height="50px" onclick="play(document.getElementById('phraseboxaudio'))">
+              <img id="soundbuttonimg" src="sound.png" height="50px" onclick="play(document.getElementById('phraseboxaudio'))">
               <span id="phraseboxwords" style="font-size: 3em;">Filler Text</span>
               <audio id="ind_words_audio" src=""></audio>
               <audio id="audio_feedback" src=""></audio>
               <audio id="phraseboxaudio" src=""></audio>
           </span>
           <span id='scorebox' style="float: right; font-size: 1.5em;">Score: </span>
-          <img src="home_icon.png" onclick="display_unit_choices()" height="50px" style="float: right;">
+          <img src="learn.png" onclick="teach_lesson()" height="50px" style="float: right; cursor: pointer;">
+          <a href="index.html"><img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right; cursor: pointer;"></a>
 
-          <table border="1">
+          <table id="choice_table">
               <tr>
                   <td id="box1" class="choicebox">
                       <img src="sound.png" id="img1" class="choice" onclick="box_clicked(this.id)">
@@ -83,6 +88,26 @@ and open the template in the editor.
                   </td>
               </tr>
         </table>
+      </div>
+
+      <div id="teach_lesson">
+        <div id="header_space">
+          <span id="teach_phrasebox">
+              <img src="sound.png" height="50px" onclick="play(document.getElementById('teach_phraseboxaudio'))">
+              <span id="teach_phraseboxwords" style="font-size: 3em;">Filler Text</span>
+              <audio id="ind_words_audio" src=""></audio>
+              <audio id="audio_feedback" src=""></audio>
+              <audio id="teach_phraseboxaudio" src=""></audio>
+          </span>
+
+          <a href="index.html"><img src="home_icon.png" onclick="display_lesson_choices()" height="50px" style="float: right; cursor: pointer;"></a>
+        </div>
+          <div id="img_container">
+            <img src="sound.png" id="learn_img">
+          </div>
+          <div id="next_button">
+            <a id="go_home_link"><img src="arrow-next.png" id="next_button_img" onclick="display_teach_item()"></a>
+          </div>
       </div>
     </body>
 </html>

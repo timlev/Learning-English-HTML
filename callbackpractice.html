@@ -1,0 +1,43 @@
+<html>
+<head>
+
+<script>
+function playAudio(audioobjid){
+    var audioobj = document.getElementById(audioobjid);
+    audioobj.addEventListener('ended',announcePlayed());
+    audioobj.play();
+}
+
+function slowFunction(callback){
+    setTimeout(function(){callback(this)},3000);
+    ;
+}
+
+function fastThing(callback){
+    console.log("fast thing");
+    callback(this);
+}
+
+slowFunction(declareFinished);
+fastThing(declareFinished);
+
+function announcePlayed(){
+    console.log("Played");
+}
+
+function declareFinished(f){
+    console.log("Finished" + f);
+}
+</script>
+<title>Callback Practice</title>
+</head>
+
+<body>
+
+<div id='playground'>
+<div onclick='playAudio("audioplayer")'>Click Me</div>
+<audio id='audioplayer' src='Units/Unit1/Wh questions/sounds/When does class start.questionmarkspeech_google.wav'>
+</audio>
+</div>
+</body>
+</html>

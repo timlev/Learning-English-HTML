@@ -19,6 +19,8 @@ def download(word, directory="./"):
     #end = "#"
     end = ""
     query = base + word + qmid + word + end
+    print query
+
     try:
         response = urllib2.urlopen(query)
     except:
@@ -63,7 +65,10 @@ def remove_symbols_lower(word):
     ind_word = ind_word.lower() #lowercase
     return ind_word
 
+#This is depricated
 def download_google(word, orig_directory="./"):
+    print "download_google is depricated"
+    return 1
     replacementsdict = {'.exclamationmark': '!', '.apostrophe': "'", '.questionmark': '?', '.comma': ',', '.colon': ':'}
     file_form_word = place_symbols(word)
     search_form_word = replace_symbols(word)
@@ -95,14 +100,25 @@ def convert_mp3_to_wav(mp3file, remove_mp3 = False):
         os.remove(mp3path)
     return wavpath
 
-def get_macsay(word_display, word):
-	os.system('say -o "' + os.path.join(tempfile.gettempdir(),word + "speech_google.WAVE") +'" -f BEI16@44100 "' + word_display + '"')
-	return os.path.join(tempfile.gettempdir(),word + "speech_google.WAVE")
+def get_macsay(word, orig_directory="./"):
+    file_form_word = place_symbols(word)
+    search_form_word = replace_symbols(word)
+    outputdir = os.path.abspath(orig_directory.replace("pics","sounds"))
+    os.system('say -o "' + os.path.join(outputdir,file_form_word + "speech_google.wav") +'" -f BEI16@44100 "' + word + '"')
+    return os.path.join(outputdir,file_form_word + "speech_google.wav")
 #problematic examples
 #don't
 #walked
 #Minnesota
 #This
+
+def download_pico(word, orig_directory = "./"):
+    file_form_word = place_symbols(word)
+    search_form_word = replace_symbols(word)
+    outputdir = os.path.abspath(orig_directory.replace("pics","sounds"))
+
+    os.system('pico2wave -w "' + os.path.join(outputdir, file_form_word) + 'speech_google.wav" "' + search_form_word + '"')
+    return os.path.join(outputdir, file_form_word + 'speech_google.wav')
 
 if __name__ == "__main__":
     import pygame
