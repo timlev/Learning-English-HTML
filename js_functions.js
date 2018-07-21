@@ -145,7 +145,7 @@ function setup_item(item, lesson, callback){
   document.getElementById(img_slots[0]).src = item;
 
   var already_taken = [item];
-  //var lesson = shuffle(lesson);
+  var lesson = shuffle(lesson);
   for (var i = 1; i < img_slots.length; i++){
     var index = 0;
     var another_pic = "";
