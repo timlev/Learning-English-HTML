@@ -183,9 +183,9 @@ function lesson_loop(unit, lesson){
   current_lesson = lesson;
   current_lesson_contents = grab_lesson(unit,lesson, "main");
   //shuffle lesson once
-  //current_lesson_contents = shuffle(current_lesson_contents);
-  //current_unit = unit;
-  //setup_item(current_lesson_contents[current_index], current_lesson_contents);//, fill_imgs()
+  current_lesson_contents = shuffle(current_lesson_contents);
+  current_unit = unit;
+  setup_item(current_lesson_contents[current_index], current_lesson_contents);//, fill_imgs()
 }
 function box_clicked(box){
   var timeout = 2000;
@@ -448,7 +448,7 @@ function listloadAudio(audio, files, lessontype){
 function preload_audio_and_images(pics, lessontype){
 	loaded = [];
 	if (document.images){
-		toggleLoading();
+		//toggleLoading();
 		for (var pic in pics){
 			//IMAGES
 			var imgObject = new Image();
@@ -480,7 +480,7 @@ function check_if_all_loaded(files, lessontype){
     if (loaded_pics.length + loaded_audio.length == total_objects){
         //Everything is loaded
         console.log("all loaded");
-        toggleLoading();//return to normal sound pic
+        //toggleLoading();//return to normal sound pic
         if (lessontype == "main"){
             setup_item(current_lesson_contents[current_index], current_lesson_contents);
         }
