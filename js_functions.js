@@ -34,7 +34,7 @@ function displayloadingGif(){
 
 function focus_on_screen(screen) {
 	for (var s in all_screens){
-		
+
 		//Turn on screen
 		if (all_screens[s] === screen) {
 			console.log(all_screens[s]);
@@ -142,17 +142,20 @@ function setup_item(item, lesson, callback){
   img_slots = shuffle(img_slots);
   //set correct_item
   correct_item = img_slots[0];
+	console.log(item);
   document.getElementById(img_slots[0]).src = item;
 
   var already_taken = [item];
-  var lesson = shuffle(lesson);
+	//Shuffles available pictures and grabs first one
   for (var i = 1; i < img_slots.length; i++){
     var index = 0;
-    var another_pic = "";
-    while (another_pic == "" || already_taken.indexOf(another_pic) != -1){
-      another_pic = lesson[index];
-      index += 1;
-    }
+		var available_pics = lesson.filter(i => already_taken.indexOf(i) == -1);
+		available_pics = shuffle(available_pics);
+    var another_pic = available_pics[0];
+    // while (another_pic == "" || already_taken.indexOf(another_pic) != -1){
+    //   another_pic = lesson[index];
+    //   index += 1;
+    // }
     already_taken.push(another_pic);
     document.getElementById(img_slots[i]).src = another_pic;
   }
@@ -484,7 +487,7 @@ function check_if_all_loaded(files, lessontype){
         else if (lessontype == "teach"){
 			display_teach_item();
 		};
-        
+
     }
     else {
         console.log(files.length - loaded_pics.length - loaded_audio.length);
