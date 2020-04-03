@@ -34,7 +34,7 @@ function displayloadingGif(){
 
 function focus_on_screen(screen) {
 	for (var s in all_screens){
-		
+
 		//Turn on screen
 		if (all_screens[s] === screen) {
 			console.log(all_screens[s]);
@@ -142,17 +142,20 @@ function setup_item(item, lesson, callback){
   img_slots = shuffle(img_slots);
   //set correct_item
   correct_item = img_slots[0];
+	console.log(item);
   document.getElementById(img_slots[0]).src = item;
 
   var already_taken = [item];
-  var lesson = shuffle(lesson);
+	//Shuffles available pictures and grabs first one
   for (var i = 1; i < img_slots.length; i++){
     var index = 0;
-    var another_pic = "";
-    while (another_pic == "" || already_taken.indexOf(another_pic) != -1){
-      another_pic = lesson[index];
-      index += 1;
-    }
+		var available_pics = lesson.filter(i => already_taken.indexOf(i) == -1);
+		available_pics = shuffle(available_pics);
+    var another_pic = available_pics[0];
+    // while (another_pic == "" || already_taken.indexOf(another_pic) != -1){
+    //   another_pic = lesson[index];
+    //   index += 1;
+    // }
     already_taken.push(another_pic);
     document.getElementById(img_slots[i]).src = another_pic;
   }
@@ -180,9 +183,9 @@ function lesson_loop(unit, lesson){
   current_lesson = lesson;
   current_lesson_contents = grab_lesson(unit,lesson, "main");
   //shuffle lesson once
-  //current_lesson_contents = shuffle(current_lesson_contents);
-  //current_unit = unit;
-  //setup_item(current_lesson_contents[current_index], current_lesson_contents);//, fill_imgs()
+  current_lesson_contents = shuffle(current_lesson_contents);
+  current_unit = unit;
+  setup_item(current_lesson_contents[current_index], current_lesson_contents);//, fill_imgs()
 }
 function box_clicked(box){
   var timeout = 2000;
@@ -445,7 +448,7 @@ function listloadAudio(audio, files, lessontype){
 function preload_audio_and_images(pics, lessontype){
 	loaded = [];
 	if (document.images){
-		toggleLoading();
+		//toggleLoading();
 		for (var pic in pics){
 			//IMAGES
 			var imgObject = new Image();
@@ -477,14 +480,14 @@ function check_if_all_loaded(files, lessontype){
     if (loaded_pics.length + loaded_audio.length == total_objects){
         //Everything is loaded
         console.log("all loaded");
-        toggleLoading();//return to normal sound pic
+        //toggleLoading();//return to normal sound pic
         if (lessontype == "main"){
             setup_item(current_lesson_contents[current_index], current_lesson_contents);
         }
         else if (lessontype == "teach"){
 			display_teach_item();
 		};
-        
+
     }
     else {
         console.log(files.length - loaded_pics.length - loaded_audio.length);
