@@ -127,6 +127,7 @@ function setup_item(item, lesson, callback){
   //~ document.getElementById("main_lesson").style.visibility = "visible";
   //~ document.getElementById("lesson_choice").style.display = "none";
   //~ document.getElementById("score_screen").style.display = "none";
+  console.log(item)
   focus_on_screen("main_lesson");
   lesson_length = lesson.length;
   tries = 0;

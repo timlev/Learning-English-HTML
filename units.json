@@ -53,7 +53,7 @@ var units_json = {
                 "pics": {},
                 "sounds": {}
             },
-            "Bathroom 🚽": {
+            "Bathroom": {
                 "pics": {
                     "Units/Newcomer/Bathroom/pics/water.jpg": null,
                     "Units/Newcomer/Bathroom/pics/toothpaste.jpg": null,
