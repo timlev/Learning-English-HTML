@@ -1,59 +1,59 @@
 var units_json = {
     "Units": {
         "Newcomer": {
-            "Animals": {
+            "Animals 🦍": {
                 "pics": {},
                 "sounds": {}
             },
-            "House": {
+            "House 🏠": {
                 "pics": {},
                 "sounds": {}
             },
-            "Numbers and Shapes": {
+            "Numbers and Shapes 🔵": {
                 "pics": {},
                 "sounds": {}
             },
-            "Bus": {
+            "Bus 🚌": {
                 "pics": {},
                 "sounds": {}
             },
-            "Art": {
+            "Art 🎨": {
                 "pics": {},
                 "sounds": {}
             },
-            "Neighborhood": {
+            "Neighborhood 🏡🏠🏘": {
                 "pics": {},
                 "sounds": {}
             },
-            "Grocery Store and Food": {
+            "Grocery Store and Food 🍅": {
                 "pics": {},
                 "sounds": {}
             },
-            "Library": {
+            "Library 📚": {
                 "pics": {},
                 "sounds": {}
             },
-            "Seasons": {
+            "Seasons 🌻☀🍂❄": {
                 "pics": {},
                 "sounds": {}
             },
-            "Nurse": {
+            "Nurse 👩‍⚕️": {
                 "pics": {},
                 "sounds": {}
             },
-            "Pet Store": {
+            "Pet Store 🐾": {
                 "pics": {},
                 "sounds": {}
             },
-            "Recess": {
+            "Recess 🏃‍": {
                 "pics": {},
                 "sounds": {}
             },
-            "Hospital": {
+            "Hospital 🏥": {
                 "pics": {},
                 "sounds": {}
             },
-            "Bathroom": {
+            "Bathroom 🚽": {
                 "pics": {
                     "Units/Newcomer/Bathroom/pics/water.jpg": null,
                     "Units/Newcomer/Bathroom/pics/toothpaste.jpg": null,
@@ -87,23 +87,23 @@ var units_json = {
                 "pics": {},
                 "sounds": {}
             },
-            "Faces": {
+            "Faces 👀👂": {
                 "pics": {},
                 "sounds": {}
             },
-            "Lunch": {
+            "Lunch 🍕🍜": {
                 "pics": {},
                 "sounds": {}
             },
-            "Body": {
+            "Body 👂👃👅👁": {
                 "pics": {},
                 "sounds": {}
             },
-            "City": {
+            "City 🏙": {
                 "pics": {},
                 "sounds": {}
             },
-            "Classroom": {
+            "Classroom 🏫🎒": {
                 "pics": {},
                 "sounds": {}
             },
@@ -111,39 +111,39 @@ var units_json = {
                 "pics": {},
                 "sounds": {}
             },
-            "Toy Store": {
+            "Toy Store 🧸🪀": {
                 "pics": {},
                 "sounds": {}
             },
-            "Kitchen": {
+            "Kitchen 🍽🍳": {
                 "pics": {},
                 "sounds": {}
             },
-            "Feelings": {
+            "Feelings 😆😟😢😡": {
                 "pics": {},
                 "sounds": {}
             },
-            "Clothes": {
+            "Clothes 👚👞👓": {
                 "pics": {},
                 "sounds": {}
             },
-            "Clinic": {
+            "Clinic 😷🩺": {
                 "pics": {},
                 "sounds": {}
             },
-            "Gym": {
+            "Gym ⛹️‍♀️🤸‍♂️": {
                 "pics": {},
                 "sounds": {}
             },
-            "Earth and Space": {
+            "Earth 🌎 and Space 🚀": {
                 "pics": {},
                 "sounds": {}
             },
-            "School": {
+            "School 🏫🎒🚸": {
                 "pics": {},
                 "sounds": {}
             },
-            "Music": {
+            "Music 🎶🎹🎷🎻": {
                 "pics": {},
                 "sounds": {}
             }
