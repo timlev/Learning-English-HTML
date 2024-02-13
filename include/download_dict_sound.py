@@ -1,4 +1,4 @@
-import urllib2
+import urllib
 import os
 import tempfile
 import platform
@@ -19,31 +19,31 @@ def download(word, directory="./"):
     #end = "#"
     end = ""
     query = base + word + qmid + word + end
-    print query
+    print(query)
 
     try:
         response = urllib2.urlopen(query)
     except:
-        print "Couldn't find", word
+        print("Couldn't find", word)
         return 1
     mp3source = ""
     for line in response:
         if "sound audio_play_button pron-icon us" in line and word + ".mp3" in line:
-            #print line
+            #print(line)
             start = line.find("data-src-mp3=") + len("data-src-mp3=") + 1
             end = line.find(".mp3") + len(".mp3")
             mp3source = line[start:end]
             break
-    print query
-    print mp3source
-    print "Downloading to:", os.path.join(directory, word + ".mp3")
+    print(query)
+    print(mp3source)
+    print("Downloading to:", os.path.join(directory, word + ".mp3"))
     try:
         getmp3 = urllib2.urlopen(mp3source)
         ofp = open(os.path.join(directory, word + ".mp3"),'wb')
         ofp.write(getmp3.read())
         ofp.close()
     except:
-        print "Could not download:", word
+        print("Could not download:", word)
 
 def replace_symbols(word):
     replacementsdict = {'.exclamationmark': '!', '.apostrophe': "'", '.questionmark': '?', '.comma': ',', '.colon': ':'}
@@ -67,7 +67,7 @@ def remove_symbols_lower(word):
 
 #This is depricated
 def download_google(word, orig_directory="./"):
-    print "download_google is depricated"
+    print("download_google is depricated")
     return 1
     replacementsdict = {'.exclamationmark': '!', '.apostrophe': "'", '.questionmark': '?', '.comma': ',', '.colon': ':'}
     file_form_word = place_symbols(word)
@@ -94,7 +94,7 @@ def convert_mp3_to_wav(mp3file, remove_mp3 = False):
     elif platform.system() == 'Windows':
         os.system('"C:\Program Files (x86)\Lame For Audacity\lame.exe" --decode ' + mp3path + " " + wavpath)
     else:
-        print "*"*20 + "Trying afconvert" + "*"*20
+        print("*"*20 + "Trying afconvert" + "*"*20)
         os.system("afconvert -f 'WAVE' -d I16@44100 " + "'"+ mp3path +"' -o "+ '"'+ wavpath +'"') #on a mac
     if remove_mp3:
         os.remove(mp3path)
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     pygame.mixer.music.play()
     while pygame.mixer.music.get_busy:
         continue
-    print "Finished ..."
+    print("Finished ...")
 """
 if __name__ == "__main__":
     with open("get.txt","r") as fp:

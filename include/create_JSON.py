@@ -1,6 +1,6 @@
 #Create JSON file lessons_JSON.js
 import os, json
-
+from functools import reduce
 def get_directory_structure(rootdir):
     """
     Creates a nested dictionary that represents the folder structure of rootdir
@@ -20,4 +20,4 @@ results = get_directory_structure("Units")
 with open("units.json", "w") as fp:
     fp.write("var units_json = ")
     json.dump(results, fp, indent=4)
-print results["Units"]["Unit1"]["Wh questions"].keys()
+print(results["Units"]["Newcomer"]["Bathroom"].keys())
