@@ -1,59 +1,7 @@
 var units_json = {
     "Units": {
         "Newcomer": {
-            "Animals 🦍": {
-                "pics": {},
-                "sounds": {}
-            },
-            "House 🏠": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Numbers and Shapes 🔵": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Bus 🚌": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Art 🎨": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Neighborhood 🏡🏠🏘": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Grocery Store and Food 🍅": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Library 📚": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Seasons 🌻☀🍂❄": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Nurse 👩‍⚕️": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Pet Store 🐾": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Recess 🏃‍": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Hospital 🏥": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Bathroom": {
+            "Bathroom 🚽": {
                 "pics": {
                     "Units/Newcomer/Bathroom/pics/water.jpg": null,
                     "Units/Newcomer/Bathroom/pics/toothpaste.jpg": null,
@@ -82,70 +30,6 @@ var units_json = {
                     "Units/Newcomer/Bathroom/sounds/toothbrushspeech_google.wav": null,
                     "Units/Newcomer/Bathroom/sounds/combspeech_google.wav": null
                 }
-            },
-            "Visit": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Faces 👀👂": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Lunch 🍕🍜": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Body 👂👃👅👁": {
-                "pics": {},
-                "sounds": {}
-            },
-            "City 🏙": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Classroom 🏫🎒": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Weekend": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Toy Store 🧸🪀": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Kitchen 🍽🍳": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Feelings 😆😟😢😡": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Clothes 👚👞👓": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Clinic 😷🩺": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Gym ⛹️‍♀️🤸‍♂️": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Earth 🌎 and Space 🚀": {
-                "pics": {},
-                "sounds": {}
-            },
-            "School 🏫🎒🚸": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Music 🎶🎹🎷🎻": {
-                "pics": {},
-                "sounds": {}
             }
         }
     }
