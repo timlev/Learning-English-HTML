@@ -1,0 +1,21 @@
+<img src="[bedroom and clothes] (imported)" width="4128" height="1852" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:tleverentz -->
+<area shape="rect" coords="1067,933,1213,1531" href="#pants" />
+<area shape="rect" coords="1221,940,1529,1596" href="#pajamas" />
+<area shape="rect" coords="1528,929,1738,1372" href="#t-shirt" />
+<area shape="rect" coords="1975,960,2385,1252" href="#sweater" />
+<area shape="rect" coords="2390,961,2788,1207" href="#underwear" />
+<area shape="rect" coords="2144,1508,2397,1677" href="#shoes" />
+<area shape="poly" coords="2408,1575,2530,1576,2554,1732,1982,1746,1984,1590,2138,1597,2137,1683,2402,1679,2408,1574,2410,1577" href="#socks" />
+<area shape="rect" coords="1231,1600,1551,1820" href="#boots" />
+<area shape="rect" coords="597,782,794,1360" href="#sweatshirt" />
+<area shape="rect" coords="2070,411,2355,649" href="#hat" />
+<area shape="rect" coords="2506,391,2905,954" href="#dress" />
+<area shape="rect" coords="3118,339,3465,796" href="#skirt" />
+</map>
