@@ -1,15 +1,17 @@
-fish
-penguins
-bat
-komodo dragon
-tapir
-tortoise
-armadillo
-hog
-flamingos
-duck
-otter
-sloth
-snow monkey
-red panda
-monkey
+clap
+arcade
+atlas
+bandage
+dresser
+drums
+fries
+look
+siren
+snack
+soda
+stereo
+stretcher
+sushi
+tablets
+tuba
+shower
