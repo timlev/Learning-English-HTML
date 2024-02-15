@@ -1,17 +1,1 @@
-clap
-arcade
-atlas
-bandage
-dresser
-drums
-fries
-look
-siren
-snack
-soda
-stereo
-stretcher
-sushi
-tablets
-tuba
-shower
+How much is that doggie in the window? Woof woof!
