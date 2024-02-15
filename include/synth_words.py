@@ -9,7 +9,6 @@ with open("/home/levtim/GitProjects/Learning-English-HTML/include/missing.txt", 
 
 print(words)
 
-words = words[0:2]
 for word in words:
 	for model in models:
 		try:
