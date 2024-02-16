@@ -99,6 +99,7 @@ function grab_lesson(unit, lesson, lessontype){
   preload_audio_and_images(pics, lessontype);
   return pics;
 }
+
 function convert_to_display(item){
   item = item.slice(item.lastIndexOf(sep) + 1,item.lastIndexOf("."));
   var replacementsdict = {'.exclamationmark': '!', '.apostrophe': "'", '.questionmark': '?', '.comma': ',', '.colon': ':'};
@@ -109,15 +110,31 @@ function convert_to_display(item){
   }
   return item;
 }
+function convert_to_sound_file(item){
+  item = item.slice(0,item.lastIndexOf("."));
+  var placementsdict = {'!' : '.exclamationmark', "'" : '.apostrophe', '?' : '.questionmark' ,',': '.comma',':': '.colon'};
+  for (var key in placementsdict){
+    if (item.indexOf(key) != -1){
+      item = item.replace(key, placementsdict[key]);
+    }
+  }
+  return item;
+}
+
 
 function set_sound(item){
-  var sound_src = item.replace("pics","sounds");
-  sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
+  console.log(item);
+  var sound_src = convert_to_sound_file(item).replace("pics","sounds");
+  console.log(sound_src);
+  sound_src = sound_src + "speech_google.wav";
+  console.log(sound_src);
   document.getElementById("phraseboxaudio").src = sound_src;
 }
 function set_teach_sound(item){
-  var sound_src = item.replace("pics","sounds");
-  sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
+  var sound_src = convert_to_sound_file(item).replace("pics","sounds");
+  console.log(sound_src);
+  sound_src = sound_src.slice(0,sound_src.lastIndexOf(".") + 1) + "speech_google.wav";
+  console.log(sound_src);
   document.getElementById("teach_phraseboxaudio").src = sound_src;
 }
 
@@ -468,6 +485,7 @@ function preload_audio_and_images(pics, lessontype){
 			var audioObject = new Audio();
 			var sound_src = pics[pic].replace("pics","sounds");
 			sound_src = sound_src.slice(0,sound_src.lastIndexOf(".")) + "speech_google.wav";
+      console.log("preload: " + sound_src);
 			audioObject.src = sound_src;
 			audioObject.addEventListener('canplaythrough', listloadAudio(audioObject, pics, lessontype));
 			//check_if_all_loaded(loaded, pics, lessontype);

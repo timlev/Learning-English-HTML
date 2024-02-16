@@ -1,469 +1,645 @@
 var units_json = {
     "Units": {
         "Newcomer": {
-            "city": {
-                "Units/Newcomer/city/city.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/city/sounds/sports storespeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/truckspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/motorcyclespeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/pet storespeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/barbershopspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/police officerspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/traffic lightspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/taxispeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/toy storespeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/trafficspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/police stationspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/libraryspeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/city/pics/truck.jpg": null,
-                    "Units/Newcomer/city/pics/sports store.jpg": null,
-                    "Units/Newcomer/city/pics/taxi.jpg": null,
-                    "Units/Newcomer/city/pics/police station.jpg": null,
-                    "Units/Newcomer/city/pics/pet store.jpg": null,
-                    "Units/Newcomer/city/pics/motorcycle.jpg": null,
-                    "Units/Newcomer/city/pics/barbershop.jpg": null,
-                    "Units/Newcomer/city/pics/library.jpg": null,
-                    "Units/Newcomer/city/pics/toy store.jpg": null,
-                    "Units/Newcomer/city/pics/traffic light.jpg": null,
-                    "Units/Newcomer/city/pics/police officer.jpg": null,
-                    "Units/Newcomer/city/pics/traffic.jpg": null
-                }
-            },
             "school bus": {
                 "Units/Newcomer/school bus/school bus.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/school bus/sounds/linespeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/sitspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/seatspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/bus stopspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/bus driverspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/seat beltspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/don.apostrophet leanspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/don.apostrophet pushspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/standspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/lunchboxspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/backpackspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/cornerspeech_google.wav": null
-                },
                 "pics": {
-                    "Units/Newcomer/school bus/pics/don't push.jpg": null,
-                    "Units/Newcomer/school bus/pics/sit.jpg": null,
-                    "Units/Newcomer/school bus/pics/seat.jpg": null,
+                    "Units/Newcomer/school bus/pics/bus stop.jpg": null,
+                    "Units/Newcomer/school bus/pics/backpack.jpg": null,
                     "Units/Newcomer/school bus/pics/corner.jpg": null,
                     "Units/Newcomer/school bus/pics/lunchbox.jpg": null,
-                    "Units/Newcomer/school bus/pics/seat belt.jpg": null,
-                    "Units/Newcomer/school bus/pics/backpack.jpg": null,
                     "Units/Newcomer/school bus/pics/bus driver.jpg": null,
+                    "Units/Newcomer/school bus/pics/sit.jpg": null,
+                    "Units/Newcomer/school bus/pics/seat belt.jpg": null,
+                    "Units/Newcomer/school bus/pics/don't lean.jpg": null,
                     "Units/Newcomer/school bus/pics/line.jpg": null,
-                    "Units/Newcomer/school bus/pics/stand.jpg": null,
-                    "Units/Newcomer/school bus/pics/bus stop.jpg": null,
-                    "Units/Newcomer/school bus/pics/don't lean.jpg": null
+                    "Units/Newcomer/school bus/pics/seat.jpg": null,
+                    "Units/Newcomer/school bus/pics/don't push.jpg": null,
+                    "Units/Newcomer/school bus/pics/stand.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/school bus/sounds/standspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/sitspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/lunchboxspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/don.apostrophet leanspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/don.apostrophet pushspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/seatspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/backpackspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/bus stopspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/seat beltspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/bus driverspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/cornerspeech_google.wav": null,
+                    "Units/Newcomer/school bus/sounds/linespeech_google.wav": null
+                }
+            },
+            "library": {
+                "Units/Newcomer/library/library.jpg": null,
+                "pics": {
+                    "Units/Newcomer/library/pics/library card.jpg": null,
+                    "Units/Newcomer/library/pics/check out.jpg": null,
+                    "Units/Newcomer/library/pics/magazine.jpg": null,
+                    "Units/Newcomer/library/pics/call number.jpg": null,
+                    "Units/Newcomer/library/pics/dictionary.jpg": null,
+                    "Units/Newcomer/library/pics/bookshelves.jpg": null,
+                    "Units/Newcomer/library/pics/computer.jpg": null,
+                    "Units/Newcomer/library/pics/return.jpg": null,
+                    "Units/Newcomer/library/pics/due date.jpg": null,
+                    "Units/Newcomer/library/pics/atlas.jpg": null,
+                    "Units/Newcomer/library/pics/video tape.jpg": null,
+                    "Units/Newcomer/library/pics/newspaper.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/library/sounds/bookshelvesspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/video tapespeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/dictionaryspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/library cardspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/call numberspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/newspaperspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/check outspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/atlasspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/magazinespeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/returnspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/computerspeech_google.wav": null,
+                    "Units/Newcomer/library/sounds/due datespeech_google.wav": null
+                }
+            },
+            "Animals": {
+                "pics": {},
+                "sounds": {}
+            },
+            "music": {
+                "Units/Newcomer/music/music.jpg": null,
+                "pics": {
+                    "Units/Newcomer/music/pics/blow.jpg": null,
+                    "Units/Newcomer/music/pics/maracas.jpg": null,
+                    "Units/Newcomer/music/pics/sing.jpg": null,
+                    "Units/Newcomer/music/pics/trumpet.jpg": null,
+                    "Units/Newcomer/music/pics/triangle.jpg": null,
+                    "Units/Newcomer/music/pics/flute.jpg": null,
+                    "Units/Newcomer/music/pics/violin.jpg": null,
+                    "Units/Newcomer/music/pics/piano.jpg": null,
+                    "Units/Newcomer/music/pics/drums.jpg": null,
+                    "Units/Newcomer/music/pics/beat.jpg": null,
+                    "Units/Newcomer/music/pics/tuba.jpg": null,
+                    "Units/Newcomer/music/pics/clap.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/music/sounds/tubaspeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/flutespeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/clapspeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/pianospeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/beatspeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/maracasspeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/trianglespeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/violinspeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/trumpetspeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/singspeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/drumsspeech_google.wav": null,
+                    "Units/Newcomer/music/sounds/blowspeech_google.wav": null
+                }
+            },
+            "House": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Numbers and Shapes": {
+                "pics": {},
+                "sounds": {}
+            },
+            "city places": {
+                "Units/Newcomer/city places/city places.jpg": null,
+                "pics": {
+                    "Units/Newcomer/city places/pics/smokestack.jpg": null,
+                    "Units/Newcomer/city places/pics/highway.jpg": null,
+                    "Units/Newcomer/city places/pics/bench.jpg": null,
+                    "Units/Newcomer/city places/pics/airport.jpg": null,
+                    "Units/Newcomer/city places/pics/skyscrapers.jpg": null,
+                    "Units/Newcomer/city places/pics/subway.jpg": null,
+                    "Units/Newcomer/city places/pics/litter.jpg": null,
+                    "Units/Newcomer/city places/pics/street cleaner.jpg": null,
+                    "Units/Newcomer/city places/pics/park.jpg": null,
+                    "Units/Newcomer/city places/pics/garbage truck.jpg": null,
+                    "Units/Newcomer/city places/pics/railroad.jpg": null,
+                    "Units/Newcomer/city places/pics/factory.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/city places/sounds/benchspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/parkspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/street cleanerspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/garbage truckspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/airportspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/subwayspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/skyscrapersspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/smokestackspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/litterspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/railroadspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/highwayspeech_google.wav": null,
+                    "Units/Newcomer/city places/sounds/factoryspeech_google.wav": null
                 }
             },
             "gym": {
                 "Units/Newcomer/gym/gym.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/gym/sounds/underspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/tumblespeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/crawlspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/hoopspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/aroundspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/skipspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/overspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/hopspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/jumpspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/betweenspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/matspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/throughspeech_google.wav": null
-                },
                 "pics": {
                     "Units/Newcomer/gym/pics/over.jpg": null,
-                    "Units/Newcomer/gym/pics/through.jpg": null,
                     "Units/Newcomer/gym/pics/under.jpg": null,
-                    "Units/Newcomer/gym/pics/tumble.jpg": null,
-                    "Units/Newcomer/gym/pics/crawl.jpg": null,
-                    "Units/Newcomer/gym/pics/skip.jpg": null,
-                    "Units/Newcomer/gym/pics/between.jpg": null,
-                    "Units/Newcomer/gym/pics/jump.jpg": null,
-                    "Units/Newcomer/gym/pics/around.jpg": null,
                     "Units/Newcomer/gym/pics/hoop.jpg": null,
+                    "Units/Newcomer/gym/pics/crawl.jpg": null,
+                    "Units/Newcomer/gym/pics/tumble.jpg": null,
                     "Units/Newcomer/gym/pics/hop.jpg": null,
-                    "Units/Newcomer/gym/pics/mat.jpg": null
+                    "Units/Newcomer/gym/pics/jump.jpg": null,
+                    "Units/Newcomer/gym/pics/mat.jpg": null,
+                    "Units/Newcomer/gym/pics/between.jpg": null,
+                    "Units/Newcomer/gym/pics/through.jpg": null,
+                    "Units/Newcomer/gym/pics/skip.jpg": null,
+                    "Units/Newcomer/gym/pics/around.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/gym/sounds/jumpspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/tumblespeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/underspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/betweenspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/aroundspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/overspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/hopspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/hoopspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/crawlspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/matspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/skipspeech_google.wav": null,
+                    "Units/Newcomer/gym/sounds/throughspeech_google.wav": null
                 }
+            },
+            "Bus": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Art": {
+                "pics": {},
+                "sounds": {}
             },
             "places": {
                 "Units/Newcomer/places/places.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/places/sounds/bankspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/mailboxspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/letterspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/laundryspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/pharmacyspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/hardware storespeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/bakeryspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/post officespeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/restaurantspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/mailmanspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/dentistspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/gas stationspeech_google.wav": null
-                },
                 "pics": {
                     "Units/Newcomer/places/pics/bank.jpg": null,
-                    "Units/Newcomer/places/pics/dentist.jpg": null,
-                    "Units/Newcomer/places/pics/pharmacy.jpg": null,
                     "Units/Newcomer/places/pics/bakery.jpg": null,
-                    "Units/Newcomer/places/pics/letter.jpg": null,
+                    "Units/Newcomer/places/pics/dentist.jpg": null,
                     "Units/Newcomer/places/pics/gas station.jpg": null,
                     "Units/Newcomer/places/pics/restaurant.jpg": null,
-                    "Units/Newcomer/places/pics/mailbox.jpg": null,
                     "Units/Newcomer/places/pics/post office.jpg": null,
                     "Units/Newcomer/places/pics/mailman.jpg": null,
+                    "Units/Newcomer/places/pics/mailbox.jpg": null,
+                    "Units/Newcomer/places/pics/letter.jpg": null,
                     "Units/Newcomer/places/pics/hardware store.jpg": null,
+                    "Units/Newcomer/places/pics/pharmacy.jpg": null,
                     "Units/Newcomer/places/pics/laundry.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/places/sounds/restaurantspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/dentistspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/letterspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/pharmacyspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/hardware storespeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/mailmanspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/bakeryspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/laundryspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/bankspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/post officespeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/mailboxspeech_google.wav": null,
+                    "Units/Newcomer/places/sounds/gas stationspeech_google.wav": null
                 }
             },
-            "nurse": {
-                "Units/Newcomer/nurse/nurse.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/nurse/sounds/bloodspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/lie downspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/feverspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/tissuesspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/thermometerspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/sneezespeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/coughspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/stomachachespeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/sore throatspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/bandagespeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/cutspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/bumpspeech_google.wav": null
-                },
+            "Neighborhood": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Grocery Store and Food": {
+                "pics": {},
+                "sounds": {}
+            },
+            "lunchroom cafeteria": {
+                "Units/Newcomer/lunchroom cafeteria/lunchroom cafeteria.jpg": null,
                 "pics": {
-                    "Units/Newcomer/nurse/pics/bandage.jpg": null,
-                    "Units/Newcomer/nurse/pics/cough.jpg": null,
-                    "Units/Newcomer/nurse/pics/sore throat.jpg": null,
-                    "Units/Newcomer/nurse/pics/tissues.jpg": null,
-                    "Units/Newcomer/nurse/pics/blood.jpg": null,
-                    "Units/Newcomer/nurse/pics/thermometer.jpg": null,
-                    "Units/Newcomer/nurse/pics/fever.jpg": null,
-                    "Units/Newcomer/nurse/pics/sneeze.jpg": null,
-                    "Units/Newcomer/nurse/pics/cut.jpg": null,
-                    "Units/Newcomer/nurse/pics/lie down.jpg": null,
-                    "Units/Newcomer/nurse/pics/bump.jpg": null,
-                    "Units/Newcomer/nurse/pics/stomachache.jpg": null
+                    "Units/Newcomer/lunchroom cafeteria/pics/eggroll.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/sandwich.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/apple.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/garbage.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/tray.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/taco.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/cookie.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/can.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/sushi.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/carrot.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/milk.jpg": null,
+                    "Units/Newcomer/lunchroom cafeteria/pics/salad.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/lunchroom cafeteria/sounds/milkspeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/applespeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/eggrollspeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/canspeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/tacospeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/garbagespeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/carrotspeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/sushispeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/saladspeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/trayspeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/sandwichspeech_google.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/cookiespeech_google.wav": null
+                }
+            },
+            "Library": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Seasons": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Nurse": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Pet Store": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Recess": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Hospital": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Bathroom": {
+                "pics": {
+                    "Units/Newcomer/Bathroom/pics/water.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/toothpaste.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/toothbrush.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/soap.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/shampoo.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/towel.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/toilet.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/shower.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/comb.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/bathtub.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/toilet paper.jpg": null,
+                    "Units/Newcomer/Bathroom/pics/brush.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/Bathroom/sounds/brushspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/soapspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/towelspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/toilet paperspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/shampoospeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/toiletspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/waterspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/showerspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/toothpastespeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/bathtubspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/toothbrushspeech_google.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/combspeech_google.wav": null
+                }
+            },
+            "clinic": {
+                "Units/Newcomer/clinic/clinic.jpg": null,
+                "pics": {
+                    "Units/Newcomer/clinic/pics/chart.jpg": null,
+                    "Units/Newcomer/clinic/pics/scale.jpg": null,
+                    "Units/Newcomer/clinic/pics/medicine.jpg": null,
+                    "Units/Newcomer/clinic/pics/doctor.jpg": null,
+                    "Units/Newcomer/clinic/pics/prescription.jpg": null,
+                    "Units/Newcomer/clinic/pics/patient.jpg": null,
+                    "Units/Newcomer/clinic/pics/tablets.jpg": null,
+                    "Units/Newcomer/clinic/pics/checkup.jpg": null,
+                    "Units/Newcomer/clinic/pics/spray.jpg": null,
+                    "Units/Newcomer/clinic/pics/drops.jpg": null,
+                    "Units/Newcomer/clinic/pics/stethoscope.jpg": null,
+                    "Units/Newcomer/clinic/pics/shot.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/clinic/sounds/doctorspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/checkupspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/prescriptionspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/chartspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/sprayspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/dropsspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/patientspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/shotspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/tabletsspeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/medicinespeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/scalespeech_google.wav": null,
+                    "Units/Newcomer/clinic/sounds/stethoscopespeech_google.wav": null
                 }
             },
             "classroom supplies and actions lower": {
                 "Units/Newcomer/classroom supplies and actions lower/classroom supplies and actions lower.jpg": null,
+                "pics": {
+                    "Units/Newcomer/classroom supplies and actions lower/pics/picture.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/scissors.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/blocks.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/crayons.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/build.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/markers.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/glue.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/look.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/cut.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/pencil.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/paint.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions lower/pics/listen.jpg": null
+                },
                 "sounds": {
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/blocksspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/buildspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/picturespeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/listenspeech_google.wav": null,
                     "Units/Newcomer/classroom supplies and actions lower/sounds/lookspeech_google.wav": null,
                     "Units/Newcomer/classroom supplies and actions lower/sounds/scissorsspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/pencilspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/crayonsspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/buildspeech_google.wav": null,
                     "Units/Newcomer/classroom supplies and actions lower/sounds/gluespeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/paintspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/blocksspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/pencilspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/listenspeech_google.wav": null,
                     "Units/Newcomer/classroom supplies and actions lower/sounds/cutspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/markersspeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/classroom supplies and actions lower/pics/paint.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/build.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/glue.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/blocks.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/pencil.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/listen.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/crayons.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/look.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/markers.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/picture.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/cut.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions lower/pics/scissors.jpg": null
-                }
-            },
-            "playground": {
-                "Units/Newcomer/playground/playground.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/playground/sounds/kickspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/slidespeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/swingspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/catchspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/ballspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/seesawspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/fallspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/barsspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/climbspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/bouncespeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/runspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/throwspeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/playground/pics/kick.jpg": null,
-                    "Units/Newcomer/playground/pics/throw.jpg": null,
-                    "Units/Newcomer/playground/pics/swing.jpg": null,
-                    "Units/Newcomer/playground/pics/bars.jpg": null,
-                    "Units/Newcomer/playground/pics/bounce.jpg": null,
-                    "Units/Newcomer/playground/pics/catch.jpg": null,
-                    "Units/Newcomer/playground/pics/slide.jpg": null,
-                    "Units/Newcomer/playground/pics/climb.jpg": null,
-                    "Units/Newcomer/playground/pics/seesaw.jpg": null,
-                    "Units/Newcomer/playground/pics/run.jpg": null,
-                    "Units/Newcomer/playground/pics/ball.jpg": null,
-                    "Units/Newcomer/playground/pics/fall.jpg": null
-                }
-            },
-            "toy store and money": {
-                "Units/Newcomer/toy store and money/toy store and money.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/toy store and money/sounds/airplanespeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/moneyspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/gamespeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/animalsspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/quarterspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/dollarspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/nickelspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/trainspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/boatspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/dimespeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/pennyspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/dollspeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/toy store and money/pics/doll.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/dime.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/airplane.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/game.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/money.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/train.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/animals.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/quarter.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/nickel.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/penny.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/boat.jpg": null,
-                    "Units/Newcomer/toy store and money/pics/dollar.jpg": null
-                }
-            },
-            "city places": {
-                "Units/Newcomer/city places/city places.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/city places/sounds/railroadspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/skyscrapersspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/factoryspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/street cleanerspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/garbage truckspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/airportspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/highwayspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/subwayspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/smokestackspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/parkspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/litterspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/benchspeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/city places/pics/litter.jpg": null,
-                    "Units/Newcomer/city places/pics/bench.jpg": null,
-                    "Units/Newcomer/city places/pics/railroad.jpg": null,
-                    "Units/Newcomer/city places/pics/skyscrapers.jpg": null,
-                    "Units/Newcomer/city places/pics/factory.jpg": null,
-                    "Units/Newcomer/city places/pics/highway.jpg": null,
-                    "Units/Newcomer/city places/pics/park.jpg": null,
-                    "Units/Newcomer/city places/pics/subway.jpg": null,
-                    "Units/Newcomer/city places/pics/smokestack.jpg": null,
-                    "Units/Newcomer/city places/pics/street cleaner.jpg": null,
-                    "Units/Newcomer/city places/pics/garbage truck.jpg": null,
-                    "Units/Newcomer/city places/pics/airport.jpg": null
-                }
-            },
-            "school": {
-                "Units/Newcomer/school/school.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/school/sounds/teacherspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/crossing guardspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/carspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/bicyclespeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/clockspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/ridespeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/walkspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/studentspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/busspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/librarianspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/nursespeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/principalspeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/school/pics/car.jpg": null,
-                    "Units/Newcomer/school/pics/principal.jpg": null,
-                    "Units/Newcomer/school/pics/crossing guard.jpg": null,
-                    "Units/Newcomer/school/pics/clock.jpg": null,
-                    "Units/Newcomer/school/pics/ride.jpg": null,
-                    "Units/Newcomer/school/pics/librarian.jpg": null,
-                    "Units/Newcomer/school/pics/nurse.jpg": null,
-                    "Units/Newcomer/school/pics/bus.jpg": null,
-                    "Units/Newcomer/school/pics/student.jpg": null,
-                    "Units/Newcomer/school/pics/bicycle.jpg": null,
-                    "Units/Newcomer/school/pics/teacher.jpg": null,
-                    "Units/Newcomer/school/pics/walk.jpg": null
-                }
-            },
-            "living room": {
-                "Units/Newcomer/living room/living room.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/living room/sounds/watchspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/televisionspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/headphonesspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/talkspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/restspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/remotespeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/radiospeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/playspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/helpspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/stereospeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/CDspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/practicespeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/living room/pics/talk.jpg": null,
-                    "Units/Newcomer/living room/pics/headphones.jpg": null,
-                    "Units/Newcomer/living room/pics/practice.jpg": null,
-                    "Units/Newcomer/living room/pics/radio.jpg": null,
-                    "Units/Newcomer/living room/pics/watch.jpg": null,
-                    "Units/Newcomer/living room/pics/help.jpg": null,
-                    "Units/Newcomer/living room/pics/remote.jpg": null,
-                    "Units/Newcomer/living room/pics/television.jpg": null,
-                    "Units/Newcomer/living room/pics/stereo.jpg": null,
-                    "Units/Newcomer/living room/pics/play.jpg": null,
-                    "Units/Newcomer/living room/pics/rest.jpg": null,
-                    "Units/Newcomer/living room/pics/CD.jpg": null
-                }
-            },
-            "mall": {
-                "Units/Newcomer/mall/mall.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/mall/sounds/pizzaspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/clothes storespeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/snack barspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/arcadespeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/friesspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/ice creamspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/restroomspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/exitspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/shoe storespeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/escalatorspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/sodaspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/movie theaterspeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/mall/pics/escalator.jpg": null,
-                    "Units/Newcomer/mall/pics/restroom.jpg": null,
-                    "Units/Newcomer/mall/pics/soda.jpg": null,
-                    "Units/Newcomer/mall/pics/arcade.jpg": null,
-                    "Units/Newcomer/mall/pics/snack bar.jpg": null,
-                    "Units/Newcomer/mall/pics/movie theater.jpg": null,
-                    "Units/Newcomer/mall/pics/shoe store.jpg": null,
-                    "Units/Newcomer/mall/pics/clothes store.jpg": null,
-                    "Units/Newcomer/mall/pics/ice cream.jpg": null,
-                    "Units/Newcomer/mall/pics/exit.jpg": null,
-                    "Units/Newcomer/mall/pics/pizza.jpg": null,
-                    "Units/Newcomer/mall/pics/fries.jpg": null
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/crayonsspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/markersspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/paintspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/picturespeech_google.wav": null
                 }
             },
             "kitchen": {
                 "Units/Newcomer/kitchen/kitchen.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/kitchen/sounds/butterspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/juicespeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/platespeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/forkspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/bowlspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/spoonspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/cerealspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/eggsspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/glassspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/breadspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/knifespeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/cupspeech_google.wav": null
-                },
                 "pics": {
-                    "Units/Newcomer/kitchen/pics/knife.jpg": null,
-                    "Units/Newcomer/kitchen/pics/glass.jpg": null,
-                    "Units/Newcomer/kitchen/pics/cup.jpg": null,
-                    "Units/Newcomer/kitchen/pics/cereal.jpg": null,
-                    "Units/Newcomer/kitchen/pics/spoon.jpg": null,
-                    "Units/Newcomer/kitchen/pics/bread.jpg": null,
-                    "Units/Newcomer/kitchen/pics/butter.jpg": null,
                     "Units/Newcomer/kitchen/pics/juice.jpg": null,
-                    "Units/Newcomer/kitchen/pics/plate.jpg": null,
                     "Units/Newcomer/kitchen/pics/bowl.jpg": null,
-                    "Units/Newcomer/kitchen/pics/fork.jpg": null,
-                    "Units/Newcomer/kitchen/pics/eggs.jpg": null
+                    "Units/Newcomer/kitchen/pics/spoon.jpg": null,
+                    "Units/Newcomer/kitchen/pics/cereal.jpg": null,
+                    "Units/Newcomer/kitchen/pics/butter.jpg": null,
+                    "Units/Newcomer/kitchen/pics/eggs.jpg": null,
+                    "Units/Newcomer/kitchen/pics/cup.jpg": null,
+                    "Units/Newcomer/kitchen/pics/plate.jpg": null,
+                    "Units/Newcomer/kitchen/pics/bread.jpg": null,
+                    "Units/Newcomer/kitchen/pics/glass.jpg": null,
+                    "Units/Newcomer/kitchen/pics/knife.jpg": null,
+                    "Units/Newcomer/kitchen/pics/fork.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/kitchen/sounds/cerealspeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/breadspeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/glassspeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/eggsspeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/spoonspeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/forkspeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/platespeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/cupspeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/juicespeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/knifespeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/bowlspeech_google.wav": null,
+                    "Units/Newcomer/kitchen/sounds/butterspeech_google.wav": null
                 }
+            },
+            "Visit": {
+                "pics": {},
+                "sounds": {}
+            },
+            "body": {
+                "Units/Newcomer/body/body.jpg": null,
+                "pics": {
+                    "Units/Newcomer/body/pics/leg.jpg": null,
+                    "Units/Newcomer/body/pics/toes.jpg": null,
+                    "Units/Newcomer/body/pics/fingers.jpg": null,
+                    "Units/Newcomer/body/pics/bottom.jpg": null,
+                    "Units/Newcomer/body/pics/head.jpg": null,
+                    "Units/Newcomer/body/pics/arm.jpg": null,
+                    "Units/Newcomer/body/pics/foot.jpg": null,
+                    "Units/Newcomer/body/pics/stomach.jpg": null,
+                    "Units/Newcomer/body/pics/neck.jpg": null,
+                    "Units/Newcomer/body/pics/hand.jpg": null,
+                    "Units/Newcomer/body/pics/chest.jpg": null,
+                    "Units/Newcomer/body/pics/back.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/body/sounds/fingersspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/neckspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/bottomspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/legspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/chestspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/backspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/headspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/armspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/toesspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/footspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/handspeech_google.wav": null,
+                    "Units/Newcomer/body/sounds/stomachspeech_google.wav": null
+                }
+            },
+            "living room": {
+                "Units/Newcomer/living room/living room.jpg": null,
+                "pics": {
+                    "Units/Newcomer/living room/pics/remote.jpg": null,
+                    "Units/Newcomer/living room/pics/practice.jpg": null,
+                    "Units/Newcomer/living room/pics/CD.jpg": null,
+                    "Units/Newcomer/living room/pics/headphones.jpg": null,
+                    "Units/Newcomer/living room/pics/stereo.jpg": null,
+                    "Units/Newcomer/living room/pics/talk.jpg": null,
+                    "Units/Newcomer/living room/pics/play.jpg": null,
+                    "Units/Newcomer/living room/pics/watch.jpg": null,
+                    "Units/Newcomer/living room/pics/television.jpg": null,
+                    "Units/Newcomer/living room/pics/help.jpg": null,
+                    "Units/Newcomer/living room/pics/radio.jpg": null,
+                    "Units/Newcomer/living room/pics/rest.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/living room/sounds/helpspeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/playspeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/stereospeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/watchspeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/talkspeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/radiospeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/remotespeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/restspeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/televisionspeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/CDspeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/headphonesspeech_google.wav": null,
+                    "Units/Newcomer/living room/sounds/practicespeech_google.wav": null
+                }
+            },
+            "playground": {
+                "Units/Newcomer/playground/playground.jpg": null,
+                "pics": {
+                    "Units/Newcomer/playground/pics/bounce.jpg": null,
+                    "Units/Newcomer/playground/pics/fall.jpg": null,
+                    "Units/Newcomer/playground/pics/ball.jpg": null,
+                    "Units/Newcomer/playground/pics/climb.jpg": null,
+                    "Units/Newcomer/playground/pics/kick.jpg": null,
+                    "Units/Newcomer/playground/pics/seesaw.jpg": null,
+                    "Units/Newcomer/playground/pics/slide.jpg": null,
+                    "Units/Newcomer/playground/pics/throw.jpg": null,
+                    "Units/Newcomer/playground/pics/catch.jpg": null,
+                    "Units/Newcomer/playground/pics/swing.jpg": null,
+                    "Units/Newcomer/playground/pics/run.jpg": null,
+                    "Units/Newcomer/playground/pics/bars.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/playground/sounds/kickspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/swingspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/slidespeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/seesawspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/bouncespeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/ballspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/runspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/throwspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/fallspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/catchspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/barsspeech_google.wav": null,
+                    "Units/Newcomer/playground/sounds/climbspeech_google.wav": null
+                }
+            },
+            "Faces": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Lunch": {
+                "pics": {},
+                "sounds": {}
+            },
+            "birthday party": {
+                "Units/Newcomer/birthday party/candy.jpg": null,
+                "Units/Newcomer/birthday party/jewelry.jpg": null,
+                "Units/Newcomer/birthday party/birthday party.jpg": null,
+                "Units/Newcomer/birthday party/helicopter.jpg": null,
+                "Units/Newcomer/birthday party/present.jpg": null,
+                "Units/Newcomer/birthday party/cake.jpg": null,
+                "Units/Newcomer/birthday party/puzzle.jpg": null,
+                "Units/Newcomer/birthday party/balloon.jpg": null,
+                "Units/Newcomer/birthday party/card.jpg": null,
+                "Units/Newcomer/birthday party/candles.jpg": null,
+                "Units/Newcomer/birthday party/ribbon.jpg": null,
+                "Units/Newcomer/birthday party/bat.jpg": null,
+                "Units/Newcomer/birthday party/wrapping paper.jpg": null
+            },
+            "Body": {
+                "pics": {},
+                "sounds": {}
+            },
+            "City": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Classroom": {
+                "pics": {},
+                "sounds": {}
             },
             "classroom supplies and actions upper": {
                 "Units/Newcomer/classroom supplies and actions upper/classroom supplies and actions upper.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/bookspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/chairspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/chalkspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/drawspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/deskspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/notebookspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/boardspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/garbagespeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/thinkspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/readspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/writespeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/paperspeech_google.wav": null
-                },
                 "pics": {
-                    "Units/Newcomer/classroom supplies and actions upper/pics/chair.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/chalk.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/paper.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/board.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/write.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/read.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/think.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/book.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/notebook.jpg": null,
                     "Units/Newcomer/classroom supplies and actions upper/pics/desk.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/chalk.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/book.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/board.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/think.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/garbage.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/paper.jpg": null,
                     "Units/Newcomer/classroom supplies and actions upper/pics/draw.jpg": null,
-                    "Units/Newcomer/classroom supplies and actions upper/pics/garbage.jpg": null
+                    "Units/Newcomer/classroom supplies and actions upper/pics/chair.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/read.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/write.jpg": null,
+                    "Units/Newcomer/classroom supplies and actions upper/pics/notebook.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/garbagespeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/bookspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/writespeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/notebookspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/readspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/thinkspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/drawspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/boardspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/chairspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/deskspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/chalkspeech_google.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/paperspeech_google.wav": null
                 }
             },
-            "pet store": {
-                "Units/Newcomer/pet store/pet store.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/pet store/sounds/birdspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/puppyspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/cagespeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/kittenspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/leashspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/dogspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/collarspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/fish tankspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/turtlespeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/catspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/fishspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/mousespeech_google.wav": null
-                },
+            "Weekend": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Toy Store": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Kitchen": {
+                "pics": {},
+                "sounds": {}
+            },
+            "toy store and money": {
+                "Units/Newcomer/toy store and money/toy store and money.jpg": null,
                 "pics": {
-                    "Units/Newcomer/pet store/pics/kitten.jpg": null,
-                    "Units/Newcomer/pet store/pics/mouse.jpg": null,
-                    "Units/Newcomer/pet store/pics/fish.jpg": null,
-                    "Units/Newcomer/pet store/pics/bird.jpg": null,
-                    "Units/Newcomer/pet store/pics/cage.jpg": null,
-                    "Units/Newcomer/pet store/pics/fish tank.jpg": null,
-                    "Units/Newcomer/pet store/pics/leash.jpg": null,
-                    "Units/Newcomer/pet store/pics/collar.jpg": null,
-                    "Units/Newcomer/pet store/pics/dog.jpg": null,
-                    "Units/Newcomer/pet store/pics/puppy.jpg": null,
-                    "Units/Newcomer/pet store/pics/cat.jpg": null,
-                    "Units/Newcomer/pet store/pics/turtle.jpg": null
+                    "Units/Newcomer/toy store and money/pics/train.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/quarter.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/dime.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/animals.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/airplane.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/doll.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/dollar.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/boat.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/penny.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/game.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/money.jpg": null,
+                    "Units/Newcomer/toy store and money/pics/nickel.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/toy store and money/sounds/quarterspeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/dimespeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/airplanespeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/animalsspeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/nickelspeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/pennyspeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/dollspeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/gamespeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/trainspeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/dollarspeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/moneyspeech_google.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/boatspeech_google.wav": null
+                }
+            },
+            "Feelings": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Clothes": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Clinic": {
+                "pics": {},
+                "sounds": {}
+            },
+            "grocery store and food": {
+                "Units/Newcomer/grocery store and food/grocery store food.jpg": null,
+                "pics": {
+                    "Units/Newcomer/grocery store and food/pics/cart.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/seafood.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/bags.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/orange.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/lettuce.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/list.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/bananas.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/cheese.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/pineapple.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/broccoli.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/box.jpg": null,
+                    "Units/Newcomer/grocery store and food/pics/meat.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/grocery store and food/sounds/lettucespeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/boxspeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/cheesespeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/broccolispeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/pineapplespeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/seafoodspeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/bagsspeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/cartspeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/bananasspeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/meatspeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/orangespeech_google.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/listspeech_google.wav": null
                 }
             },
             "bedroom and clothes": {
@@ -472,359 +648,297 @@ var units_json = {
                 "Units/Newcomer/bedroom and clothes/serve.sh": null,
                 "Units/Newcomer/bedroom and clothes/bedroom and clothes.jpg": null,
                 "Units/Newcomer/bedroom and clothes/bedroom and clothes_map.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/bedroom and clothes/sounds/underwearspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/sweaterspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/socksspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/shoesspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/sweatshirtspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/pajamasspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/pantsspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/hatspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/bootsspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/t-shirtspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/dressspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/skirtspeech_google.wav": null
-                },
                 "pics": {
                     "Units/Newcomer/bedroom and clothes/pics/t-shirt.jpg": null,
+                    "Units/Newcomer/bedroom and clothes/pics/sweater.jpg": null,
+                    "Units/Newcomer/bedroom and clothes/pics/shoes.jpg": null,
+                    "Units/Newcomer/bedroom and clothes/pics/pajamas.jpg": null,
                     "Units/Newcomer/bedroom and clothes/pics/sweatshirt.jpg": null,
+                    "Units/Newcomer/bedroom and clothes/pics/socks.jpg": null,
+                    "Units/Newcomer/bedroom and clothes/pics/pants.jpg": null,
                     "Units/Newcomer/bedroom and clothes/pics/boots.jpg": null,
                     "Units/Newcomer/bedroom and clothes/pics/dress.jpg": null,
-                    "Units/Newcomer/bedroom and clothes/pics/pajamas.jpg": null,
-                    "Units/Newcomer/bedroom and clothes/pics/sweater.jpg": null,
-                    "Units/Newcomer/bedroom and clothes/pics/skirt.jpg": null,
-                    "Units/Newcomer/bedroom and clothes/pics/shoes.jpg": null,
-                    "Units/Newcomer/bedroom and clothes/pics/pants.jpg": null,
                     "Units/Newcomer/bedroom and clothes/pics/hat.jpg": null,
                     "Units/Newcomer/bedroom and clothes/pics/underwear.jpg": null,
-                    "Units/Newcomer/bedroom and clothes/pics/socks.jpg": null
-                }
-            },
-            "clinic": {
-                "Units/Newcomer/clinic/clinic.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/clinic/sounds/stethoscopespeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/dropsspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/chartspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/doctorspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/prescriptionspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/tabletsspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/patientspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/checkupspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/medicinespeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/sprayspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/shotspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/scalespeech_google.wav": null
+                    "Units/Newcomer/bedroom and clothes/pics/skirt.jpg": null
                 },
-                "pics": {
-                    "Units/Newcomer/clinic/pics/chart.jpg": null,
-                    "Units/Newcomer/clinic/pics/scale.jpg": null,
-                    "Units/Newcomer/clinic/pics/patient.jpg": null,
-                    "Units/Newcomer/clinic/pics/medicine.jpg": null,
-                    "Units/Newcomer/clinic/pics/checkup.jpg": null,
-                    "Units/Newcomer/clinic/pics/stethoscope.jpg": null,
-                    "Units/Newcomer/clinic/pics/drops.jpg": null,
-                    "Units/Newcomer/clinic/pics/prescription.jpg": null,
-                    "Units/Newcomer/clinic/pics/tablets.jpg": null,
-                    "Units/Newcomer/clinic/pics/shot.jpg": null,
-                    "Units/Newcomer/clinic/pics/spray.jpg": null,
-                    "Units/Newcomer/clinic/pics/doctor.jpg": null
-                }
-            },
-            "body": {
-                "Units/Newcomer/body/body.jpg": null,
                 "sounds": {
-                    "Units/Newcomer/body/sounds/chestspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/toesspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/headspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/neckspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/legspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/footspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/armspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/backspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/fingersspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/bottomspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/handspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/stomachspeech_google.wav": null
-                },
-                "pics": {
-                    "Units/Newcomer/body/pics/chest.jpg": null,
-                    "Units/Newcomer/body/pics/arm.jpg": null,
-                    "Units/Newcomer/body/pics/leg.jpg": null,
-                    "Units/Newcomer/body/pics/fingers.jpg": null,
-                    "Units/Newcomer/body/pics/neck.jpg": null,
-                    "Units/Newcomer/body/pics/bottom.jpg": null,
-                    "Units/Newcomer/body/pics/stomach.jpg": null,
-                    "Units/Newcomer/body/pics/hand.jpg": null,
-                    "Units/Newcomer/body/pics/toes.jpg": null,
-                    "Units/Newcomer/body/pics/head.jpg": null,
-                    "Units/Newcomer/body/pics/back.jpg": null,
-                    "Units/Newcomer/body/pics/foot.jpg": null
+                    "Units/Newcomer/bedroom and clothes/sounds/socksspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/sweatshirtspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/hatspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/t-shirtspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/shoesspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/pajamasspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/skirtspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/sweaterspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/dressspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/bootsspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/underwearspeech_google.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/pantsspeech_google.wav": null
                 }
             },
             "feelings": {
                 "Units/Newcomer/feelings/feelings.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/feelings/sounds/laughspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/tiredspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/angryspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/smilespeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/sadspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/yawnspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/scaredspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/frownspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/happyspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/cryspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/worriedspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/surprisedspeech_google.wav": null
-                },
                 "pics": {
-                    "Units/Newcomer/feelings/pics/cry.jpg": null,
-                    "Units/Newcomer/feelings/pics/scared.jpg": null,
-                    "Units/Newcomer/feelings/pics/worried.jpg": null,
-                    "Units/Newcomer/feelings/pics/sad.jpg": null,
-                    "Units/Newcomer/feelings/pics/tired.jpg": null,
-                    "Units/Newcomer/feelings/pics/angry.jpg": null,
                     "Units/Newcomer/feelings/pics/frown.jpg": null,
-                    "Units/Newcomer/feelings/pics/smile.jpg": null,
+                    "Units/Newcomer/feelings/pics/angry.jpg": null,
+                    "Units/Newcomer/feelings/pics/sad.jpg": null,
+                    "Units/Newcomer/feelings/pics/worried.jpg": null,
                     "Units/Newcomer/feelings/pics/laugh.jpg": null,
                     "Units/Newcomer/feelings/pics/yawn.jpg": null,
+                    "Units/Newcomer/feelings/pics/tired.jpg": null,
+                    "Units/Newcomer/feelings/pics/smile.jpg": null,
+                    "Units/Newcomer/feelings/pics/surprised.jpg": null,
                     "Units/Newcomer/feelings/pics/happy.jpg": null,
-                    "Units/Newcomer/feelings/pics/surprised.jpg": null
+                    "Units/Newcomer/feelings/pics/scared.jpg": null,
+                    "Units/Newcomer/feelings/pics/cry.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/feelings/sounds/smilespeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/angryspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/happyspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/surprisedspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/scaredspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/yawnspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/frownspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/tiredspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/laughspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/worriedspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/cryspeech_google.wav": null,
+                    "Units/Newcomer/feelings/sounds/sadspeech_google.wav": null
                 }
             },
-            "birthday party": {
-                "Units/Newcomer/birthday party/cake.jpg": null,
-                "Units/Newcomer/birthday party/jewelry.jpg": null,
-                "Units/Newcomer/birthday party/balloon.jpg": null,
-                "Units/Newcomer/birthday party/birthday party.jpg": null,
-                "Units/Newcomer/birthday party/card.jpg": null,
-                "Units/Newcomer/birthday party/ribbon.jpg": null,
-                "Units/Newcomer/birthday party/present.jpg": null,
-                "Units/Newcomer/birthday party/candy.jpg": null,
-                "Units/Newcomer/birthday party/candles.jpg": null,
-                "Units/Newcomer/birthday party/bat.jpg": null,
-                "Units/Newcomer/birthday party/puzzle.jpg": null,
-                "Units/Newcomer/birthday party/helicopter.jpg": null,
-                "Units/Newcomer/birthday party/wrapping paper.jpg": null,
-                "sounds": {},
-                "pics": {}
+            "Gym": {
+                "pics": {},
+                "sounds": {}
             },
-            "Bathroom": {
-                "sounds": {
-                    "Units/Newcomer/Bathroom/sounds/brushspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/toilet paperspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/toothpastespeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/waterspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/bathtubspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/shampoospeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/soapspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/showerspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/toothbrushspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/toiletspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/towelspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/combspeech_google.wav": null
-                },
+            "school": {
+                "Units/Newcomer/school/school.jpg": null,
                 "pics": {
-                    "Units/Newcomer/Bathroom/pics/towel.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/bathtub.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/shower.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/toilet paper.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/toilet.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/brush.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/toothpaste.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/water.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/toothbrush.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/soap.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/shampoo.jpg": null,
-                    "Units/Newcomer/Bathroom/pics/comb.jpg": null
+                    "Units/Newcomer/school/pics/librarian.jpg": null,
+                    "Units/Newcomer/school/pics/bicycle.jpg": null,
+                    "Units/Newcomer/school/pics/bus.jpg": null,
+                    "Units/Newcomer/school/pics/ride.jpg": null,
+                    "Units/Newcomer/school/pics/car.jpg": null,
+                    "Units/Newcomer/school/pics/teacher.jpg": null,
+                    "Units/Newcomer/school/pics/clock.jpg": null,
+                    "Units/Newcomer/school/pics/student.jpg": null,
+                    "Units/Newcomer/school/pics/walk.jpg": null,
+                    "Units/Newcomer/school/pics/nurse.jpg": null,
+                    "Units/Newcomer/school/pics/crossing guard.jpg": null,
+                    "Units/Newcomer/school/pics/principal.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/school/sounds/nursespeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/walkspeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/clockspeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/librarianspeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/crossing guardspeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/principalspeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/studentspeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/teacherspeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/bicyclespeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/carspeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/ridespeech_google.wav": null,
+                    "Units/Newcomer/school/sounds/busspeech_google.wav": null
                 }
             },
             "home": {
                 "Units/Newcomer/home/home.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/home/sounds/dresserspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/cookspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/sinkspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/brushspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/sleepspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/tablespeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/stovespeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/washspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/eatspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/get dressedspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/bedspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/sofaspeech_google.wav": null
-                },
                 "pics": {
-                    "Units/Newcomer/home/pics/dresser.jpg": null,
-                    "Units/Newcomer/home/pics/stove.jpg": null,
-                    "Units/Newcomer/home/pics/sofa.jpg": null,
                     "Units/Newcomer/home/pics/bed.jpg": null,
-                    "Units/Newcomer/home/pics/brush.jpg": null,
                     "Units/Newcomer/home/pics/sleep.jpg": null,
                     "Units/Newcomer/home/pics/get dressed.jpg": null,
-                    "Units/Newcomer/home/pics/cook.jpg": null,
+                    "Units/Newcomer/home/pics/table.jpg": null,
+                    "Units/Newcomer/home/pics/dresser.jpg": null,
+                    "Units/Newcomer/home/pics/wash.jpg": null,
+                    "Units/Newcomer/home/pics/sofa.jpg": null,
                     "Units/Newcomer/home/pics/eat.jpg": null,
                     "Units/Newcomer/home/pics/sink.jpg": null,
-                    "Units/Newcomer/home/pics/table.jpg": null,
-                    "Units/Newcomer/home/pics/wash.jpg": null
+                    "Units/Newcomer/home/pics/stove.jpg": null,
+                    "Units/Newcomer/home/pics/brush.jpg": null,
+                    "Units/Newcomer/home/pics/cook.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/home/sounds/brushspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/sofaspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/sleepspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/eatspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/stovespeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/cookspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/bedspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/sinkspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/tablespeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/get dressedspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/dresserspeech_google.wav": null,
+                    "Units/Newcomer/home/sounds/washspeech_google.wav": null
                 }
             },
-            "library": {
-                "Units/Newcomer/library/library.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/library/sounds/due datespeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/returnspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/newspaperspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/computerspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/library cardspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/dictionaryspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/bookshelvesspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/magazinespeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/video tapespeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/check outspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/call numberspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/atlasspeech_google.wav": null
-                },
+            "mall": {
+                "Units/Newcomer/mall/mall.jpg": null,
                 "pics": {
-                    "Units/Newcomer/library/pics/call number.jpg": null,
-                    "Units/Newcomer/library/pics/check out.jpg": null,
-                    "Units/Newcomer/library/pics/computer.jpg": null,
-                    "Units/Newcomer/library/pics/magazine.jpg": null,
-                    "Units/Newcomer/library/pics/bookshelves.jpg": null,
-                    "Units/Newcomer/library/pics/library card.jpg": null,
-                    "Units/Newcomer/library/pics/dictionary.jpg": null,
-                    "Units/Newcomer/library/pics/video tape.jpg": null,
-                    "Units/Newcomer/library/pics/atlas.jpg": null,
-                    "Units/Newcomer/library/pics/newspaper.jpg": null,
-                    "Units/Newcomer/library/pics/return.jpg": null,
-                    "Units/Newcomer/library/pics/due date.jpg": null
+                    "Units/Newcomer/mall/pics/ice cream.jpg": null,
+                    "Units/Newcomer/mall/pics/restroom.jpg": null,
+                    "Units/Newcomer/mall/pics/shoe store.jpg": null,
+                    "Units/Newcomer/mall/pics/arcade.jpg": null,
+                    "Units/Newcomer/mall/pics/fries.jpg": null,
+                    "Units/Newcomer/mall/pics/pizza.jpg": null,
+                    "Units/Newcomer/mall/pics/exit.jpg": null,
+                    "Units/Newcomer/mall/pics/movie theater.jpg": null,
+                    "Units/Newcomer/mall/pics/snack bar.jpg": null,
+                    "Units/Newcomer/mall/pics/soda.jpg": null,
+                    "Units/Newcomer/mall/pics/clothes store.jpg": null,
+                    "Units/Newcomer/mall/pics/escalator.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/mall/sounds/shoe storespeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/snack barspeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/arcadespeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/clothes storespeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/restroomspeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/sodaspeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/pizzaspeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/escalatorspeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/exitspeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/ice creamspeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/movie theaterspeech_google.wav": null,
+                    "Units/Newcomer/mall/sounds/friesspeech_google.wav": null
                 }
             },
-            "grocery store and food": {
-                "Units/Newcomer/grocery store and food/grocery store food.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/grocery store and food/sounds/meatspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/seafoodspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/broccolispeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/cartspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/orangespeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/boxspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/bananasspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/listspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/lettucespeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/bagsspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/pineapplespeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/cheesespeech_google.wav": null
-                },
+            "city": {
+                "Units/Newcomer/city/city.jpg": null,
                 "pics": {
-                    "Units/Newcomer/grocery store and food/pics/lettuce.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/meat.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/cheese.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/box.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/broccoli.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/seafood.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/pineapple.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/bags.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/bananas.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/list.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/orange.jpg": null,
-                    "Units/Newcomer/grocery store and food/pics/cart.jpg": null
+                    "Units/Newcomer/city/pics/barbershop.jpg": null,
+                    "Units/Newcomer/city/pics/traffic light.jpg": null,
+                    "Units/Newcomer/city/pics/taxi.jpg": null,
+                    "Units/Newcomer/city/pics/pet store.jpg": null,
+                    "Units/Newcomer/city/pics/library.jpg": null,
+                    "Units/Newcomer/city/pics/truck.jpg": null,
+                    "Units/Newcomer/city/pics/police officer.jpg": null,
+                    "Units/Newcomer/city/pics/sports store.jpg": null,
+                    "Units/Newcomer/city/pics/police station.jpg": null,
+                    "Units/Newcomer/city/pics/motorcycle.jpg": null,
+                    "Units/Newcomer/city/pics/traffic.jpg": null,
+                    "Units/Newcomer/city/pics/toy store.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/city/sounds/police officerspeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/sports storespeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/trafficspeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/barbershopspeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/truckspeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/motorcyclespeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/pet storespeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/libraryspeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/traffic lightspeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/taxispeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/toy storespeech_google.wav": null,
+                    "Units/Newcomer/city/sounds/police stationspeech_google.wav": null
                 }
             },
-            "lunchroom cafeteria": {
-                "Units/Newcomer/lunchroom cafeteria/lunchroom cafeteria.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/lunchroom cafeteria/sounds/carrotspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/trayspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/milkspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/applespeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/sushispeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/garbagespeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/cookiespeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/canspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/sandwichspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/saladspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/eggrollspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/tacospeech_google.wav": null
-                },
+            "Earth and Space": {
+                "pics": {},
+                "sounds": {}
+            },
+            "School": {
+                "pics": {},
+                "sounds": {}
+            },
+            "Music": {
+                "pics": {},
+                "sounds": {}
+            },
+            "nurse": {
+                "Units/Newcomer/nurse/nurse.jpg": null,
                 "pics": {
-                    "Units/Newcomer/lunchroom cafeteria/pics/apple.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/tray.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/cookie.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/can.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/sushi.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/salad.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/sandwich.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/eggroll.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/taco.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/carrot.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/garbage.jpg": null,
-                    "Units/Newcomer/lunchroom cafeteria/pics/milk.jpg": null
+                    "Units/Newcomer/nurse/pics/tissues.jpg": null,
+                    "Units/Newcomer/nurse/pics/cough.jpg": null,
+                    "Units/Newcomer/nurse/pics/stomachache.jpg": null,
+                    "Units/Newcomer/nurse/pics/bump.jpg": null,
+                    "Units/Newcomer/nurse/pics/sneeze.jpg": null,
+                    "Units/Newcomer/nurse/pics/blood.jpg": null,
+                    "Units/Newcomer/nurse/pics/lie down.jpg": null,
+                    "Units/Newcomer/nurse/pics/thermometer.jpg": null,
+                    "Units/Newcomer/nurse/pics/sore throat.jpg": null,
+                    "Units/Newcomer/nurse/pics/fever.jpg": null,
+                    "Units/Newcomer/nurse/pics/cut.jpg": null,
+                    "Units/Newcomer/nurse/pics/bandage.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/nurse/sounds/stomachachespeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/bandagespeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/feverspeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/coughspeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/lie downspeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/tissuesspeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/sore throatspeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/bumpspeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/sneezespeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/cutspeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/bloodspeech_google.wav": null,
+                    "Units/Newcomer/nurse/sounds/thermometerspeech_google.wav": null
+                }
+            },
+            "pet store": {
+                "Units/Newcomer/pet store/pet store.jpg": null,
+                "pics": {
+                    "Units/Newcomer/pet store/pics/collar.jpg": null,
+                    "Units/Newcomer/pet store/pics/kitten.jpg": null,
+                    "Units/Newcomer/pet store/pics/bird.jpg": null,
+                    "Units/Newcomer/pet store/pics/fish tank.jpg": null,
+                    "Units/Newcomer/pet store/pics/leash.jpg": null,
+                    "Units/Newcomer/pet store/pics/mouse.jpg": null,
+                    "Units/Newcomer/pet store/pics/dog.jpg": null,
+                    "Units/Newcomer/pet store/pics/cage.jpg": null,
+                    "Units/Newcomer/pet store/pics/cat.jpg": null,
+                    "Units/Newcomer/pet store/pics/fish.jpg": null,
+                    "Units/Newcomer/pet store/pics/puppy.jpg": null,
+                    "Units/Newcomer/pet store/pics/turtle.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/pet store/sounds/cagespeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/leashspeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/mousespeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/fishspeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/puppyspeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/dogspeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/kittenspeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/turtlespeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/birdspeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/fish tankspeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/catspeech_google.wav": null,
+                    "Units/Newcomer/pet store/sounds/collarspeech_google.wav": null
                 }
             },
             "hospital": {
                 "Units/Newcomer/hospital/hospital.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/hospital/sounds/sirenspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/walkerspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/maskspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/ambulancespeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/blanketspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/x-rayspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/castspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/rubber glovesspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/paramedicspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/wheelchairspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/stretcherspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/crutchesspeech_google.wav": null
-                },
                 "pics": {
                     "Units/Newcomer/hospital/pics/stretcher.jpg": null,
                     "Units/Newcomer/hospital/pics/x-ray.jpg": null,
                     "Units/Newcomer/hospital/pics/walker.jpg": null,
-                    "Units/Newcomer/hospital/pics/paramedic.jpg": null,
-                    "Units/Newcomer/hospital/pics/blanket.jpg": null,
-                    "Units/Newcomer/hospital/pics/crutches.jpg": null,
-                    "Units/Newcomer/hospital/pics/rubber gloves.jpg": null,
-                    "Units/Newcomer/hospital/pics/wheelchair.jpg": null,
-                    "Units/Newcomer/hospital/pics/ambulance.jpg": null,
                     "Units/Newcomer/hospital/pics/mask.jpg": null,
+                    "Units/Newcomer/hospital/pics/blanket.jpg": null,
+                    "Units/Newcomer/hospital/pics/ambulance.jpg": null,
+                    "Units/Newcomer/hospital/pics/rubber gloves.jpg": null,
+                    "Units/Newcomer/hospital/pics/cast.jpg": null,
                     "Units/Newcomer/hospital/pics/siren.jpg": null,
-                    "Units/Newcomer/hospital/pics/cast.jpg": null
-                }
-            },
-            "music": {
-                "Units/Newcomer/music/music.jpg": null,
-                "sounds": {
-                    "Units/Newcomer/music/sounds/drumsspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/violinspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/pianospeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/beatspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/tubaspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/flutespeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/clapspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/maracasspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/singspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/trianglespeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/blowspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/trumpetspeech_google.wav": null
+                    "Units/Newcomer/hospital/pics/wheelchair.jpg": null,
+                    "Units/Newcomer/hospital/pics/crutches.jpg": null,
+                    "Units/Newcomer/hospital/pics/paramedic.jpg": null
                 },
-                "pics": {
-                    "Units/Newcomer/music/pics/tuba.jpg": null,
-                    "Units/Newcomer/music/pics/sing.jpg": null,
-                    "Units/Newcomer/music/pics/maracas.jpg": null,
-                    "Units/Newcomer/music/pics/flute.jpg": null,
-                    "Units/Newcomer/music/pics/beat.jpg": null,
-                    "Units/Newcomer/music/pics/blow.jpg": null,
-                    "Units/Newcomer/music/pics/violin.jpg": null,
-                    "Units/Newcomer/music/pics/triangle.jpg": null,
-                    "Units/Newcomer/music/pics/drums.jpg": null,
-                    "Units/Newcomer/music/pics/piano.jpg": null,
-                    "Units/Newcomer/music/pics/clap.jpg": null,
-                    "Units/Newcomer/music/pics/trumpet.jpg": null
+                "sounds": {
+                    "Units/Newcomer/hospital/sounds/x-rayspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/ambulancespeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/wheelchairspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/walkerspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/stretcherspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/crutchesspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/sirenspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/blanketspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/maskspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/paramedicspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/rubber glovesspeech_google.wav": null,
+                    "Units/Newcomer/hospital/sounds/castspeech_google.wav": null
                 }
             }
         }
