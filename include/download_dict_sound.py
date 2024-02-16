@@ -78,10 +78,10 @@ def download_google(word, orig_directory="./"):
     opener.addheaders = [('User-agent', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)')]
     outputdir = os.path.abspath(orig_directory.replace("pics","sounds"))
     response = opener.open(google_translate_url+'?q='+ search_form_word.replace(' ','%20')+'&tl=en')
-    ofp = open(os.path.join(outputdir, file_form_word + 'speech_google.mp3'),'wb')
+    ofp = open(os.path.join(outputdir, file_form_word + 'phrasebox.mp3'),'wb')
     ofp.write(response.read())
     ofp.close()
-    return os.path.join(outputdir, file_form_word + 'speech_google.mp3')
+    return os.path.join(outputdir, file_form_word + 'phrasebox.mp3')
 
 def convert_mp3_to_wav(mp3file, remove_mp3 = False):
     mp3path = os.path.abspath(mp3file)
@@ -105,8 +105,8 @@ def get_macsay(word, orig_directory="./"):
     file_form_word = place_symbols(word)
     search_form_word = replace_symbols(word)
     outputdir = os.path.abspath(orig_directory.replace("pics","sounds"))
-    os.system('say -o "' + os.path.join(outputdir,file_form_word + "speech_google.wav") +'" -f BEI16@44100 "' + word + '"')
-    return os.path.join(outputdir,file_form_word + "speech_google.wav")
+    os.system('say -o "' + os.path.join(outputdir,file_form_word + "phrasebox.wav") +'" -f BEI16@44100 "' + word + '"')
+    return os.path.join(outputdir,file_form_word + "phrasebox.wav")
 #problematic examples
 #don't
 #walked
@@ -118,8 +118,8 @@ def download_pico(word, orig_directory = "./"):
     search_form_word = replace_symbols(word)
     outputdir = os.path.abspath(orig_directory.replace("pics","sounds"))
 
-    os.system('pico2wave -w "' + os.path.join(outputdir, file_form_word) + 'speech_google.wav" "' + search_form_word + '"')
-    return os.path.join(outputdir, file_form_word + 'speech_google.wav')
+    os.system('pico2wave -w "' + os.path.join(outputdir, file_form_word) + 'phrasebox.wav" "' + search_form_word + '"')
+    return os.path.join(outputdir, file_form_word + 'phrasebox.wav')
 
 def generate_piper(word, orig_directory = "./"):
     file_form_word = place_symbols(word)
@@ -128,11 +128,11 @@ def generate_piper(word, orig_directory = "./"):
     model = "en_US-lessac-medium.onnx"
     outputdir = os.path.abspath(orig_directory.replace("pics","sounds"))
     ps = subprocess.Popen(("echo", search_form_word), stdout=subprocess.PIPE)
-    output = subprocess.check_output(("/home/levtim/Downloads/piper/piper/piper", "--model", os.path.join("/home/levtim/Downloads/piper/piper/", model) , "--output_file", os.path.join(outputdir, file_form_word + 'speech_google.wav')), stdin=ps.stdout)
+    output = subprocess.check_output(("/home/levtim/Downloads/piper/piper/piper", "--model", os.path.join("/home/levtim/Downloads/piper/piper/", model) , "--output_file", os.path.join(outputdir, file_form_word + 'phrasebox.wav')), stdin=ps.stdout)
     ps.wait()
-    print(os.path.join(outputdir, file_form_word + 'speech_google.wav'))
-    #os.system('pico2wave -w "' + os.path.join(outputdir, file_form_word) + 'speech_google.wav" "' + search_form_word + '"')
-    return os.path.join(outputdir, file_form_word + 'speech_google.wav')
+    print(os.path.join(outputdir, file_form_word + 'phrasebox.wav'))
+    #os.system('pico2wave -w "' + os.path.join(outputdir, file_form_word) + 'phrasebox.wav" "' + search_form_word + '"')
+    return os.path.join(outputdir, file_form_word + 'phrasebox.wav')
 
 
 if __name__ == "__main__":

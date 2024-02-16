@@ -20,7 +20,7 @@ if len(os.path.split(sys.argv[0])[0]) > 0:
 picfiles = [os.path.abspath(file) for file in glob.glob('../Units/*/*/pics/*.*')]
 soundfiles = [os.path.abspath(file) for file in glob.glob('../Units/*/*/sounds/*.*')]
 comparepicfiles = [file[:file.rindex(".")] for file in picfiles]
-comparesoundfiles =[file.replace("speech_google.ogg","").replace("speech_google.wav","").replace("/sounds/","/pics/") for file in soundfiles]
+comparesoundfiles =[file.replace("phrasebox.ogg","").replace("phrasebox.wav","").replace("/sounds/","/pics/") for file in soundfiles]
 compared = [os.path.split(file) for file in comparepicfiles if file not in comparesoundfiles]
 print(compared)
 for item in compared:

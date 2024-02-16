@@ -2,7 +2,7 @@
 
 import os, argparse, sys, platform
 #EXAMPLE Record sentence/phrase sounds for auto play in current directory
-#python record_missing_words.py missing.txt --ending "speech_google" --format wav --output_dir .
+#python record_missing_words.py missing.txt --ending "phrasebox" --format wav --output_dir .
 
 #EXAMPLE Record missing words for individual clicking in sounds directory
 

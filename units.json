@@ -18,18 +18,18 @@ var units_json = {
                     "Units/Newcomer/school bus/pics/stand.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/school bus/sounds/standspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/sitspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/lunchboxspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/don.apostrophet leanspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/don.apostrophet pushspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/seatspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/backpackspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/bus stopspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/seat beltspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/bus driverspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/cornerspeech_google.wav": null,
-                    "Units/Newcomer/school bus/sounds/linespeech_google.wav": null
+                    "Units/Newcomer/school bus/sounds/standphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/sitphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/lunchboxphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/don.apostrophet leanphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/don.apostrophet pushphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/seatphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/backpackphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/bus stopphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/seat beltphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/bus driverphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/cornerphrasebox.wav": null,
+                    "Units/Newcomer/school bus/sounds/linephrasebox.wav": null
                 }
             },
             "library": {
@@ -49,18 +49,18 @@ var units_json = {
                     "Units/Newcomer/library/pics/newspaper.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/library/sounds/bookshelvesspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/video tapespeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/dictionaryspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/library cardspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/call numberspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/newspaperspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/check outspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/atlasspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/magazinespeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/returnspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/computerspeech_google.wav": null,
-                    "Units/Newcomer/library/sounds/due datespeech_google.wav": null
+                    "Units/Newcomer/library/sounds/bookshelvesphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/video tapephrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/dictionaryphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/library cardphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/call numberphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/newspaperphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/check outphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/atlasphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/magazinephrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/returnphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/computerphrasebox.wav": null,
+                    "Units/Newcomer/library/sounds/due datephrasebox.wav": null
                 }
             },
             "Animals": {
@@ -84,18 +84,18 @@ var units_json = {
                     "Units/Newcomer/music/pics/clap.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/music/sounds/tubaspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/flutespeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/clapspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/pianospeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/beatspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/maracasspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/trianglespeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/violinspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/trumpetspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/singspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/drumsspeech_google.wav": null,
-                    "Units/Newcomer/music/sounds/blowspeech_google.wav": null
+                    "Units/Newcomer/music/sounds/tubaphrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/flutephrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/clapphrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/pianophrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/beatphrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/maracasphrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/trianglephrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/violinphrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/trumpetphrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/singphrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/drumsphrasebox.wav": null,
+                    "Units/Newcomer/music/sounds/blowphrasebox.wav": null
                 }
             },
             "House": {
@@ -123,18 +123,18 @@ var units_json = {
                     "Units/Newcomer/city places/pics/factory.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/city places/sounds/benchspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/parkspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/street cleanerspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/garbage truckspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/airportspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/subwayspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/skyscrapersspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/smokestackspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/litterspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/railroadspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/highwayspeech_google.wav": null,
-                    "Units/Newcomer/city places/sounds/factoryspeech_google.wav": null
+                    "Units/Newcomer/city places/sounds/benchphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/parkphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/street cleanerphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/garbage truckphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/airportphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/subwayphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/skyscrapersphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/smokestackphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/litterphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/railroadphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/highwayphrasebox.wav": null,
+                    "Units/Newcomer/city places/sounds/factoryphrasebox.wav": null
                 }
             },
             "gym": {
@@ -154,18 +154,18 @@ var units_json = {
                     "Units/Newcomer/gym/pics/around.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/gym/sounds/jumpspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/tumblespeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/underspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/betweenspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/aroundspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/overspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/hopspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/hoopspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/crawlspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/matspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/skipspeech_google.wav": null,
-                    "Units/Newcomer/gym/sounds/throughspeech_google.wav": null
+                    "Units/Newcomer/gym/sounds/jumpphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/tumblephrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/underphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/betweenphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/aroundphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/overphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/hopphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/hoopphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/crawlphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/matphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/skipphrasebox.wav": null,
+                    "Units/Newcomer/gym/sounds/throughphrasebox.wav": null
                 }
             },
             "Bus": {
@@ -193,18 +193,18 @@ var units_json = {
                     "Units/Newcomer/places/pics/laundry.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/places/sounds/restaurantspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/dentistspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/letterspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/pharmacyspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/hardware storespeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/mailmanspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/bakeryspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/laundryspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/bankspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/post officespeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/mailboxspeech_google.wav": null,
-                    "Units/Newcomer/places/sounds/gas stationspeech_google.wav": null
+                    "Units/Newcomer/places/sounds/restaurantphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/dentistphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/letterphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/pharmacyphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/hardware storephrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/mailmanphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/bakeryphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/laundryphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/bankphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/post officephrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/mailboxphrasebox.wav": null,
+                    "Units/Newcomer/places/sounds/gas stationphrasebox.wav": null
                 }
             },
             "Neighborhood": {
@@ -232,18 +232,18 @@ var units_json = {
                     "Units/Newcomer/lunchroom cafeteria/pics/salad.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/lunchroom cafeteria/sounds/milkspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/applespeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/eggrollspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/canspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/tacospeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/garbagespeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/carrotspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/sushispeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/saladspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/trayspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/sandwichspeech_google.wav": null,
-                    "Units/Newcomer/lunchroom cafeteria/sounds/cookiespeech_google.wav": null
+                    "Units/Newcomer/lunchroom cafeteria/sounds/milkphrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/applephrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/eggrollphrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/canphrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/tacophrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/garbagephrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/carrotphrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/sushiphrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/saladphrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/trayphrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/sandwichphrasebox.wav": null,
+                    "Units/Newcomer/lunchroom cafeteria/sounds/cookiephrasebox.wav": null
                 }
             },
             "Library": {
@@ -286,18 +286,18 @@ var units_json = {
                     "Units/Newcomer/Bathroom/pics/brush.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/Bathroom/sounds/brushspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/soapspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/towelspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/toilet paperspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/shampoospeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/toiletspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/waterspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/showerspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/toothpastespeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/bathtubspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/toothbrushspeech_google.wav": null,
-                    "Units/Newcomer/Bathroom/sounds/combspeech_google.wav": null
+                    "Units/Newcomer/Bathroom/sounds/brushphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/soapphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/towelphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/toilet paperphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/shampoophrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/toiletphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/waterphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/showerphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/toothpastephrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/bathtubphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/toothbrushphrasebox.wav": null,
+                    "Units/Newcomer/Bathroom/sounds/combphrasebox.wav": null
                 }
             },
             "clinic": {
@@ -317,18 +317,18 @@ var units_json = {
                     "Units/Newcomer/clinic/pics/shot.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/clinic/sounds/doctorspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/checkupspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/prescriptionspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/chartspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/sprayspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/dropsspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/patientspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/shotspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/tabletsspeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/medicinespeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/scalespeech_google.wav": null,
-                    "Units/Newcomer/clinic/sounds/stethoscopespeech_google.wav": null
+                    "Units/Newcomer/clinic/sounds/doctorphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/checkupphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/prescriptionphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/chartphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/sprayphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/dropsphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/patientphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/shotphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/tabletsphrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/medicinephrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/scalephrasebox.wav": null,
+                    "Units/Newcomer/clinic/sounds/stethoscopephrasebox.wav": null
                 }
             },
             "classroom supplies and actions lower": {
@@ -348,18 +348,18 @@ var units_json = {
                     "Units/Newcomer/classroom supplies and actions lower/pics/listen.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/lookspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/scissorsspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/buildspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/gluespeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/blocksspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/pencilspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/listenspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/cutspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/crayonsspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/markersspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/paintspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions lower/sounds/picturespeech_google.wav": null
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/lookphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/scissorsphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/buildphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/gluephrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/blocksphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/pencilphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/listenphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/cutphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/crayonsphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/markersphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/paintphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions lower/sounds/picturephrasebox.wav": null
                 }
             },
             "kitchen": {
@@ -379,18 +379,18 @@ var units_json = {
                     "Units/Newcomer/kitchen/pics/fork.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/kitchen/sounds/cerealspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/breadspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/glassspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/eggsspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/spoonspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/forkspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/platespeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/cupspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/juicespeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/knifespeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/bowlspeech_google.wav": null,
-                    "Units/Newcomer/kitchen/sounds/butterspeech_google.wav": null
+                    "Units/Newcomer/kitchen/sounds/cerealphrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/breadphrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/glassphrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/eggsphrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/spoonphrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/forkphrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/platephrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/cupphrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/juicephrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/knifephrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/bowlphrasebox.wav": null,
+                    "Units/Newcomer/kitchen/sounds/butterphrasebox.wav": null
                 }
             },
             "Visit": {
@@ -414,18 +414,18 @@ var units_json = {
                     "Units/Newcomer/body/pics/back.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/body/sounds/fingersspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/neckspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/bottomspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/legspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/chestspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/backspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/headspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/armspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/toesspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/footspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/handspeech_google.wav": null,
-                    "Units/Newcomer/body/sounds/stomachspeech_google.wav": null
+                    "Units/Newcomer/body/sounds/fingersphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/neckphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/bottomphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/legphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/chestphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/backphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/headphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/armphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/toesphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/footphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/handphrasebox.wav": null,
+                    "Units/Newcomer/body/sounds/stomachphrasebox.wav": null
                 }
             },
             "living room": {
@@ -445,18 +445,18 @@ var units_json = {
                     "Units/Newcomer/living room/pics/rest.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/living room/sounds/helpspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/playspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/stereospeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/watchspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/talkspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/radiospeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/remotespeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/restspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/televisionspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/CDspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/headphonesspeech_google.wav": null,
-                    "Units/Newcomer/living room/sounds/practicespeech_google.wav": null
+                    "Units/Newcomer/living room/sounds/helpphrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/playphrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/stereophrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/watchphrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/talkphrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/radiophrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/remotephrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/restphrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/televisionphrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/CDphrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/headphonesphrasebox.wav": null,
+                    "Units/Newcomer/living room/sounds/practicephrasebox.wav": null
                 }
             },
             "playground": {
@@ -476,18 +476,18 @@ var units_json = {
                     "Units/Newcomer/playground/pics/bars.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/playground/sounds/kickspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/swingspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/slidespeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/seesawspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/bouncespeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/ballspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/runspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/throwspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/fallspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/catchspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/barsspeech_google.wav": null,
-                    "Units/Newcomer/playground/sounds/climbspeech_google.wav": null
+                    "Units/Newcomer/playground/sounds/kickphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/swingphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/slidephrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/seesawphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/bouncephrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/ballphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/runphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/throwphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/fallphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/catchphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/barsphrasebox.wav": null,
+                    "Units/Newcomer/playground/sounds/climbphrasebox.wav": null
                 }
             },
             "Faces": {
@@ -542,18 +542,18 @@ var units_json = {
                     "Units/Newcomer/classroom supplies and actions upper/pics/notebook.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/garbagespeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/bookspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/writespeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/notebookspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/readspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/thinkspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/drawspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/boardspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/chairspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/deskspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/chalkspeech_google.wav": null,
-                    "Units/Newcomer/classroom supplies and actions upper/sounds/paperspeech_google.wav": null
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/garbagephrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/bookphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/writephrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/notebookphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/readphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/thinkphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/drawphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/boardphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/chairphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/deskphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/chalkphrasebox.wav": null,
+                    "Units/Newcomer/classroom supplies and actions upper/sounds/paperphrasebox.wav": null
                 }
             },
             "Weekend": {
@@ -585,18 +585,18 @@ var units_json = {
                     "Units/Newcomer/toy store and money/pics/nickel.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/toy store and money/sounds/quarterspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/dimespeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/airplanespeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/animalsspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/nickelspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/pennyspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/dollspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/gamespeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/trainspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/dollarspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/moneyspeech_google.wav": null,
-                    "Units/Newcomer/toy store and money/sounds/boatspeech_google.wav": null
+                    "Units/Newcomer/toy store and money/sounds/quarterphrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/dimephrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/airplanephrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/animalsphrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/nickelphrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/pennyphrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/dollphrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/gamephrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/trainphrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/dollarphrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/moneyphrasebox.wav": null,
+                    "Units/Newcomer/toy store and money/sounds/boatphrasebox.wav": null
                 }
             },
             "Feelings": {
@@ -628,18 +628,18 @@ var units_json = {
                     "Units/Newcomer/grocery store and food/pics/meat.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/grocery store and food/sounds/lettucespeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/boxspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/cheesespeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/broccolispeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/pineapplespeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/seafoodspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/bagsspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/cartspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/bananasspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/meatspeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/orangespeech_google.wav": null,
-                    "Units/Newcomer/grocery store and food/sounds/listspeech_google.wav": null
+                    "Units/Newcomer/grocery store and food/sounds/lettucephrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/boxphrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/cheesephrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/broccoliphrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/pineapplephrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/seafoodphrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/bagsphrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/cartphrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/bananasphrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/meatphrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/orangephrasebox.wav": null,
+                    "Units/Newcomer/grocery store and food/sounds/listphrasebox.wav": null
                 }
             },
             "bedroom and clothes": {
@@ -663,18 +663,18 @@ var units_json = {
                     "Units/Newcomer/bedroom and clothes/pics/skirt.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/bedroom and clothes/sounds/socksspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/sweatshirtspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/hatspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/t-shirtspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/shoesspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/pajamasspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/skirtspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/sweaterspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/dressspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/bootsspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/underwearspeech_google.wav": null,
-                    "Units/Newcomer/bedroom and clothes/sounds/pantsspeech_google.wav": null
+                    "Units/Newcomer/bedroom and clothes/sounds/socksphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/sweatshirtphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/hatphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/t-shirtphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/shoesphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/pajamasphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/skirtphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/sweaterphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/dressphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/bootsphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/underwearphrasebox.wav": null,
+                    "Units/Newcomer/bedroom and clothes/sounds/pantsphrasebox.wav": null
                 }
             },
             "feelings": {
@@ -694,18 +694,18 @@ var units_json = {
                     "Units/Newcomer/feelings/pics/cry.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/feelings/sounds/smilespeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/angryspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/happyspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/surprisedspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/scaredspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/yawnspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/frownspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/tiredspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/laughspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/worriedspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/cryspeech_google.wav": null,
-                    "Units/Newcomer/feelings/sounds/sadspeech_google.wav": null
+                    "Units/Newcomer/feelings/sounds/smilephrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/angryphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/happyphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/surprisedphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/scaredphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/yawnphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/frownphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/tiredphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/laughphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/worriedphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/cryphrasebox.wav": null,
+                    "Units/Newcomer/feelings/sounds/sadphrasebox.wav": null
                 }
             },
             "Gym": {
@@ -729,18 +729,18 @@ var units_json = {
                     "Units/Newcomer/school/pics/principal.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/school/sounds/nursespeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/walkspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/clockspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/librarianspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/crossing guardspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/principalspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/studentspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/teacherspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/bicyclespeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/carspeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/ridespeech_google.wav": null,
-                    "Units/Newcomer/school/sounds/busspeech_google.wav": null
+                    "Units/Newcomer/school/sounds/nursephrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/walkphrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/clockphrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/librarianphrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/crossing guardphrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/principalphrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/studentphrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/teacherphrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/bicyclephrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/carphrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/ridephrasebox.wav": null,
+                    "Units/Newcomer/school/sounds/busphrasebox.wav": null
                 }
             },
             "home": {
@@ -760,18 +760,18 @@ var units_json = {
                     "Units/Newcomer/home/pics/cook.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/home/sounds/brushspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/sofaspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/sleepspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/eatspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/stovespeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/cookspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/bedspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/sinkspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/tablespeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/get dressedspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/dresserspeech_google.wav": null,
-                    "Units/Newcomer/home/sounds/washspeech_google.wav": null
+                    "Units/Newcomer/home/sounds/brushphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/sofaphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/sleepphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/eatphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/stovephrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/cookphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/bedphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/sinkphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/tablephrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/get dressedphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/dresserphrasebox.wav": null,
+                    "Units/Newcomer/home/sounds/washphrasebox.wav": null
                 }
             },
             "mall": {
@@ -791,18 +791,18 @@ var units_json = {
                     "Units/Newcomer/mall/pics/escalator.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/mall/sounds/shoe storespeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/snack barspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/arcadespeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/clothes storespeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/restroomspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/sodaspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/pizzaspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/escalatorspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/exitspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/ice creamspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/movie theaterspeech_google.wav": null,
-                    "Units/Newcomer/mall/sounds/friesspeech_google.wav": null
+                    "Units/Newcomer/mall/sounds/shoe storephrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/snack barphrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/arcadephrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/clothes storephrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/restroomphrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/sodaphrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/pizzaphrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/escalatorphrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/exitphrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/ice creamphrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/movie theaterphrasebox.wav": null,
+                    "Units/Newcomer/mall/sounds/friesphrasebox.wav": null
                 }
             },
             "city": {
@@ -822,18 +822,18 @@ var units_json = {
                     "Units/Newcomer/city/pics/toy store.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/city/sounds/police officerspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/sports storespeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/trafficspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/barbershopspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/truckspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/motorcyclespeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/pet storespeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/libraryspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/traffic lightspeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/taxispeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/toy storespeech_google.wav": null,
-                    "Units/Newcomer/city/sounds/police stationspeech_google.wav": null
+                    "Units/Newcomer/city/sounds/police officerphrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/sports storephrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/trafficphrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/barbershopphrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/truckphrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/motorcyclephrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/pet storephrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/libraryphrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/traffic lightphrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/taxiphrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/toy storephrasebox.wav": null,
+                    "Units/Newcomer/city/sounds/police stationphrasebox.wav": null
                 }
             },
             "Earth and Space": {
@@ -865,18 +865,18 @@ var units_json = {
                     "Units/Newcomer/nurse/pics/bandage.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/nurse/sounds/stomachachespeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/bandagespeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/feverspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/coughspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/lie downspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/tissuesspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/sore throatspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/bumpspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/sneezespeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/cutspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/bloodspeech_google.wav": null,
-                    "Units/Newcomer/nurse/sounds/thermometerspeech_google.wav": null
+                    "Units/Newcomer/nurse/sounds/stomachachephrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/bandagephrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/feverphrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/coughphrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/lie downphrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/tissuesphrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/sore throatphrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/bumpphrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/sneezephrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/cutphrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/bloodphrasebox.wav": null,
+                    "Units/Newcomer/nurse/sounds/thermometerphrasebox.wav": null
                 }
             },
             "pet store": {
@@ -896,18 +896,18 @@ var units_json = {
                     "Units/Newcomer/pet store/pics/turtle.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/pet store/sounds/cagespeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/leashspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/mousespeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/fishspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/puppyspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/dogspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/kittenspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/turtlespeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/birdspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/fish tankspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/catspeech_google.wav": null,
-                    "Units/Newcomer/pet store/sounds/collarspeech_google.wav": null
+                    "Units/Newcomer/pet store/sounds/cagephrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/leashphrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/mousephrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/fishphrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/puppyphrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/dogphrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/kittenphrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/turtlephrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/birdphrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/fish tankphrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/catphrasebox.wav": null,
+                    "Units/Newcomer/pet store/sounds/collarphrasebox.wav": null
                 }
             },
             "hospital": {
@@ -927,18 +927,18 @@ var units_json = {
                     "Units/Newcomer/hospital/pics/paramedic.jpg": null
                 },
                 "sounds": {
-                    "Units/Newcomer/hospital/sounds/x-rayspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/ambulancespeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/wheelchairspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/walkerspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/stretcherspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/crutchesspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/sirenspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/blanketspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/maskspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/paramedicspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/rubber glovesspeech_google.wav": null,
-                    "Units/Newcomer/hospital/sounds/castspeech_google.wav": null
+                    "Units/Newcomer/hospital/sounds/x-rayphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/ambulancephrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/wheelchairphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/walkerphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/stretcherphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/crutchesphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/sirenphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/blanketphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/maskphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/paramedicphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/rubber glovesphrasebox.wav": null,
+                    "Units/Newcomer/hospital/sounds/castphrasebox.wav": null
                 }
             }
         }
