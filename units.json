@@ -63,10 +63,6 @@ var units_json = {
                     "Units/Newcomer/library/sounds/returnphrasebox.wav": null
                 }
             },
-            "Animals": {
-                "pics": {},
-                "sounds": {}
-            },
             "music": {
                 "Units/Newcomer/music/music.jpg": null,
                 "pics": {
@@ -97,14 +93,6 @@ var units_json = {
                     "Units/Newcomer/music/sounds/drumsphrasebox.wav": null,
                     "Units/Newcomer/music/sounds/pianophrasebox.wav": null
                 }
-            },
-            "House": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Numbers and Shapes": {
-                "pics": {},
-                "sounds": {}
             },
             "city places": {
                 "Units/Newcomer/city places/city places.jpg": null,
@@ -168,14 +156,6 @@ var units_json = {
                     "Units/Newcomer/gym/sounds/crawlphrasebox.wav": null
                 }
             },
-            "Bus": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Art": {
-                "pics": {},
-                "sounds": {}
-            },
             "places": {
                 "Units/Newcomer/places/places.jpg": null,
                 "pics": {
@@ -207,14 +187,6 @@ var units_json = {
                     "Units/Newcomer/places/sounds/dentistphrasebox.wav": null
                 }
             },
-            "Neighborhood": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Grocery Store and Food": {
-                "pics": {},
-                "sounds": {}
-            },
             "lunchroom cafeteria": {
                 "Units/Newcomer/lunchroom cafeteria/lunchroom cafeteria.jpg": null,
                 "pics": {
@@ -245,30 +217,6 @@ var units_json = {
                     "Units/Newcomer/lunchroom cafeteria/sounds/saladphrasebox.wav": null,
                     "Units/Newcomer/lunchroom cafeteria/sounds/canphrasebox.wav": null
                 }
-            },
-            "Library": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Seasons": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Nurse": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Pet Store": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Recess": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Hospital": {
-                "pics": {},
-                "sounds": {}
             },
             "Bathroom": {
                 "pics": {
@@ -393,10 +341,6 @@ var units_json = {
                     "Units/Newcomer/kitchen/sounds/bowlphrasebox.wav": null
                 }
             },
-            "Visit": {
-                "pics": {},
-                "sounds": {}
-            },
             "body": {
                 "Units/Newcomer/body/body.jpg": null,
                 "pics": {
@@ -490,14 +434,6 @@ var units_json = {
                     "Units/Newcomer/playground/sounds/ballphrasebox.wav": null
                 }
             },
-            "Faces": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Lunch": {
-                "pics": {},
-                "sounds": {}
-            },
             "birthday party": {
                 "Units/Newcomer/birthday party/candy.jpg": null,
                 "Units/Newcomer/birthday party/jewelry.jpg": null,
@@ -512,18 +448,6 @@ var units_json = {
                 "Units/Newcomer/birthday party/ribbon.jpg": null,
                 "Units/Newcomer/birthday party/bat.jpg": null,
                 "Units/Newcomer/birthday party/wrapping paper.jpg": null
-            },
-            "Body": {
-                "pics": {},
-                "sounds": {}
-            },
-            "City": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Classroom": {
-                "pics": {},
-                "sounds": {}
             },
             "classroom supplies and actions upper": {
                 "Units/Newcomer/classroom supplies and actions upper/classroom supplies and actions upper.jpg": null,
@@ -556,18 +480,6 @@ var units_json = {
                     "Units/Newcomer/classroom supplies and actions upper/sounds/garbagephrasebox.wav": null
                 }
             },
-            "Weekend": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Toy Store": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Kitchen": {
-                "pics": {},
-                "sounds": {}
-            },
             "toy store and money": {
                 "Units/Newcomer/toy store and money/toy store and money.jpg": null,
                 "pics": {
@@ -598,18 +510,6 @@ var units_json = {
                     "Units/Newcomer/toy store and money/sounds/nickelphrasebox.wav": null,
                     "Units/Newcomer/toy store and money/sounds/boatphrasebox.wav": null
                 }
-            },
-            "Feelings": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Clothes": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Clinic": {
-                "pics": {},
-                "sounds": {}
             },
             "grocery store and food": {
                 "Units/Newcomer/grocery store and food/grocery store food.jpg": null,
@@ -707,10 +607,6 @@ var units_json = {
                     "Units/Newcomer/feelings/sounds/surprisedphrasebox.wav": null,
                     "Units/Newcomer/feelings/sounds/scaredphrasebox.wav": null
                 }
-            },
-            "Gym": {
-                "pics": {},
-                "sounds": {}
             },
             "school": {
                 "Units/Newcomer/school/school.jpg": null,
@@ -835,18 +731,6 @@ var units_json = {
                     "Units/Newcomer/city/sounds/trafficphrasebox.wav": null,
                     "Units/Newcomer/city/sounds/libraryphrasebox.wav": null
                 }
-            },
-            "Earth and Space": {
-                "pics": {},
-                "sounds": {}
-            },
-            "School": {
-                "pics": {},
-                "sounds": {}
-            },
-            "Music": {
-                "pics": {},
-                "sounds": {}
             },
             "nurse": {
                 "Units/Newcomer/nurse/nurse.jpg": null,
