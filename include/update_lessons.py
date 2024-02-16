@@ -16,7 +16,7 @@ if len(os.path.split(sys.argv[0])[0]) > 0:
     os.chdir(os.path.split(sys.argv[0])[0])
 
 
-########## DOWNLOAD Pico2wave #########
+########## Generate piper - DOWNLOAD Pico2wave #########
 picfiles = [os.path.abspath(file) for file in glob.glob('../Units/*/*/pics/*.*')]
 soundfiles = [os.path.abspath(file) for file in glob.glob('../Units/*/*/sounds/*.*')]
 comparepicfiles = [file[:file.rindex(".")] for file in picfiles]
@@ -25,7 +25,8 @@ compared = [os.path.split(file) for file in comparepicfiles if file not in compa
 print(compared)
 for item in compared:
 	path, raw_word = item[0], item[1]
-	download_dict_sound.download_pico(raw_word, path)
+	#download_dict_sound.download_pico(raw_word, path)
+	download_dict_sound.generate_piper(raw_word, path)
     #download_dict_sound.convert_mp3_to_wav(download_dict_sound.download_google(raw_word, path), True)
 
 
