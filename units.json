@@ -218,6 +218,52 @@ var units_json = {
                     "Units/Newcomer/lunchroom cafeteria/sounds/canphrasebox.wav": null
                 }
             },
+            "doing verbs": {
+                "pics": {
+                    "Units/Newcomer/doing verbs/pics/sleep.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/drink.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/talk.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/sing.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/play.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/wash.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/jump.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/laugh.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/sit.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/walk.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/eat.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/look.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/run.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/read.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/shop.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/write.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/yell.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/cry.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/stand.jpg": null,
+                    "Units/Newcomer/doing verbs/pics/listen.jpg": null
+                },
+                "sounds": {
+                    "Units/Newcomer/doing verbs/sounds/runphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/washphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/jumpphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/eatphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/readphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/singphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/shopphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/laughphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/talkphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/sitphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/writephrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/standphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/cryphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/walkphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/listenphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/lookphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/drinkphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/playphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/yellphrasebox.wav": null,
+                    "Units/Newcomer/doing verbs/sounds/sleepphrasebox.wav": null
+                }
+            },
             "Bathroom": {
                 "pics": {
                     "Units/Newcomer/Bathroom/pics/water.jpg": null,
